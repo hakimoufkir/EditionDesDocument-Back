@@ -1,0 +1,117 @@
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.d
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*
+
+# Xamarin
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.manifest
+*.assets
+*.resources
+*.rs
+*.package
+*.nuget
+*.crunch
+*.symbols
+
+# .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+bin/
+obj/
+AppPackages/
+Backup/
+csproj.user
+userprefs/
+
+# Rider
+.idea
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code
+.vscode/
+
+# DotNetCore V1.x lock file
+project.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCopReport.xml
+
+# dotCover
+.dotCover/
+
+# NCrunch
+.ncrunchsolution
+.ncrunchproject
+
+# Web workspaces
+.vscode/
+**/.sass-cache
+**/.npm
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
