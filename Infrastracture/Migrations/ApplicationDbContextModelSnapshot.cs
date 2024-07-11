@@ -97,6 +97,9 @@ namespace Infrastracture.Migrations
                     b.Property<Guid>("ModeleId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("NameTrainee")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("role")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -109,22 +112,22 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0db17e3f-9a64-4fbf-b07d-af2b24b7d91e"),
+                            Id = new Guid("a17245a2-f2b8-4ad3-ba08-4263b02ace8f"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 0,
                             DocumentType = "document_trainee",
-                            IdTrainee = new Guid("2bf680c1-f6d7-422f-80cd-513f7bc2ddad"),
-                            ModeleId = new Guid("fa239f69-46f8-40d3-98d6-44197bb039c9"),
+                            IdTrainee = new Guid("2de2ac63-717d-45c4-b580-07bbc0f4f302"),
+                            ModeleId = new Guid("10fc07c7-a6dc-4c4b-ba02-f8feb4d614d1"),
                             role = "Admin"
                         },
                         new
                         {
-                            Id = new Guid("43441e81-62e4-44cf-acd1-6c7c042181ab"),
+                            Id = new Guid("efde2807-e4c4-4d2c-8ed0-05063fd888d0"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 1,
                             DocumentType = "document_traineeList",
-                            IdTrainee = new Guid("4d025293-7793-4fac-b5a3-17a466e18315"),
-                            ModeleId = new Guid("ae9e3455-18b0-40f3-8138-3bb635d9eea1"),
+                            IdTrainee = new Guid("dcbb7758-9323-4feb-92e6-81f98f24e538"),
+                            ModeleId = new Guid("9649602c-db25-45e3-b9f2-5de750ea8f60"),
                             role = "User"
                         });
                 });

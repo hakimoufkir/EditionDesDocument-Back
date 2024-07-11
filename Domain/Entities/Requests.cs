@@ -6,6 +6,7 @@ namespace Domain.Entities;
 public class Requests : Base
 {
     public Guid IdTrainee { get; set; }
+    public string? NameTrainee { get; set; }
     public Guid ModeleId { get; set; }
     public string role { get; set; }
     public string DocumentType { get; set; }
