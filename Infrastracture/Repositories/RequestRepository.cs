@@ -5,7 +5,7 @@ using Infrastructure.Repositories;
 
 namespace Infrastracture.Repositories
 {
-    internal class RequestRepository : GenericRepository<Requests>, IRequestRepository
+    internal class RequestRepository : GenericRepository<Request>, IRequestRepository
     {
         public RequestRepository(ApplicationDbContext db) : base(db)
         {

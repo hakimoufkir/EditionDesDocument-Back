@@ -12,7 +12,7 @@ namespace EventService.Application.Mapping
         {
 
             //Request Mapping
-            CreateMap<Requests,AddRequestCommand>().ReverseMap();          
+            CreateMap<Request,AddRequestCommand>().ReverseMap();          
 
         }
     }

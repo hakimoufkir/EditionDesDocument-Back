@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 ﻿using MediatR;
 using static Domain.Entities.Documents;
+=======
+﻿using Domain.Entities;
+using MediatR;
+using static Domain.Entities.Document;
+>>>>>>> 5b80bd99d1aeef3c01b441d9ce61ac3c7ce662c7
 
 namespace Application.Features.RequestFeature.Commands.AddRequest;
 

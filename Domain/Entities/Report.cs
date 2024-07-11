@@ -2,7 +2,7 @@
 
 namespace Domain.Entities;
 
-public class Reports : Base
+public class Report : Base
 {
     public int RapportId { get; set; }
     public string NomRapport { get; set; }

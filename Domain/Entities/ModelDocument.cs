@@ -3,7 +3,7 @@ using Domain.Common;
 
 namespace Domain.Entities;
 
-public class ModeleDocuments : Base
+public class ModelDocument : Base
 {
     public Guid ModeleId { get; set; }
     public string NomModele { get; set; }

@@ -5,7 +5,7 @@ namespace Application.IRepository;
 public interface 
     
     
-    IRequestRepository: IGenericRepository<Requests>
+    IRequestRepository: IGenericRepository<Request>
 {
     
 }

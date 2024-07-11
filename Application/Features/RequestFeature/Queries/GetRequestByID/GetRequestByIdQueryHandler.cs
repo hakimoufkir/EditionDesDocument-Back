@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Features.RequestFeature.Queries.GetRequestByID;
 
-public class GetRequestByIdQueryHandler :IRequestHandler<GetRequestByIdQuery,Requests>
+public class GetRequestByIdQueryHandler :IRequestHandler<GetRequestByIdQuery,Request>
 {
     private readonly IUnitOfService _uos;
     private readonly IMapper _mapper;
@@ -16,7 +16,7 @@ public class GetRequestByIdQueryHandler :IRequestHandler<GetRequestByIdQuery,Req
         _mapper = mapper;
     }
 
-    public Task<Requests> Handle(GetRequestByIdQuery request, CancellationToken cancellationToken)
+    public Task<Request> Handle(GetRequestByIdQuery request, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }

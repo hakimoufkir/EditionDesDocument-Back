@@ -2,7 +2,7 @@
 
 namespace Domain.Entities;
 
-public class DocuementsTraineeList : Documents
+public class DocumentTraineeList : Document
 {
     public List<Guid> IdTraineesList { get; set; }
 }

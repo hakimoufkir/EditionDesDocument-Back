@@ -10,23 +10,26 @@ namespace Infrastructure.Infrastructure.Data
 
 
 
-        public DbSet<Documents> DocumentsBase { get; set; }
-
-        public DbSet<Requests>Requests { get; set; }
-
-
+        public DbSet<Contract> Contracts { get; set; }
+        public DbSet<Document> Documents { get; set; }
+        public DbSet<DocumentTrainee> DocumentsTrainees { get; set; }
+        public DbSet<DocumentTraineeList> DocumentsTraineeLists { get; set; }
+        public DbSet<ModelDocument> ModelDocuments { get; set; }
+        public DbSet<Report> Reports { get; set; }
+        public DbSet<RequestInternship> RequestInternships { get; set; }
+        public DbSet<Request>Requests { get; set; }
 
 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Documents>()
+            modelBuilder.Entity<Document>()
                 .HasDiscriminator<string>("document_type")
-                .HasValue<DocumentsTrainee>("document_trainee")
-                .HasValue<DocuementsTraineeList>("document_traineeList");
+                .HasValue<DocumentTrainee>("document_trainee")
+                .HasValue<DocumentTraineeList>("document_traineeList");
 
-            modelBuilder.Entity<Requests>(entity =>
+            modelBuilder.Entity<Request>(entity =>
             {
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.IdTrainee).IsRequired();
@@ -37,7 +40,7 @@ namespace Infrastructure.Infrastructure.Data
 
                 // Seed data for Requests entity
                 entity.HasData(
-                    new Requests
+                    new Request
                     {
                         Id = Guid.NewGuid(),
                         IdTrainee = Guid.NewGuid(),
@@ -46,7 +49,7 @@ namespace Infrastructure.Infrastructure.Data
                         DocumentType = "document_trainee",
                         DocumentStatus = Domain.Enums.DocumentStatus.Accepte  // Assuming DocumentStatus is an enum
                     },
-                    new Requests
+                    new Request
                     {
                         Id = Guid.NewGuid(),
                         IdTrainee = Guid.NewGuid(),
