@@ -6,7 +6,7 @@ using MediatR;
 
 namespace Application.Features.RequestFeature.Queries.GetRequestsList;
 
-public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery,List<Requests>>
+public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery,List<Request>>
 {
     private readonly IUnitOfService _uos;
     private readonly IMapper _mapper;
@@ -17,9 +17,9 @@ public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery,
         _mapper = mapper;
     }
 
-    public async Task<List<Requests>> Handle(GetRequestsListQuery request, CancellationToken cancellationToken)
+    public async Task<List<Request>> Handle(GetRequestsListQuery request, CancellationToken cancellationToken)
     {
-        List<Requests> requests = await _uos.RequestService.GetRequestsListAsync();
+        List<Request> requests = await _uos.RequestService.GetRequestsListAsync();
         return requests;
 
     }

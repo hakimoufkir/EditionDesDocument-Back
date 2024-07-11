@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities;
 
-public class DocumentsTrainee : Documents
+public class DocumentTrainee : Document
 {
     public Guid IdTrainee { get; set; }
 }

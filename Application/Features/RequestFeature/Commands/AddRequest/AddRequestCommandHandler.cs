@@ -24,7 +24,7 @@ public AddRequestCommandHandler(IUnitOfService uos, IMapper mapper)
         {
             try
             {
-                Requests requests = _mapper.Map<Requests>(request);
+                Request requests = _mapper.Map<Request>(request);
                 var result = await _uos.RequestService.AddRequestAsync(requests);
                 if (result == "Success")
                 {
