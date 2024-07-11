@@ -15,9 +15,9 @@ namespace Infrastracture.Repositories
             _context = context;
         }
 
-        public Task<List<Request>> GetAllAsNoTracking()
+        public async Task<List<Request>> GetAllAsNoTracking()
         {
-            throw new NotImplementedException();
+            return await dbSet.AsNoTracking().ToListAsync();
         }
 
         public async Task<Request> GetByIdAsync(Guid id)
