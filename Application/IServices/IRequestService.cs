@@ -8,4 +8,8 @@ public interface IRequestService
     Task<Request> GetRequestByIdAsync(Guid IdRequest);
     Task<string> AddRequestAsync(Request Request);
 
+    Task<string> UpdateRequestAsync(Request request);
+
+
+
 }

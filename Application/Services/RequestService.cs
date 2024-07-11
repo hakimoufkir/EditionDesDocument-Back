@@ -27,9 +27,9 @@ public class RequestService : IRequestService
 
     }
 
-    public Task<Request> GetRequestByIdAsync(Guid IdRequest)
+    public async Task<Request> GetRequestByIdAsync(Guid IdRequest)
     {
-        throw new NotImplementedException();
+        return await _uow.RequestRepository.GetByIdAsync(IdRequest);
     }
 
     public async Task<string> AddRequestAsync(Request Request)
@@ -51,6 +51,20 @@ public class RequestService : IRequestService
             throw new Exception("Error adding request: " + ex.Message);
         }
 
+    }
+
+    public async Task<string> UpdateRequestAsync(Request request)
+    {
+        try
+        {
+            await _uow.RequestRepository.UpdateAsync(request);
+            await _uow.CommitAsync();
+            return "Success";
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Error updating request: " + ex.Message);
+        }
     }
     #endregion
 

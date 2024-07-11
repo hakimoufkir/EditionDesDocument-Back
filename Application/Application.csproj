@@ -13,7 +13,6 @@
     <ItemGroup>
       <Folder Include="Broker\" />
       <Folder Include="Features\RequestFeature\Commands\DeleteRequest\" />
-      <Folder Include="Features\RequestFeature\Commands\UpdateRequest\" />
     </ItemGroup>
 
     <ItemGroup>

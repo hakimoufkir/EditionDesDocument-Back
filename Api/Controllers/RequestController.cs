@@ -1,4 +1,5 @@
 ﻿using Application.Features.RequestFeature.Commands.AddRequest;
+using Application.Features.RequestFeature.Commands.UpdateRequest;
 using Application.Features.RequestFeature.Queries.GetRequestsList;
 using Domain.Entities;
 using MediatR;
@@ -28,8 +29,6 @@ namespace Api.Controllers
         [HttpPost("/Requests/add")]
         public async Task<IActionResult> AddRequestsList([FromBody] AddRequestCommand addRequestCommand)
         {
-            //var res = await _mediator.Send(addRequestCommand);
-            //return Ok(res);
             try
             {
                 string result = await _mediator.Send(addRequestCommand);
@@ -52,6 +51,47 @@ namespace Api.Controllers
                 return StatusCode(500, $"Error: {ex.Message}");
             }
         }
+
+
+        [HttpPut("/Requests/update/{id}")]
+        public async Task<IActionResult> UpdateRequest(Guid id, [FromBody] UpdateRequestCommand updateRequestCommand)
+        {
+            if (id != updateRequestCommand.Id)
+            {
+                return BadRequest("ID mismatch");
+            }
+
+            try
+            {
+                string result = await _mediator.Send(updateRequestCommand);
+
+                if (result.StartsWith("Success"))
+                {
+                    return Ok(result);
+                }
+                else if (result.StartsWith("BadRequest"))
+                {
+                    return BadRequest(result);
+                }
+                else if (result == "Request not found")
+                {
+                    return NotFound(result);
+                }
+                else
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error: {ex.Message}");
+            }
+        }
+
+
+
+
+
     }
     
 }
