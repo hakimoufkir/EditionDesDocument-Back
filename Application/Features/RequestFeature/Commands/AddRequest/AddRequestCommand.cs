@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 using MediatR;
-using static Domain.Entities.Documents;
+using static Domain.Entities.Document;
 
 namespace Application.Features.RequestFeature.Commands.AddRequest;
 

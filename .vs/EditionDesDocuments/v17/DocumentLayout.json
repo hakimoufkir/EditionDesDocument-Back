@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\common\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\common\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\infrastracture\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\modeldocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\modeldocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\documenttrainee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\documenttrainee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\documenttraineelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\documenttraineelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +42,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\RequestController.cs",
-              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "Api\\Controllers\\RequestController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAqwBsAAAAgAAAA",
+              "DocumentIndex": 2,
+              "Title": "Base.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Common\\Base.cs",
+              "RelativeDocumentMoniker": "Domain\\Common\\Base.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Common\\Base.cs",
+              "RelativeToolTip": "Domain\\Common\\Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:00:37.223Z",
+              "WhenOpened": "2024-07-10T20:01:14.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Request.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Request.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Request.cs",
+              "RelativeToolTip": "Domain\\Entities\\Request.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:25:15.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Report.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Report.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Report.cs",
+              "RelativeToolTip": "Domain\\Entities\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T13:53:06.446Z",
+              "WhenOpened": "2024-07-10T19:25:12.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DocumentTrainee.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\DocumentTrainee.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\DocumentTrainee.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\DocumentTrainee.cs",
+              "RelativeToolTip": "Domain\\Entities\\DocumentTrainee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:24:57.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Document.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Document.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Document.cs",
+              "RelativeToolTip": "Domain\\Entities\\Document.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:24:49.054Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModelDocument.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\ModelDocument.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\ModelDocument.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\ModelDocument.cs",
+              "RelativeToolTip": "Domain\\Entities\\ModelDocument.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:22:52.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Db\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Db\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Db\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infrastracture\\Db\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:19:22.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DocumentTraineeList.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\DocumentTraineeList.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\DocumentTraineeList.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\DocumentTraineeList.cs",
+              "RelativeToolTip": "Domain\\Entities\\DocumentTraineeList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T19:12:33.297Z"
             }
           ]
         }

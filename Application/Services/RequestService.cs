@@ -16,19 +16,19 @@ public class RequestService : IRequestService
     }
     #endregion
     #region Methods
-    public async Task<List<Requests>> GetRequestsListAsync()
+    public async Task<List<Request>> GetRequestsListAsync()
     {
-        List<Requests> requestsList = await _uow.RequestRepository.GetAllAsNoTracking();
+        List<Request> requestsList = await _uow.RequestRepository.GetAllAsNoTracking();
         return requestsList;
 
     }
 
-    public Task<Requests> GetRequestByIdAsync(Guid IdRequest)
+    public Task<Request> GetRequestByIdAsync(Guid IdRequest)
     {
         throw new NotImplementedException();
     }
 
-    public async Task<string> AddRequestAsync(Requests Request)
+    public async Task<string> AddRequestAsync(Request Request)
     {
         try
         {

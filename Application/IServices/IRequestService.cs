@@ -4,8 +4,8 @@ namespace Application.Interfaces;
 
 public interface IRequestService
 {
-    Task<List<Requests>> GetRequestsListAsync();
-    Task<Requests> GetRequestByIdAsync(Guid IdRequest);
-    Task<string> AddRequestAsync(Requests Request);
+    Task<List<Request>> GetRequestsListAsync();
+    Task<Request> GetRequestByIdAsync(Guid IdRequest);
+    Task<string> AddRequestAsync(Request Request);
 
 }

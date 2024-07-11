@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Application.Features.RequestFeature.Queries.GetRequestByID;
 
-public class GetRequestByIdQuery: IRequest<Requests>
+public class GetRequestByIdQuery: IRequest<Request>
 {
     
 }

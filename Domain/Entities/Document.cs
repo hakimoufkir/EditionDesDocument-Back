@@ -5,7 +5,7 @@
 
     namespace Domain.Entities;
 
-    public class Documents : Base
+    public class Document : Base
     {
         public Guid IdModelDocuments { get; set; }
         public string DocumentType { get; set; }
