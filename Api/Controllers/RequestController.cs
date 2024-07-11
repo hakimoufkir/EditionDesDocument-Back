@@ -25,7 +25,7 @@ namespace Api.Controllers
             return Ok(res);
         }
 
-        [HttpPost("/Requests/list")]
+        [HttpPost("/Requests/add")]
         public async Task<IActionResult> AddRequestsList([FromBody] AddRequestCommand addRequestCommand)
         {
             var res = await _mediator.Send(addRequestCommand);
