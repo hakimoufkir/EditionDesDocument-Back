@@ -9,6 +9,7 @@ namespace Infrastructure.Repositories
         private readonly ApplicationDbContext _db;
         public IRequestRepository RequestRepository { get; }
 
+        public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
 
         public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository)
         {

@@ -28,8 +28,30 @@ namespace Api.Controllers
         [HttpPost("/Requests/add")]
         public async Task<IActionResult> AddRequestsList([FromBody] AddRequestCommand addRequestCommand)
         {
-            var res = await _mediator.Send(addRequestCommand);
-            return Ok(res);
+            //var res = await _mediator.Send(addRequestCommand);
+            //return Ok(res);
+            try
+            {
+                string result = await _mediator.Send(addRequestCommand);
+
+                if (result.StartsWith("Success"))
+                {
+                    return Ok(result);
+                }
+                else if (result.StartsWith("BadRequest"))
+                {
+                    return BadRequest(result);
+                }
+                else
+                {
+                    return Ok(result);
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error: {ex.Message}");
+            }
         }
     }
+    
 }

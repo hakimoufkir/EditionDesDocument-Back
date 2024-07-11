@@ -1,6 +1,8 @@
 ﻿using Application.Interfaces;
+using Application.IServices;
 using Application.IUOW;
 using Domain.Entities;
+using MediatR;
 
 namespace Application.Services;
 
@@ -8,11 +10,13 @@ public class RequestService : IRequestService
 {
     #region Props
     private readonly IUnitOfWork _uow;
+    private readonly ICheckRoleService _checkRoleService;
     #endregion     
     #region Constructor
-    public RequestService(IUnitOfWork uow)
+    public RequestService(IUnitOfWork uow, ICheckRoleService checkRoleService)
     {
         _uow = uow;
+        _checkRoleService = checkRoleService;
     }
     #endregion
     #region Methods
@@ -30,6 +34,11 @@ public class RequestService : IRequestService
 
     public async Task<string> AddRequestAsync(Request Request)
     {
+        if (await _checkRoleService.CheckRole(Request))
+        {
+            return "BadRequest: Role cannot be 'assistante'";
+        }
+
         try
         {
             await _uow.RequestRepository.CreateAsync(Request);
@@ -39,7 +48,7 @@ public class RequestService : IRequestService
         catch (Exception ex)
         {
 
-            throw new Exception(ex.ToString());
+            throw new Exception("Error adding request: " + ex.Message);
         }
 
     }
