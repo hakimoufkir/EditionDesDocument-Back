@@ -8,8 +8,8 @@ namespace Domain.Enums
 {
     public enum DocumentStatus
     {
-        Accepte,
         InProgress,
+        Accepte,        
         Deny
     }
   
