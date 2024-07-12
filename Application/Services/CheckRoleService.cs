@@ -15,10 +15,12 @@ namespace Application.Services
             _requestRepository = requestRepository;
             _mapper = mapper;
         }
+
+
         public async Task<bool> CheckRole(Request request)
         {
            
-            if (request.role == "assistante")
+            if (request.role == "assistante" || request.role == "traitant")
             {
                 return false;
             }

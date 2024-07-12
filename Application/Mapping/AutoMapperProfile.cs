@@ -13,8 +13,8 @@ namespace EventService.Application.Mapping
         {
 
             //Request Mapping
-            CreateMap<Request,AddRequestCommand>().ReverseMap()
-                 .ForMember(dest => dest.Id, opt => opt.Ignore()); 
+            CreateMap<Request, AddRequestCommand>().ReverseMap();
+                
 
             // UpdateRequestCommand mapping
             CreateMap<UpdateRequestCommand, Request>().ReverseMap();
