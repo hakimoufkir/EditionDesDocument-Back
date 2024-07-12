@@ -14,7 +14,7 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
     {
         private readonly IUnitOfService _uos;
         private readonly IMapper _mapper;
-public AddRequestCommandHandler(IUnitOfService uos, IMapper mapper)
+        public AddRequestCommandHandler(IUnitOfService uos, IMapper mapper)
         {
             _uos = uos;
             _mapper = mapper;
