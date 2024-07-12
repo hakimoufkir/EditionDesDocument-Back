@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240710192642_hamid")]
-    partial class hamid
+    [Migration("20240712102522_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -202,7 +202,14 @@ namespace Infrastracture.Migrations
                     b.Property<Guid>("ModeleId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("role")
+                    b.Property<string>("NameTrainee")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReasonRejection")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -214,23 +221,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7dd7ce09-9d7e-406e-81cc-4c41d51d7000"),
+                            Id = new Guid("65cd0e23-9340-4ecb-ae46-b7396d8dbad4"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 0,
                             DocumentType = "document_trainee",
-                            IdTrainee = new Guid("6fbd1315-5a60-4053-a595-4f07f876d215"),
-                            ModeleId = new Guid("de1375c0-4bb0-45fc-ae63-355af858d0c2"),
-                            role = "Admin"
+                            IdTrainee = new Guid("35ea8b19-d927-472f-99e5-e66d73b86d32"),
+                            ModeleId = new Guid("a85d00a1-607f-4baf-9d83-5c8aa43d440f"),
+                            ReasonRejection = "",
+                            Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("f545b58c-8ae6-4f26-8823-9856685dec2b"),
+                            Id = new Guid("c16753a9-9f42-4775-84af-519e329c79ab"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DocumentStatus = 1,
+                            DocumentStatus = 2,
                             DocumentType = "document_traineeList",
-                            IdTrainee = new Guid("2f83b87d-7322-46e0-b3f5-18896ff5c852"),
-                            ModeleId = new Guid("aa43b347-4cc1-4f0f-a7ff-8153a5caaea1"),
-                            role = "User"
+                            IdTrainee = new Guid("810c295f-495f-4512-9bcd-6e0baf524ce4"),
+                            ModeleId = new Guid("f072ca72-ca9d-4936-adcd-1bae0bb00845"),
+                            ReasonRejection = "ya pas de justification",
+                            Role = "director"
                         });
                 });
 

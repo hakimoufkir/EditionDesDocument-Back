@@ -36,7 +36,7 @@ public class RequestService : IRequestService
     {
         if (await _checkRoleService.CheckRole(Request))
         {
-            return "BadRequest: Role cannot be 'assistante'";
+            return "You don't have permission!";
         }
 
         try
