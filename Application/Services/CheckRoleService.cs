@@ -20,7 +20,7 @@ namespace Application.Services
         public async Task<bool> CheckRole(Request request)
         {
            
-            if (request.role == "assistante" || request.role == "traitant")
+            if (request.Role == "assistant" || request.Role == "trainee" || request.Role == "director")
             {
                 return false;
             }

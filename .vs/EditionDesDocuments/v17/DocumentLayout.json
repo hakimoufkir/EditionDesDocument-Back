@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\",
   "Documents": [
     {
@@ -28,6 +29,88 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\features\\requestfeature\\commands\\addrequest\\addrequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\addrequest\\addrequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\features\\requestfeature\\commands\\addrequest\\addrequestcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\addrequest\\addrequestcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\iservices\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\services\\checkroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\checkroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\iservices\\icheckroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\icheckroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\requestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\routing\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\routing\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\routing\\testrouting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\routing\\testrouting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\features\\requestfeature\\queries\\getrequestbyid\\getrequestbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\queries\\getrequestbyid\\getrequestbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\irepository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\irepository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2
       "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -53,10 +136,274 @@
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+=======
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Router.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\Router.cs",
+              "RelativeDocumentMoniker": "Domain\\Routing\\Router.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\Router.cs",
+              "RelativeToolTip": "Domain\\Routing\\Router.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:10:40.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IRequestService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IRequestService.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IRequestService.cs",
+              "RelativeToolTip": "Application\\IServices\\IRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:56:59.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RequestService.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\RequestService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\RequestService.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\RequestService.cs",
+              "RelativeToolTip": "Application\\Services\\RequestService.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwCEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:30:04.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\CheckRoleService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\CheckRoleService.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\CheckRoleService.cs",
+              "RelativeToolTip": "Application\\Services\\CheckRoleService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAkwBYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T22:36:36.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestRouting.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\TestRouting.cs",
+              "RelativeDocumentMoniker": "Domain\\Routing\\TestRouting.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\TestRouting.cs",
+              "RelativeToolTip": "Domain\\Routing\\TestRouting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:10:43.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddRequestCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:41:11.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Report.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Report.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Report.cs",
+              "RelativeToolTip": "Domain\\Entities\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:31:25.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Request.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Request.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Request.cs",
+              "RelativeToolTip": "Domain\\Entities\\Request.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T14:36:37.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddRequestCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:41:28.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\ConfigureServices.cs",
+              "RelativeToolTip": "Infrastracture\\ConfigureServices.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:12:13.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICheckRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\ICheckRoleService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\ICheckRoleService.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\ICheckRoleService.cs",
+              "RelativeToolTip": "Application\\IServices\\ICheckRoleService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:16:17.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetRequestByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:10:20.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateRequestCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:42:10.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateRequestCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T14:31:47.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "Api\\Controllers\\RequestController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwDgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:36:11.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:48:43.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IRepository\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "Application\\IRepository\\IRequestRepository.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IRepository\\IRequestRepository.cs",
+              "RelativeToolTip": "Application\\IRepository\\IRequestRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:56:50.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IUnitOfService.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IUnitOfService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IUnitOfService.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IUnitOfService.cs",
+              "RelativeToolTip": "Application\\IServices\\IUnitOfService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:57:07.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Repositories\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\RequestRepository.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Repositories\\RequestRepository.cs",
+              "RelativeToolTip": "Infrastracture\\Repositories\\RequestRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:57:42.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Mapping\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Mapping\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Mapping\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Application\\Mapping\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:35:33.31Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1377,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+>>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
