@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.IServices;
 using Application.Services;
 using EventService.Application.Mapping;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +13,7 @@ namespace Infrastructure
         {
             services.AddTransient<IRequestService,RequestService>();
             services.AddTransient<IUnitOfService, UnitOfService>();
+            services.AddTransient<ICheckRoleService, CheckRoleService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
