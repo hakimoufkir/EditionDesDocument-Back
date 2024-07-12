@@ -53,13 +53,13 @@ namespace Api.Controllers
         }
 
 
-        [HttpPut("/Requests/update/{id}")]
-        public async Task<IActionResult> UpdateRequest(Guid id, [FromBody] UpdateRequestCommand updateRequestCommand)
+        [HttpPut("/Requests/update")]
+        public async Task<IActionResult> UpdateRequest( [FromBody] UpdateRequestCommand updateRequestCommand)
         {
-            if (id != updateRequestCommand.Id)
+           /* if (id != updateRequestCommand.Id)
             {
                 return BadRequest("ID mismatch");
-            }
+            }*/
 
             try
             {
@@ -67,7 +67,7 @@ namespace Api.Controllers
 
                 if (result.StartsWith("Success"))
                 {
-                    return Ok(result);
+                    return Ok("Successfully changed the status of request");
                 }
                 else if (result.StartsWith("BadRequest"))
                 {

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240710192642_hamid")]
-    partial class hamid
+    [Migration("20240712091721_hhhhhhh")]
+    partial class hhhhhhh
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -202,6 +202,9 @@ namespace Infrastracture.Migrations
                     b.Property<Guid>("ModeleId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("NameTrainee")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("role")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -214,22 +217,22 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7dd7ce09-9d7e-406e-81cc-4c41d51d7000"),
+                            Id = new Guid("78e69cf9-db54-48a8-b9ff-6a8443602d61"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 0,
                             DocumentType = "document_trainee",
-                            IdTrainee = new Guid("6fbd1315-5a60-4053-a595-4f07f876d215"),
-                            ModeleId = new Guid("de1375c0-4bb0-45fc-ae63-355af858d0c2"),
+                            IdTrainee = new Guid("f8a82dd9-7100-4891-a786-fa995858f1f6"),
+                            ModeleId = new Guid("19202e5b-4a5d-4116-8801-5682f592e4d9"),
                             role = "Admin"
                         },
                         new
                         {
-                            Id = new Guid("f545b58c-8ae6-4f26-8823-9856685dec2b"),
+                            Id = new Guid("d4b16499-d2a2-444c-a7e1-a1e93119aad1"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 1,
                             DocumentType = "document_traineeList",
-                            IdTrainee = new Guid("2f83b87d-7322-46e0-b3f5-18896ff5c852"),
-                            ModeleId = new Guid("aa43b347-4cc1-4f0f-a7ff-8153a5caaea1"),
+                            IdTrainee = new Guid("fb9b44d5-12ab-4bd4-b654-a751622fa92f"),
+                            ModeleId = new Guid("06e718f8-57c6-4ffa-b111-aa583d4d9699"),
                             role = "User"
                         });
                 });

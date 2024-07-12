@@ -34,7 +34,7 @@ namespace Infrastructure.Infrastructure.Data
                 entity.HasKey(e => e.Id);
                 entity.Property(e => e.IdTrainee).IsRequired();
                 entity.Property(e => e.ModeleId).IsRequired();
-                entity.Property(e => e.role).IsRequired().HasMaxLength(50);
+                entity.Property(e => e.Role).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.DocumentType).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.DocumentStatus).IsRequired();
 
@@ -45,8 +45,9 @@ namespace Infrastructure.Infrastructure.Data
                         Id = Guid.NewGuid(),
                         IdTrainee = Guid.NewGuid(),
                         ModeleId = Guid.NewGuid(),
-                        role = "Admin",
+                        Role = "assistant",
                         DocumentType = "document_trainee",
+                        ReasonRejection = "",
                         DocumentStatus = Domain.Enums.DocumentStatus.Accepte  // Assuming DocumentStatus is an enum
                     },
                     new Request
@@ -54,9 +55,10 @@ namespace Infrastructure.Infrastructure.Data
                         Id = Guid.NewGuid(),
                         IdTrainee = Guid.NewGuid(),
                         ModeleId = Guid.NewGuid(),
-                        role = "User",
+                        Role = "director",
                         DocumentType = "document_traineeList",
-                        DocumentStatus = Domain.Enums.DocumentStatus.InProgress // Assuming DocumentStatus is an enum
+                        ReasonRejection = "ya pas de justification",
+                        DocumentStatus = Domain.Enums.DocumentStatus.Deny // Assuming DocumentStatus is an enum
                     }
                 );
             });
