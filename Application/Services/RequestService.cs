@@ -66,6 +66,13 @@ public class RequestService : IRequestService
             throw new Exception("Error updating request: " + ex.Message);
         }
     }
+
+    // New method for pagination
+    public async Task<List<Request>> GetPagedRequestsAsync(int page, int pageSize)
+    {
+        int skip = (page - 1) * pageSize;
+        return await _uow.RequestRepository.GetPagedRequestsAsync(skip, pageSize);
+    }
     #endregion
 
 }
