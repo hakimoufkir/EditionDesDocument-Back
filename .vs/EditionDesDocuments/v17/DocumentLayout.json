@@ -1,37 +1,19 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\",
+  "WorkspaceRootPath": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\infrastracture\\migrations\\20240711103548_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\migrations\\20240711103548_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\infrastracture\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Migrations\\20240711103220_initDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Migrations\\20240711103220_initDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Migrations\\20240712120148_yy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Migrations\\20240712120148_yy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\application\\features\\requestfeature\\commands\\addrequest\\addrequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\addrequest\\addrequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\hp\\desktop\\jobintech\\hamza gestion des document\\editiondesdocument\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-  "WorkspaceRootPath": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\",
-  "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -93,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -114,7 +92,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2
       "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -125,12 +102,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -140,27 +113,33 @@
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-<<<<<<< HEAD
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\appsettings.json",
+              "RelativeToolTip": "Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-12T12:02:25.999Z",
+              "EditorCaption": ""
             },
             {
-=======
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "DocumentStatus.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Enums\\DocumentStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\DocumentStatus.cs",
               "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Enums\\DocumentStatus.cs",
               "RelativeToolTip": "Domain\\Enums\\DocumentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T11:25:29.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T11:25:29.353Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Router.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\Router.cs",
               "RelativeDocumentMoniker": "Domain\\Routing\\Router.cs",
@@ -172,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IRequestService.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IRequestService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\IRequestService.cs",
@@ -184,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "RequestService.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\RequestService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\RequestService.cs",
@@ -196,7 +175,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\RequestController.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
+              "RelativeToolTip": "Api\\Controllers\\RequestController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T21:36:11.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240712120148_yy.cs",
+              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Migrations\\20240712120148_yy.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240712120148_yy.cs",
+              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Migrations\\20240712120148_yy.cs",
+              "RelativeToolTip": "Infrastracture\\Migrations\\20240712120148_yy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T12:01:48.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CheckRoleService.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Services\\CheckRoleService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\CheckRoleService.cs",
@@ -208,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "TestRouting.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Routing\\TestRouting.cs",
               "RelativeDocumentMoniker": "Domain\\Routing\\TestRouting.cs",
@@ -220,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AddRequestCommand.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
@@ -232,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Report.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Report.cs",
@@ -244,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Entities\\Request.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Request.cs",
@@ -256,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AddRequestCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommandHandler.cs",
@@ -268,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ConfigureServices.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\ConfigureServices.cs",
               "RelativeDocumentMoniker": "Infrastracture\\ConfigureServices.cs",
@@ -280,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ICheckRoleService.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\ICheckRoleService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\ICheckRoleService.cs",
@@ -292,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "GetRequestByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Queries\\GetRequestByID\\GetRequestByIdQuery.cs",
@@ -304,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "UpdateRequestCommand.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
@@ -316,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "UpdateRequestCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommandHandler.cs",
@@ -328,19 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\RequestController.cs",
-              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "Api\\Controllers\\RequestController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAQwDgAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T21:36:11.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
@@ -352,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "IRequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IRepository\\IRequestRepository.cs",
               "RelativeDocumentMoniker": "Application\\IRepository\\IRequestRepository.cs",
@@ -364,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "IUnitOfService.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\IServices\\IUnitOfService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\IUnitOfService.cs",
@@ -376,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RequestRepository.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Infrastracture\\Repositories\\RequestRepository.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Repositories\\RequestRepository.cs",
@@ -388,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Application\\Mapping\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mapping\\AutoMapperProfile.cs",
@@ -405,98 +397,16 @@
           "SelectedChildIndex": -1,
           "Children": [
             {
->>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Db\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Db\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Db\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastracture\\Db\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAIwDEAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T14:21:45.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DocumentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Domain\\Enums\\DocumentStatus.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\DocumentStatus.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Domain\\Enums\\DocumentStatus.cs",
-              "RelativeToolTip": "Domain\\Enums\\DocumentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T14:18:09.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240711103548_initDb.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Migrations\\20240711103548_initDb.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240711103548_initDb.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Migrations\\20240711103548_initDb.cs",
-              "RelativeToolTip": "Infrastracture\\Migrations\\20240711103548_initDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T10:35:49.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Api\\appsettings.json",
-              "RelativeDocumentMoniker": "Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Api\\appsettings.json",
-              "RelativeToolTip": "Api\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-11T10:25:48.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20240711103220_initDb.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Migrations\\20240711103220_initDb.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240711103220_initDb.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Infrastracture\\Migrations\\20240711103220_initDb.cs",
-              "RelativeToolTip": "Infrastracture\\Migrations\\20240711103220_initDb.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T10:32:21.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddRequestCommand.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
-              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\AddRequest\\AddRequestCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T10:21:16.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\jobIntech\\hamza Gestion des document\\EditionDesDocument\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T14:37:40.782Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -8,11 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastracture.Migrations
 {
     /// <inheritdoc />
-<<<<<<<< HEAD:Infrastracture/Migrations/20240711103548_initDb.cs
-    public partial class initDb : Migration
-========
-    public partial class hhhhhhh : Migration
->>>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2:Infrastracture/Migrations/20240712091721_hhhhhhh.cs
+    public partial class yys : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -115,9 +111,10 @@ namespace Infrastracture.Migrations
                     IdTrainee = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     NameTrainee = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ModeleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    role = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Role = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     DocumentType = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     DocumentStatus = table.Column<int>(type: "int", nullable: false),
+                    ReasonRejection = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -130,16 +127,11 @@ namespace Infrastracture.Migrations
 
             migrationBuilder.InsertData(
                 table: "Requests",
-                columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "role" },
+                columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "ReasonRejection", "Role" },
                 values: new object[,]
                 {
-<<<<<<<< HEAD:Infrastracture/Migrations/20240711103548_initDb.cs
-                    { new Guid("17637d6e-16dc-4257-a47b-f477f03d256b"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "document_traineeList", new Guid("2211bf70-e766-47b2-a00b-6e23ef3f6284"), null, null, new Guid("afb91c8f-0c29-482b-88a8-b96c06932284"), null, "User" },
-                    { new Guid("fe9fbc11-fe1e-4ad7-8059-1b0c569e65bb"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 0, "document_trainee", new Guid("acbb8ff3-76ac-4b9b-b6ef-a15b19b43c16"), null, null, new Guid("93c3630c-6e0c-431d-82b1-77ed25746180"), null, "Admin" }
-========
-                    { new Guid("78e69cf9-db54-48a8-b9ff-6a8443602d61"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 0, "document_trainee", new Guid("f8a82dd9-7100-4891-a786-fa995858f1f6"), null, null, new Guid("19202e5b-4a5d-4116-8801-5682f592e4d9"), null, "Admin" },
-                    { new Guid("d4b16499-d2a2-444c-a7e1-a1e93119aad1"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "document_traineeList", new Guid("fb9b44d5-12ab-4bd4-b654-a751622fa92f"), null, null, new Guid("06e718f8-57c6-4ffa-b111-aa583d4d9699"), null, "User" }
->>>>>>>> d64bcffe3a4f7bc5d4da801582f2349d656424a2:Infrastracture/Migrations/20240712091721_hhhhhhh.cs
+                    { new Guid("292fbbc1-6875-44f9-a0ed-8fd3613d1fff"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "document_traineeList", new Guid("048e2f4a-46c1-4e24-bb05-d35f13824074"), null, null, new Guid("c8a43031-3bac-41f6-ac0e-526a33ac4096"), null, "ya pas de justification", "director" },
+                    { new Guid("72e2e924-8cdc-4074-8ada-cfe8fbff7456"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "document_trainee", new Guid("dcd3d448-7d87-4e28-92a9-d367cfb9c27d"), null, null, new Guid("afcda754-75e3-43d4-a698-239452a8044b"), null, "", "assistant" }
                 });
         }
 

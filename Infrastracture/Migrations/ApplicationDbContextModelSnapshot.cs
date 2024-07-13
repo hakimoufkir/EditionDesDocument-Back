@@ -202,7 +202,11 @@ namespace Infrastracture.Migrations
                     b.Property<string>("NameTrainee")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("role")
+                    b.Property<string>("ReasonRejection")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
@@ -214,23 +218,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("fe9fbc11-fe1e-4ad7-8059-1b0c569e65bb"),
+                            Id = new Guid("72e2e924-8cdc-4074-8ada-cfe8fbff7456"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DocumentStatus = 0,
+                            DocumentStatus = 1,
                             DocumentType = "document_trainee",
-                            IdTrainee = new Guid("acbb8ff3-76ac-4b9b-b6ef-a15b19b43c16"),
-                            ModeleId = new Guid("93c3630c-6e0c-431d-82b1-77ed25746180"),
-                            role = "Admin"
+                            IdTrainee = new Guid("dcd3d448-7d87-4e28-92a9-d367cfb9c27d"),
+                            ModeleId = new Guid("afcda754-75e3-43d4-a698-239452a8044b"),
+                            ReasonRejection = "",
+                            Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("17637d6e-16dc-4257-a47b-f477f03d256b"),
+                            Id = new Guid("292fbbc1-6875-44f9-a0ed-8fd3613d1fff"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DocumentStatus = 1,
+                            DocumentStatus = 2,
                             DocumentType = "document_traineeList",
-                            IdTrainee = new Guid("2211bf70-e766-47b2-a00b-6e23ef3f6284"),
-                            ModeleId = new Guid("afb91c8f-0c29-482b-88a8-b96c06932284"),
-                            role = "User"
+                            IdTrainee = new Guid("048e2f4a-46c1-4e24-bb05-d35f13824074"),
+                            ModeleId = new Guid("c8a43031-3bac-41f6-ac0e-526a33ac4096"),
+                            ReasonRejection = "ya pas de justification",
+                            Role = "director"
                         });
                 });
 
