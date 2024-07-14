@@ -4,10 +4,6 @@
 *.lo
 *.d
 
-# Precompiled Headers
-*.gch
-*.pch
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
@@ -55,16 +51,16 @@ Backup/
 csproj.user
 userprefs/
 
-# Rider
-.idea
-*.sln.iml
-
-# User-specific files
-*.rsuser
+# Visual Studio IDE
+.vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
+
+# JetBrains Rider
+.idea/
+*.sln.iml
 
 # Mono Auto Generated Files
 mono_crash.*
@@ -78,9 +74,6 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-# VS Code
-.vscode/
 
 # DotNetCore V1.x lock file
 project.lock.json
@@ -111,7 +104,3 @@ StyleCopReport.xml
 
 # Windows shortcuts
 *.lnk
-
-# JetBrains Rider
-.idea/
-*.sln.iml
