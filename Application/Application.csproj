@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
+<<<<<<< HEAD
     <ItemGroup>
       <None Remove="Features\RequestFeature\Queries\appsettings.Development.json" />
       <None Remove="Features\RequestFeature\Queries\appsettings.json" />
@@ -27,17 +28,23 @@
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
+=======
+	<ItemGroup>
+		<ProjectReference Include="..\Domain\Domain.csproj" />
+	</ItemGroup>
+>>>>>>> fb53c4d072532c553a2f0d7e0fd28e14b97dbb85
 
-    <ItemGroup>
-      <Folder Include="Broker\" />
-      <Folder Include="Features\RequestFeature\Commands\DeleteRequest\" />
-    </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Broker\" />
+		<Folder Include="Features\RequestFeature\Commands\DeleteRequest\" />
+	</ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="13.0.1" />
-      <PackageReference Include="MediatR" Version="12.3.0" />
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-      <PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.4" />
-    </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="MediatR" Version="12.3.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.4" />
+	</ItemGroup>
 
 </Project>

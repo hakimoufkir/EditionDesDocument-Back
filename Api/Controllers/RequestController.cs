@@ -56,10 +56,7 @@ namespace Api.Controllers
         [HttpPut("/Requests/update")]
         public async Task<IActionResult> UpdateRequest( [FromBody] UpdateRequestCommand updateRequestCommand)
         {
-           /* if (id != updateRequestCommand.Id)
-            {
-                return BadRequest("ID mismatch");
-            }*/
+         
 
             try
             {

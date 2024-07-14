@@ -10,6 +10,6 @@ public interface IRequestService
 
     Task<string> UpdateRequestAsync(Request request);
 
-
+    Task<List<Request>> GetPagedRequestsAsync(int page, int pageSize);
 
 }

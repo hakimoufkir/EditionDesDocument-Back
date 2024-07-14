@@ -1,26 +1,32 @@
 ﻿using Application.Interfaces;
-using Application.IUOW;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
-namespace Application.Features.RequestFeature.Queries.GetRequestsList;
-
-public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery,List<Request>>
+namespace Application.Features.RequestFeature.Queries.GetRequestsList
 {
-    private readonly IUnitOfService _uos;
-    private readonly IMapper _mapper;
-
-    public GetRequestsListQueryHandler(IUnitOfService uos, IMapper mapper)
+    public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery, List<Request>>
     {
-        _uos = uos;
-        _mapper = mapper;
-    }
+        private readonly IRequestService _requestService; 
+        private readonly IMapper _mapper;
 
-    public async Task<List<Request>> Handle(GetRequestsListQuery request, CancellationToken cancellationToken)
-    {
-        List<Request> requests = await _uos.RequestService.GetRequestsListAsync();
-        return requests;
+        public GetRequestsListQueryHandler(IRequestService requestService, IMapper mapper)
+        {
+            _requestService = requestService;
+            _mapper = mapper;
+        }
 
+        public async Task<List<Request>> Handle(GetRequestsListQuery request, CancellationToken cancellationToken)
+        {
+          
+            int page = 1; 
+            int pageSize = 10; 
+
+            List<Request> requests = await _requestService.GetPagedRequestsAsync(page, pageSize);
+            return requests;
+        }
     }
 }

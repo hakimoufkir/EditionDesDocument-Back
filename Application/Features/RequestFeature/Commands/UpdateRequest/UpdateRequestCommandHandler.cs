@@ -19,6 +19,7 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
             _uos = uos;
             _mapper = mapper;
         }
+        
 
         public async Task<string> Handle(UpdateRequestCommand request, CancellationToken cancellationToken)
         {
@@ -27,6 +28,14 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
             {
                 return "Request not found";
             }
+
+           
+
+            existingRequest.DocumentStatus = (Domain.Enums.DocumentStatus)request.DocumentStatus;
+
+           
+
+            existingRequest.LastModifiedDate = DateTime.UtcNow;
 
             // Map the update command to the existing request
             _mapper.Map(request, existingRequest);

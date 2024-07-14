@@ -24,5 +24,15 @@ namespace Infrastracture.Repositories
         {
             return await _context.Requests.FirstOrDefaultAsync(r => r.Id == id);
         }
+       
+        
+        // Implementing pagination
+        public async Task<List<Request>> GetPagedRequestsAsync(int skip, int pageSize)
+        {
+            return await _context.Set<Request>()
+                .Skip(skip)
+                .Take(pageSize)
+                .ToListAsync();
+        }
     }
 }
