@@ -218,27 +218,23 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-
-                            Id = new Guid("896ed18d-e02e-4a4a-b7f5-bd243aee18a6"),
+                            Id = new Guid("72e2e924-8cdc-4074-8ada-cfe8fbff7456"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 1,
                             DocumentType = "document_trainee",
-                            IdTrainee = new Guid("fa75bf2d-cc3b-4673-83d2-118306ad7be5"),
-                            ModeleId = new Guid("1b543e14-3411-4e70-8a66-2ec2aab93dc6"),
-
+                            IdTrainee = new Guid("dcd3d448-7d87-4e28-92a9-d367cfb9c27d"),
+                            ModeleId = new Guid("afcda754-75e3-43d4-a698-239452a8044b"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-
-                            Id = new Guid("bcfe7d38-312c-4d55-a3b3-29170c452f7e"),
+                            Id = new Guid("292fbbc1-6875-44f9-a0ed-8fd3613d1fff"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 2,
                             DocumentType = "document_traineeList",
-                            IdTrainee = new Guid("122d3cc9-6d7f-4e50-b82d-b0b836c4fbc7"),
-                            ModeleId = new Guid("89ab18c3-c6e2-4e9d-af55-62dad9a0b50f"),
-
+                            IdTrainee = new Guid("048e2f4a-46c1-4e24-bb05-d35f13824074"),
+                            ModeleId = new Guid("c8a43031-3bac-41f6-ac0e-526a33ac4096"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });

@@ -6,9 +6,33 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+<<<<<<< HEAD
+    <ItemGroup>
+      <None Remove="Features\RequestFeature\Queries\appsettings.Development.json" />
+      <None Remove="Features\RequestFeature\Queries\appsettings.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Features\RequestFeature\Queries\appsettings.Development.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Features\RequestFeature\Queries\appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+=======
 	<ItemGroup>
 		<ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
+>>>>>>> fb53c4d072532c553a2f0d7e0fd28e14b97dbb85
 
 	<ItemGroup>
 		<Folder Include="Broker\" />
