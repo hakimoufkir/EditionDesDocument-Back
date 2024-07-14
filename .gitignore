@@ -106,3 +106,4 @@ StyleCopReport.xml
 *.lnk
 /.vs
 .vs/EditionDesDocuments/v17/DocumentLayout.json
+/.vs
