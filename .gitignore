@@ -105,3 +105,4 @@ StyleCopReport.xml
 # Windows shortcuts
 *.lnk
 /.vs
+.vs/EditionDesDocuments/v17/DocumentLayout.json
