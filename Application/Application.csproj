@@ -7,6 +7,24 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="Features\RequestFeature\Queries\appsettings.Development.json" />
+      <None Remove="Features\RequestFeature\Queries\appsettings.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Features\RequestFeature\Queries\appsettings.Development.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Features\RequestFeature\Queries\appsettings.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
