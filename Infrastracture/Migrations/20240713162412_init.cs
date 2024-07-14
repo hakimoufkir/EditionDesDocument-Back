@@ -8,7 +8,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastracture.Migrations
 {
     /// <inheritdoc />
+
     public partial class init : Migration
+
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -130,8 +132,10 @@ namespace Infrastracture.Migrations
                 columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "ReasonRejection", "Role" },
                 values: new object[,]
                 {
+
                     { new Guid("896ed18d-e02e-4a4a-b7f5-bd243aee18a6"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "document_trainee", new Guid("fa75bf2d-cc3b-4673-83d2-118306ad7be5"), null, null, new Guid("1b543e14-3411-4e70-8a66-2ec2aab93dc6"), null, "", "assistant" },
                     { new Guid("bcfe7d38-312c-4d55-a3b3-29170c452f7e"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "document_traineeList", new Guid("122d3cc9-6d7f-4e50-b82d-b0b836c4fbc7"), null, null, new Guid("89ab18c3-c6e2-4e9d-af55-62dad9a0b50f"), null, "ya pas de justification", "director" }
+
                 });
         }
 

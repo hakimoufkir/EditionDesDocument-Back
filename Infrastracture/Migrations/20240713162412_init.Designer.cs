@@ -12,8 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
+
     [Migration("20240713162412_init")]
     partial class init
+
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -221,23 +223,27 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
+
                             Id = new Guid("896ed18d-e02e-4a4a-b7f5-bd243aee18a6"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 1,
                             DocumentType = "document_trainee",
                             IdTrainee = new Guid("fa75bf2d-cc3b-4673-83d2-118306ad7be5"),
                             ModeleId = new Guid("1b543e14-3411-4e70-8a66-2ec2aab93dc6"),
+
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
+
                             Id = new Guid("bcfe7d38-312c-4d55-a3b3-29170c452f7e"),
                             CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DocumentStatus = 2,
                             DocumentType = "document_traineeList",
                             IdTrainee = new Guid("122d3cc9-6d7f-4e50-b82d-b0b836c4fbc7"),
                             ModeleId = new Guid("89ab18c3-c6e2-4e9d-af55-62dad9a0b50f"),
+
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });
