@@ -5,6 +5,7 @@
 ﻿using Domain.Entities;
 using MediatR;
 using static Domain.Entities.Document;
+using Domain.Enums;
 
 
 namespace Application.Features.RequestFeature.Commands.AddRequest;

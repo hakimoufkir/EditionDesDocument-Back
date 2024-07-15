@@ -8,9 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastracture.Migrations
 {
     /// <inheritdoc />
-
-    public partial class init : Migration
-
+    public partial class initttt : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -132,10 +130,8 @@ namespace Infrastracture.Migrations
                 columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "ReasonRejection", "Role" },
                 values: new object[,]
                 {
-
-                    { new Guid("896ed18d-e02e-4a4a-b7f5-bd243aee18a6"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "document_trainee", new Guid("fa75bf2d-cc3b-4673-83d2-118306ad7be5"), null, null, new Guid("1b543e14-3411-4e70-8a66-2ec2aab93dc6"), null, "", "assistant" },
-                    { new Guid("bcfe7d38-312c-4d55-a3b3-29170c452f7e"), null, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 2, "document_traineeList", new Guid("122d3cc9-6d7f-4e50-b82d-b0b836c4fbc7"), null, null, new Guid("89ab18c3-c6e2-4e9d-af55-62dad9a0b50f"), null, "ya pas de justification", "director" }
-
+                    { new Guid("9853146b-ddb8-4163-bbba-1831fb63173c"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8179), 2, "Convention de stage", new Guid("bdef04ad-518f-499e-b354-56bb50fecd16"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8181), new Guid("5749fd52-dfa0-416d-b199-f72a9b071211"), null, "ya pas de justification", "director" },
+                    { new Guid("ae267cd0-cf46-426f-ba4b-bddb5f46395e"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8101), 1, "Demande de stage", new Guid("ade5004c-7425-4375-b70a-bae8c8112318"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8149), new Guid("006b5103-2e2a-499a-90c5-f7a8067232c5"), null, "", "assistant" }
                 });
         }
 

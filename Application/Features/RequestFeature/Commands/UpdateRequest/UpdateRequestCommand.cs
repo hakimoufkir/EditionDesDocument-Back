@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Domain.Enums;
+using MediatR;
 using static Domain.Entities.Document;
 
 namespace Application.Features.RequestFeature.Commands.UpdateRequest
@@ -8,6 +9,7 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
         public Guid Id { get; set; }
         public DocumentStatus DocumentStatus { get; set; }
 
-        public DateTime? LastModifiedDate { get; set; }
+        /*        public DateTime? LastModifiedDate { get; set; }
+        */
     }
 }

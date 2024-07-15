@@ -46,7 +46,7 @@ namespace Infrastructure.Infrastructure.Data
                         IdTrainee = Guid.NewGuid(),
                         ModeleId = Guid.NewGuid(),
                         Role = "assistant",
-                        DocumentType = "document_trainee",
+                        DocumentType = "Demande de stage",
                         ReasonRejection = "",
                         DocumentStatus = Domain.Enums.DocumentStatus.Accepte  // Assuming DocumentStatus is an enum
                     },
@@ -56,7 +56,7 @@ namespace Infrastructure.Infrastructure.Data
                         IdTrainee = Guid.NewGuid(),
                         ModeleId = Guid.NewGuid(),
                         Role = "director",
-                        DocumentType = "document_traineeList",
+                        DocumentType = "Convention de stage",
                         ReasonRejection = "ya pas de justification",
                         DocumentStatus = Domain.Enums.DocumentStatus.Deny // Assuming DocumentStatus is an enum
                     }

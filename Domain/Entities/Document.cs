@@ -10,10 +10,5 @@
         public Guid IdModelDocuments { get; set; }
         public string DocumentType { get; set; }
         public string FilePath { get; set; }
-        public enum DocumentStatus
-        {
-            Accepte,
-            InProgress,
-            Deny
-        }
+
     }

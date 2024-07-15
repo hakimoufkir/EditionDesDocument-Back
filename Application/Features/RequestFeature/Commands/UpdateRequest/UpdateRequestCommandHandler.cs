@@ -23,15 +23,16 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
 
         public async Task<string> Handle(UpdateRequestCommand request, CancellationToken cancellationToken)
         {
-            var existingRequest = await _uos.RequestService.GetRequestByIdAsync(request.Id);
+            Request existingRequest = await _uos.RequestService.GetRequestByIdAsync(request.Id);
             if (existingRequest == null)
             {
                 return "Request not found";
             }
 
+
            
 
-            existingRequest.DocumentStatus = (Domain.Enums.DocumentStatus)request.DocumentStatus;
+            existingRequest.DocumentStatus = request.DocumentStatus;
 
            
 
