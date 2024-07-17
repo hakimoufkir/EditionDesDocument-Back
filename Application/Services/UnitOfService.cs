@@ -12,6 +12,8 @@ namespace Application.Services
         public IMapper Mapper { get; set; }
         public IRequestService RequestService { get; set; }
         public ICheckRoleService CheckRoleService { get; set; }
+
+        public IFileManagement FileManagementService => throw new NotImplementedException();
         #endregion
 
 

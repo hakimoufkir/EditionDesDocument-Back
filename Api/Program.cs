@@ -1,3 +1,5 @@
+using Application.IServices;
+using Application.Services;
 using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddApplicationService();
+builder.Services.AddScoped<IFileManagement, FileManagementService>();
+
+
 // Configure CORS
 builder.Services.AddCors(options =>
 {
@@ -17,27 +22,24 @@ builder.Services.AddCors(options =>
                           .AllowAnyHeader()
                           .AllowCredentials());
 });
+
 var app = builder.Build();
+
 app.UseCors("AllowSpecificOrigin");
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "EditionDesDocument API V1");
-        
     });
 }
 
 app.UseHttpsRedirection();
-
-
-
 app.UseAuthorization();
 
+// Map the DocumentController
 app.MapControllers();
-
 
 app.Run();

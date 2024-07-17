@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces;
 using Application.IRepository;
+using Application.IServices;
 using Application.IUOW;
 using Application.Services;
 using AutoMapper;
@@ -22,6 +23,10 @@ namespace Infrastructure
             //database setup
 
             services.AddScoped<IRequestService, RequestService>();
+            services.AddScoped<IDocumentRepository, DocumentRepository>();
+            /*services.AddScoped<IFileManagement, FileManagement>(); */// Register your service here
+            services.AddScoped<IFileManagement, FileManagementService>();
+
 
 
 

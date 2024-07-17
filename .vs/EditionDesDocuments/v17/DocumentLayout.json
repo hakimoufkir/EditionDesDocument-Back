@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\",
+  "WorkspaceRootPath": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|c:\\users\\asmae\\source\\repos\\serviceeditiondesdocuments\\domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\documentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|g:\\serviceeditiondesdocument\\editiondesdocument\\application\\iservices\\ifilemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\ifilemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|g:\\serviceeditiondesdocument\\editiondesdocument\\application\\services\\filemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\filemanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|g:\\serviceeditiondesdocument\\editiondesdocument\\application\\iservices\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\irequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|g:\\serviceeditiondesdocument\\editiondesdocument\\application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|g:\\serviceeditiondesdocument\\editiondesdocument\\api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +30,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRequestService.cs",
+              "DocumentMoniker": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IRequestService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IRequestService.cs",
+              "ToolTip": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IRequestService.cs",
+              "RelativeToolTip": "Application\\IServices\\IRequestService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T14:53:21.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUnitOfService.cs",
+              "DocumentMoniker": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IUnitOfService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IUnitOfService.cs",
+              "ToolTip": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IUnitOfService.cs",
+              "RelativeToolTip": "Application\\IServices\\IUnitOfService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T14:53:18.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Api\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\DocumentController.cs",
+              "ToolTip": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Api\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "Api\\Controllers\\DocumentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T14:41:54.165Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DocumentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Enums\\DocumentStatus.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\DocumentStatus.cs",
-              "ToolTip": "C:\\Users\\Asmae\\source\\repos\\ServiceEditionDesDocuments\\Domain\\Enums\\DocumentStatus.cs",
-              "RelativeToolTip": "Domain\\Enums\\DocumentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Title": "IFileManagementService.cs",
+              "DocumentMoniker": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IFileManagementService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IFileManagementService.cs",
+              "ToolTip": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\IServices\\IFileManagementService.cs",
+              "RelativeToolTip": "Application\\IServices\\IFileManagementService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T11:13:45.886Z",
+              "WhenOpened": "2024-07-17T14:41:16.628Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileManagementService.cs",
+              "DocumentMoniker": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\Services\\FileManagementService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\FileManagementService.cs",
+              "ToolTip": "G:\\ServiceEditionDesDocument\\EditionDesDocument\\Application\\Services\\FileManagementService.cs",
+              "RelativeToolTip": "Application\\Services\\FileManagementService.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAApwGIAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:02:42.943Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1377,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }
