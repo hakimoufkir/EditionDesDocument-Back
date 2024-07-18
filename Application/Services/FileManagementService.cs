@@ -10,7 +10,7 @@ namespace Application.Services;
 
 public class FileManagementService : IFileManagementService
     {
-   private readonly string _blobSasToken;
+        private readonly string _blobSasToken;
         private readonly string _containerName;
         private readonly BlobServiceClient _blobServiceClient;
 
@@ -25,7 +25,8 @@ public class FileManagementService : IFileManagementService
 
     public async Task<string> Upload(IFormFile file)
         {
-            // Create or get the container
+             // Create or get the container
+
             var blobContainerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
             await blobContainerClient.CreateIfNotExistsAsync();
 

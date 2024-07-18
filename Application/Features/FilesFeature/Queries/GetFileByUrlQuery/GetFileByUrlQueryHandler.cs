@@ -1,25 +1,21 @@
-﻿using Application.IServices;
+﻿using Application.Interfaces;
+using Application.IServices;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Features.DocumentsFeature.Queries.GetFileByUrlQuery
 {
     public class GetFileByUrlQueryHandler : IRequestHandler<GetFileByUrlQuery, GetFileByUrlResponse>
     {
-        private readonly IFileManagementService _fileManagementService;
+        private readonly IUnitOfService _uos;
 
-        public GetFileByUrlQueryHandler(IFileManagementService fileManagementService)
+        public GetFileByUrlQueryHandler(IUnitOfService uos)
         {
-            _fileManagementService = fileManagementService;
+            _uos = uos;
         }
 
         public async Task<GetFileByUrlResponse> Handle(GetFileByUrlQuery request, CancellationToken cancellationToken)
         {
-            var fileStream = await _fileManagementService.GetFile(request.Url);
+            var fileStream = await _uos.FileManagementService.GetFile(request.Url);
 
             if (fileStream == null)
             {

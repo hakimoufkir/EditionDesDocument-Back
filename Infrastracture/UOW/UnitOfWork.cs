@@ -13,7 +13,8 @@ namespace Infrastructure.Repositories
         public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
 
         public IFileManagementService FileManagementService { get;  }
-        //public IDocumentRepository DocumentRepository { get;  }
+
+      
 
         public IFileManagementService fileManagementService => throw new NotImplementedException();
 
@@ -23,7 +24,7 @@ namespace Infrastructure.Repositories
             _db = db;
             RequestRepository = requestRepository;
             FileManagementService = fileManagementService;
-            //DocumentRepository = documentRepository;
+           
         }
 
 

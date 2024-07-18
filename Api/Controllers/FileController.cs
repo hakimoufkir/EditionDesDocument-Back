@@ -1,4 +1,4 @@
-﻿using Application.Features.DocumentsFeature.Commands.UpdateFile;
+﻿using Application.Features.DocumentsFeature.Commands.AddFile;
 using Application.Features.DocumentsFeature.Queries;
 using Application.Features.DocumentsFeature.Queries.GetFileByUrlQuery;
 using MediatR;
@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class FileController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -24,7 +24,7 @@ namespace Api.Controllers
             if (file == null || file.Length == 0)
                 return BadRequest("File is required.");
 
-            // Here we use a simple inline handler since upload logic doesn't fit the current query setup
+      
             var fileUrl = await _mediator.Send(new UploadFileCommand { File = file });
             return Ok(new { FileUrl = fileUrl });
         }

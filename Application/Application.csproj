@@ -12,8 +12,8 @@
 
 	<ItemGroup>
 		<Folder Include="Broker\" />
-		<Folder Include="Features\DocumentsFeature\Commands\AddFile\" />
-		<Folder Include="Features\DocumentsFeature\Commands\DeleteFile\" />
+		<Folder Include="Features\FilesFeature\Commands\DeleteFile\" />
+		<Folder Include="Features\FilesFeature\Commands\UpdateFile\" />
 	</ItemGroup>
 
 	<ItemGroup>
