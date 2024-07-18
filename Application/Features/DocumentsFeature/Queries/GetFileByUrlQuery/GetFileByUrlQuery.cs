@@ -5,17 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.DocumentsFeature.Queries
+namespace Application.Features.DocumentsFeature.Queries.GetFileByUrlQuery
 {
-    public class DownloadDocumentQuery : IRequest<DownloadDocumentResponse>
+    public class GetFileByUrlQuery : IRequest<GetFileByUrlResponse>
     {
-        public Guid DocumentId { get; set; }
+        public string Url { get; set; }
     }
-
-    public class DownloadDocumentResponse
+    public class GetFileByUrlResponse
     {
         public byte[] FileContent { get; set; }
         public string ContentType { get; set; }
         public string FileName { get; set; }
     }
+
 }

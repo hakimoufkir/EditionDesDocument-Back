@@ -23,7 +23,7 @@ namespace Infrastructure
             //database setup
 
             services.AddScoped<IRequestService, RequestService>();
-            services.AddScoped<IDocumentRepository, DocumentRepository>();
+            //services.AddScoped<IDocumentRepository, DocumentRepository>();
             //services.AddScoped<IFileManagementService, FileManagementService>();
 
 
