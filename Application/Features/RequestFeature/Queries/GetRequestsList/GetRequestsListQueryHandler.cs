@@ -23,7 +23,7 @@ namespace Application.Features.RequestFeature.Queries.GetRequestsList
         {
           
             int page = 1; 
-            int pageSize = 10; 
+            int pageSize = 100; 
 
             List<Request> requests = await _requestService.GetPagedRequestsAsync(page, pageSize);
             return requests;
