@@ -3,11 +3,10 @@ using System.Threading.Tasks;
 
 namespace Application.IServices
 {
-    public interface IFileManagement
+    public interface IFileManagementService
     {
-        Task<string> Uploadd(IFormFile file);
-        Task<Stream> GetFiles(string url);
-        Task<string> Upload(Stream fileStream, string fileName);
+        Task<string> Upload(IFormFile file);
         Task<Stream> GetFile(string url);
+      
     }
 }

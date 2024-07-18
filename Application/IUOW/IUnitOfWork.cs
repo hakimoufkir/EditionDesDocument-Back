@@ -9,7 +9,7 @@ public interface IUnitOfWork
 {
     IRequestRepository RequestRepository { get; }
     ICheckRoleRepository CheckRoleRepository { get; }
-    IFileManagement fileManagementService { get; }
+    IFileManagementService fileManagementService { get; }
     IDocumentRepository DocumentRepository { get; }
     void Commit();
     Task CommitAsync();

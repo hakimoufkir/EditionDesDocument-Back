@@ -13,7 +13,7 @@ namespace Application.Services
         public IRequestService RequestService { get; set; }
         public ICheckRoleService CheckRoleService { get; set; }
 
-        public IFileManagement FileManagementService => throw new NotImplementedException();
+        public IFileManagementService FileManagementService => throw new NotImplementedException();
         #endregion
 
 

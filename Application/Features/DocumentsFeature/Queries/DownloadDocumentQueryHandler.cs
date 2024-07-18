@@ -12,10 +12,10 @@ namespace Application.Features.DocumentsFeature.Queries
 {
     public class DownloadDocumentQueryHandler : IRequestHandler<DownloadDocumentQuery, DownloadDocumentResponse>
     {
-        private readonly IFileManagement _fileManagementService;
+        private readonly IFileManagementService _fileManagementService;
         private readonly IUnitOfWork _unitOfWork;
 
-        public DownloadDocumentQueryHandler(IFileManagement fileManagementService, IUnitOfWork unitOfWork)
+        public DownloadDocumentQueryHandler(IFileManagementService fileManagementService, IUnitOfWork unitOfWork)
         {
             _fileManagementService = fileManagementService;
             _unitOfWork = unitOfWork;

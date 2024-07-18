@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Application.Services;
-using Application.IServices; // Adjust the namespace as per your project structure
+using Application.IServices; 
 
 namespace Api.Controllers
 {
@@ -10,9 +10,9 @@ namespace Api.Controllers
     [Route("api/[controller]")]
     public class FileController : ControllerBase
     {
-        private readonly IFileManagement _fileManagement;
+        private readonly IFileManagementService _fileManagement;
 
-        public FileController(IFileManagement fileManagement)
+        public FileController(IFileManagementService fileManagement)
         {
             _fileManagement = fileManagement;
         }
@@ -23,7 +23,7 @@ namespace Api.Controllers
             if (file == null || file.Length == 0)
                 return BadRequest("File is required.");
 
-            var fileUrl = await _fileManagement.Uploadd(file);
+            var fileUrl = await _fileManagement.Upload(file);
             return Ok(new { FileUrl = fileUrl });
         }
         [HttpGet("download")]
@@ -32,7 +32,7 @@ namespace Api.Controllers
             try
             {
                 // Call your service method to get the file as a Stream
-                var fileStream = await _fileManagement.GetFiles(url);
+                var fileStream = await _fileManagement.GetFile(url);
 
                 // Check if fileStream is null or empty
                 if (fileStream == null)
@@ -54,14 +54,6 @@ namespace Api.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-        //[HttpGet("download")]
-        //public async Task<IActionResult> DownloadFile(string url)
-        //{
-        //    if (string.IsNullOrEmpty(url))
-        //        return BadRequest("File URL is required.");
-
-        //    var file = await _fileManagement.GetFiles(url);
-        //    return File(file.OpenReadStream(), "application/octet-stream", file.FileName);
-        //}
+        
     }
 }

@@ -19,27 +19,27 @@ namespace Infrastracture.Repositories
 
         public async Task<Document> GetDocumentByIdAsync(Guid id)
         {
-            return await GetDocumentByIdAsync(id); // Assuming GetByIdAsync is implemented in GenericRepository
+            return await GetDocumentByIdAsync(id); 
         }
 
         public async Task<List<Document>> GetAllDocumentsAsync()
         {
-            return await GetAllAsNoTracking(); // Assuming GetAllAsync is implemented in GenericRepository
+            return await GetAllAsNoTracking(); 
         }
 
         public async Task AddDocumentAsync(Document document)
         {
-            await CreateAsync(document); // Assuming AddAsync is implemented in GenericRepository
+            await CreateAsync(document); 
         }
 
         public async Task UpdateDocumentAsync(Document document)
         {
-            await UpdateAsync(document); // Assuming UpdateAsync is implemented in GenericRepository
+            await UpdateAsync(document); 
         }
 
         public async Task DeleteDocumentAsync(Document document)
         {
-            await RemoveAsync(document); // Assuming DeleteAsync is implemented in GenericRepository
+            await RemoveAsync(document);
         }
     }
 }

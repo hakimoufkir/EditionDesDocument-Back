@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddApplicationService();
-builder.Services.AddScoped<IFileManagement, FileManagementService>();
+
 
 
 // Configure CORS

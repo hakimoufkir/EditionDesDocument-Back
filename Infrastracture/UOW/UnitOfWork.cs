@@ -12,12 +12,12 @@ namespace Infrastructure.Repositories
 
         public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
 
-        public IFileManagement FileManagementService { get;  }
+        public IFileManagementService FileManagementService { get;  }
         public IDocumentRepository DocumentRepository { get;  }
 
-        public IFileManagement fileManagementService => throw new NotImplementedException();
+        public IFileManagementService fileManagementService => throw new NotImplementedException();
 
-        public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository, IFileManagement fileManagementService,
+        public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository, IFileManagementService fileManagementService,
                           IDocumentRepository documentRepository)
         {
             _db = db;

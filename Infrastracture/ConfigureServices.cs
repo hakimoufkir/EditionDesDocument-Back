@@ -24,8 +24,7 @@ namespace Infrastructure
 
             services.AddScoped<IRequestService, RequestService>();
             services.AddScoped<IDocumentRepository, DocumentRepository>();
-            /*services.AddScoped<IFileManagement, FileManagement>(); */// Register your service here
-            services.AddScoped<IFileManagement, FileManagementService>();
+            //services.AddScoped<IFileManagementService, FileManagementService>();
 
 
 
