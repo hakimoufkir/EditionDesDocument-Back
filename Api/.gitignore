@@ -95,6 +95,7 @@ StyleCopReport.xml
 .vscode/
 **/.sass-cache
 **/.npm
+/.vscode/appsettings.json
 
 # Windows Installer files
 *.cab
