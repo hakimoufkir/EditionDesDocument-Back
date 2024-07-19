@@ -10,13 +10,12 @@ namespace Infrastructure.Infrastructure.Data
 
 
 
-        public DbSet<Contract> Contracts { get; set; }
-        public DbSet<Document> Documents { get; set; }
+/*        public DbSet<Document> Documents { get; set; }
         public DbSet<DocumentTrainee> DocumentsTrainees { get; set; }
         public DbSet<DocumentTraineeList> DocumentsTraineeLists { get; set; }
         public DbSet<ModelDocument> ModelDocuments { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<RequestInternship> RequestInternships { get; set; }
+        public DbSet<RequestInternship> RequestInternships { get; set; }*/
         public DbSet<Request>Requests { get; set; }
 
 
@@ -24,10 +23,10 @@ namespace Infrastructure.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Document>()
+           /* modelBuilder.Entity<Document>()
                 .HasDiscriminator<string>("document_type")
                 .HasValue<DocumentTrainee>("document_trainee")
-                .HasValue<DocumentTraineeList>("document_traineeList");
+                .HasValue<DocumentTraineeList>("document_traineeList");*/
 
             modelBuilder.Entity<Request>(entity =>
             {
