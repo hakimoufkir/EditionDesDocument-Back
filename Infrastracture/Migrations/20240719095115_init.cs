@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastracture.Migrations
 {
     /// <inheritdoc />
-    public partial class initttt : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -130,8 +130,8 @@ namespace Infrastracture.Migrations
                 columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "ReasonRejection", "Role" },
                 values: new object[,]
                 {
-                    { new Guid("9853146b-ddb8-4163-bbba-1831fb63173c"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8179), 2, "Convention de stage", new Guid("bdef04ad-518f-499e-b354-56bb50fecd16"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8181), new Guid("5749fd52-dfa0-416d-b199-f72a9b071211"), null, "ya pas de justification", "director" },
-                    { new Guid("ae267cd0-cf46-426f-ba4b-bddb5f46395e"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8101), 1, "Demande de stage", new Guid("ade5004c-7425-4375-b70a-bae8c8112318"), null, new DateTime(2024, 7, 15, 11, 43, 6, 727, DateTimeKind.Local).AddTicks(8149), new Guid("006b5103-2e2a-499a-90c5-f7a8067232c5"), null, "", "assistant" }
+                    { new Guid("82ca6169-58f3-49e9-ba8f-990c979f09fb"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6753), 2, "Convention de stage", new Guid("e45c3776-1795-488a-8ec6-7fe4f35546ba"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6760), new Guid("576ac7de-23c7-4303-9a29-f1d3cf5759f9"), null, "ya pas de justification", "director" },
+                    { new Guid("b8dd8ec5-d916-4ffb-bfee-34980de7954b"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6395), 1, "Demande de stage", new Guid("a77d59f7-9797-429c-92c8-445749209baa"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6653), new Guid("8b76acc7-125d-4ca7-b478-8ac7028b3ea8"), null, "", "assistant" }
                 });
         }
 
