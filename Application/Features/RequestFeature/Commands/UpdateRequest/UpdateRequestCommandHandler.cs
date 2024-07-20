@@ -2,6 +2,7 @@
 using Application.IRepository;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 using System;
 using System.Threading;
@@ -26,7 +27,7 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
             Request existingRequest = await _unitOfService.RequestService.GetRequestByIdAsync(request.Id);
             if (existingRequest == null)
             {
-                return "Request not found";
+                return ResponsStutusHandler.StatusMessages.RequestNotFound.ToString();
             }
 
 

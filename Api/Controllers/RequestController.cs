@@ -2,6 +2,7 @@
 using Application.Features.RequestFeature.Commands.UpdateRequest;
 using Application.Features.RequestFeature.Queries.GetRequestsList;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,11 +34,11 @@ namespace Api.Controllers
             {
                 string result = await _mediator.Send(addRequestCommand);
 
-                if (result.StartsWith("Success"))
+                if (result.StartsWith(ResponsStutusHandler.Status.Success.ToString()))
                 {
                     return Ok(result);
                 }
-                else if (result.StartsWith("BadRequest"))
+                else if (result.StartsWith(ResponsStutusHandler.Status.BadRequest.ToString()))
                 {
                     return BadRequest(result);
                 }
@@ -62,15 +63,15 @@ namespace Api.Controllers
             {
                 string result = await _mediator.Send(updateRequestCommand);
 
-                if (result.StartsWith("Success"))
+                if (result.StartsWith(ResponsStutusHandler.Status.Success.ToString()))
                 {
                     return Ok("Successfully changed the status of request");
                 }
-                else if (result.StartsWith("BadRequest"))
+                else if (result.StartsWith(ResponsStutusHandler.Status.BadRequest.ToString()))
                 {
                     return BadRequest(result);
                 }
-                else if (result == "Request not found")
+                else if (result == ResponsStutusHandler.Status.RequestNotFound.ToString())
                 {
                     return NotFound(result);
                 }

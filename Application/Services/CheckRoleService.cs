@@ -2,6 +2,7 @@
 using Application.IServices;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 
 namespace Application.Services
 {
@@ -20,7 +21,7 @@ namespace Application.Services
         public async Task<bool> CheckRole(Request request)
         {
            
-            if (request.Role == "assistant" || request.Role == "trainee" || request.Role == "director")
+            if (request.Role == Roles.roles.assistant.ToString() || request.Role == Roles.roles.trainee.ToString() || request.Role == Roles.roles.director.ToString())
             {
                 return false;
             }

@@ -2,6 +2,7 @@
 using Application.IServices;
 using Application.IUnitOfWorks;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 
 namespace Application.Services;
@@ -36,14 +37,14 @@ public class RequestService : IRequestService
     {
         if (await _checkRoleService.CheckRole(Request))
         {
-            return "You don't have permission!";
+            return Roles.RolesPermission.Permission;
         }
 
         try
         {
             await _unitOfService.RequestRepository.CreateAsync(Request);
             await _unitOfService.CommitAsync();
-            return "Success";
+            return ResponsStutusHandler.Status.Success.ToString();
         }
         catch (Exception ex)
         {
@@ -59,7 +60,7 @@ public class RequestService : IRequestService
         {
             await _unitOfService.RequestRepository.UpdateAsync(request);
             await _unitOfService.CommitAsync();
-            return "Success";
+            return ResponsStutusHandler.Status.Success.ToString();
         }
         catch (Exception ex)
         {

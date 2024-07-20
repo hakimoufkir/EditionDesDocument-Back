@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,10 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
             {
                 Request requests = _mapper.Map<Request>(request);
                 var result = await _unitOfService.RequestService.AddRequestAsync(requests);
-                if (result == "Success")
+                if (result == ResponsStutusHandler.Status.Success.ToString())
                 {
-                    return "Request added successfully !";
+                    //return "Request added successfully !";
+                    return ResponsStutusHandler.StatusMessages.Added.ToString();
                 }
                 else
                 {
