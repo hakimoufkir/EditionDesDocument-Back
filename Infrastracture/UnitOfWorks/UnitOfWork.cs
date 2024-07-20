@@ -1,13 +1,13 @@
 ﻿using Application.IRepository;
 using Application.IServices;
-using Application.IUOW;
+using Application.IUnitOfWorks;
 using Infrastructure.Infrastructure.Data;
 
 namespace Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ApplicationDbContext _dbContext;
         public IRequestRepository RequestRepository { get; }
 
         public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
@@ -18,10 +18,10 @@ namespace Infrastructure.Repositories
 
         public IFileManagementService fileManagementService => throw new NotImplementedException();
 
-        public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository, IFileManagementService fileManagementService
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository, IFileManagementService fileManagementService
                         )
         {
-            _db = db;
+            _dbContext = dbContext;
             RequestRepository = requestRepository;
             FileManagementService = fileManagementService;
            
@@ -30,22 +30,22 @@ namespace Infrastructure.Repositories
 
         public void Commit()
         {
-            _db.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         public async Task CommitAsync()
         {
-           await _db.SaveChangesAsync();
+           await _dbContext.SaveChangesAsync();
         }
 
         public void Rollback()
         {
-            _db.SaveChanges();
+            _dbContext.SaveChanges();
         }
 
         public async Task RollbackAsync()
         {
-            await _db.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
         }
     }
 

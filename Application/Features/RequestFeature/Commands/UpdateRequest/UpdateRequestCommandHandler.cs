@@ -11,19 +11,19 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
 {
     public class UpdateRequestCommandHandler : IRequestHandler<UpdateRequestCommand, string>
     {
-        private readonly IUnitOfService _uos;
+        private readonly IUnitOfService _unitOfService;
         private readonly IMapper _mapper;
 
-        public UpdateRequestCommandHandler(IUnitOfService uos, IMapper mapper)
+        public UpdateRequestCommandHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _uos = uos;
+            _unitOfService = unitOfService;
             _mapper = mapper;
         }
         
 
         public async Task<string> Handle(UpdateRequestCommand request, CancellationToken cancellationToken)
         {
-            Request existingRequest = await _uos.RequestService.GetRequestByIdAsync(request.Id);
+            Request existingRequest = await _unitOfService.RequestService.GetRequestByIdAsync(request.Id);
             if (existingRequest == null)
             {
                 return "Request not found";
@@ -41,7 +41,7 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
             // Map the update command to the existing request
             _mapper.Map(request, existingRequest);
 
-            return await _uos.RequestService.UpdateRequestAsync(existingRequest);
+            return await _unitOfService.RequestService.UpdateRequestAsync(existingRequest);
         }
     }
 }

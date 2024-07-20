@@ -8,13 +8,13 @@ namespace Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ApplicationDbContext _dbContext;
         internal DbSet<T> dbSet;
 
-        public GenericRepository(ApplicationDbContext db)
+        public GenericRepository(ApplicationDbContext dbContext)
         {
-            _db = db;
-            this.dbSet = db.Set<T>();
+            _dbContext = dbContext;
+            this.dbSet = _dbContext.Set<T>();
         }
 
         public async Task<List<T>> GetAllAsNoTracking(Expression<Func<T, bool>>? filter = null)

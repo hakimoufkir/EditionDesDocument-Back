@@ -7,17 +7,17 @@ namespace Application.Features.DocumentsFeature.Commands.AddFile
     public class UploadFileCommandHandler : IRequestHandler<UploadFileCommand, string>
     {
     
-        private readonly IUnitOfService _uos;
+        private readonly IUnitOfService _unitOfService;
 
-        public UploadFileCommandHandler(IUnitOfService uos)
+        public UploadFileCommandHandler(IUnitOfService unitOfService)
         {
-           
-            _uos= uos;
+
+            _unitOfService = unitOfService;
         }
 
         public async Task<string> Handle(UploadFileCommand request, CancellationToken cancellationToken)
         {
-            return await _uos.FileManagementService.Upload(request.File);
+            return await _unitOfService.FileManagementService.Upload(request.File);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.IRepository;
 using Application.IServices;
-using Application.IUOW;
+using Application.IUnitOfWorks;
 using Application.Services;
 using AutoMapper;
 using Infrastracture.Repositories;

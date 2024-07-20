@@ -12,11 +12,11 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
 {
     public class AddRequestCommandHandler : IRequestHandler<AddRequestCommand, string>
     {
-        private readonly IUnitOfService _uos;
+        private readonly IUnitOfService _unitOfService;
         private readonly IMapper _mapper;
-        public AddRequestCommandHandler(IUnitOfService uos, IMapper mapper)
+        public AddRequestCommandHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _uos = uos;
+            _unitOfService = unitOfService;
             _mapper = mapper;
         }
 
@@ -25,7 +25,7 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
             try
             {
                 Request requests = _mapper.Map<Request>(request);
-                var result = await _uos.RequestService.AddRequestAsync(requests);
+                var result = await _unitOfService.RequestService.AddRequestAsync(requests);
                 if (result == "Success")
                 {
                     return "Request added successfully !";

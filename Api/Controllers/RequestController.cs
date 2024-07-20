@@ -54,9 +54,9 @@ namespace Api.Controllers
 
 
         [HttpPut("/Requests/update")]
-        public async Task<IActionResult> UpdateRequest( [FromBody] UpdateRequestCommand updateRequestCommand)
+        public async Task<IActionResult> UpdateRequest([FromBody] UpdateRequestCommand updateRequestCommand)
         {
-         
+
 
             try
             {
@@ -90,5 +90,5 @@ namespace Api.Controllers
 
 
     }
-    
+
 }

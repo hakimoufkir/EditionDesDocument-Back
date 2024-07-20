@@ -3,7 +3,7 @@
 using Application.IRepository;
 using Application.IServices;
 
-namespace Application.IUOW;
+namespace Application.IUnitOfWorks;
 
 public interface IUnitOfWork
 {
