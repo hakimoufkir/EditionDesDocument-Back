@@ -33,6 +33,7 @@ namespace Infrastructure
 
 
             services.AddScoped<IRequestRepository, RequestRepository>();
+            services.AddScoped<IDocumentRepository, DocumentRepository>();
             //dependency injection contanaire
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

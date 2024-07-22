@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Enums
 {
-    public class ResponsStutusHandler
+    public static class ResponsStutusHandler
     {
         public enum Status
         {
@@ -15,7 +15,6 @@ namespace Domain.Enums
             Success,
             InternalServerError,
             Added,
-
         }
         public static class StatusMessages
         {

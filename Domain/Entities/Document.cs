@@ -1,14 +1,13 @@
 ﻿
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using Domain.Common;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Domain.Common;
 
-    namespace Domain.Entities;
+namespace Domain.Entities;
 
-    public class Document : Base
-    {
-        public Guid IdModelDocuments { get; set; }
-        public string DocumentType { get; set; }
-        public string FilePath { get; set; }
+public class Document : Base
+{
+    public string PathFile { get; set; }
+    public string InstantJSON { get; set; }
 
-    }
+}

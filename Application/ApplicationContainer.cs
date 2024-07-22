@@ -14,8 +14,8 @@ namespace Infrastructure
         {
             services.AddTransient<IRequestService,RequestService>();
             services.AddTransient<IUnitOfService, UnitOfService>();
-            services.AddTransient<ICheckRoleService, CheckRoleService>();
             services.AddTransient<IFileManagementService, FileManagementService>();
+            services.AddTransient<IDocumentService,DocumentService>();
            
 
 

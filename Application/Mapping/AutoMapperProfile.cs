@@ -1,4 +1,6 @@
 ﻿
+using Application.Features.DocumentFeature.Commands.UpdateDocument;
+using Application.Features.DocumentFeature.Queries.GetDocumentById;
 using Application.Features.RequestFeature.Commands.AddRequest;
 using Application.Features.RequestFeature.Commands.UpdateRequest;
 using AutoMapper;
@@ -18,6 +20,13 @@ namespace EventService.Application.Mapping
 
             // UpdateRequestCommand mapping
             CreateMap<UpdateRequestCommand, Request>().ReverseMap();
+
+            // GetDocumentByIdQuery mapping
+            CreateMap<GetDocumentByIdQuery, Document>().ReverseMap();
+
+
+            //UpdateDocumentCommand mapping
+            CreateMap<UpdateDocumentCommand, Document>();
         }
     }
 }

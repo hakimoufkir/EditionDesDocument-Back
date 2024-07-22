@@ -1,5 +1,4 @@
 ﻿using Application.IRepository;
-using Application.IServices;
 using Application.IUnitOfWorks;
 using Infrastructure.Infrastructure.Data;
 
@@ -9,24 +8,14 @@ namespace Infrastructure.Repositories
     {
         private readonly ApplicationDbContext _dbContext;
         public IRequestRepository RequestRepository { get; }
+        public IDocumentRepository DocumentRepository { get; }
 
-        public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
-
-        public IFileManagementService FileManagementService { get;  }
-
-      
-
-        public IFileManagementService fileManagementService => throw new NotImplementedException();
-
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository, IFileManagementService fileManagementService
-                        )
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
-            FileManagementService = fileManagementService;
-           
+            DocumentRepository = documentRepository;
         }
-
 
         public void Commit()
         {

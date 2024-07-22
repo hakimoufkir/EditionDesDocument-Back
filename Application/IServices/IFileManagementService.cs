@@ -7,6 +7,8 @@ namespace Application.IServices
     {
         Task<string> Upload(IFormFile file);
         Task<Stream> GetFile(string url);
-      
+        Task<List<string>> ListAllFiles();
+
+
     }
 }
