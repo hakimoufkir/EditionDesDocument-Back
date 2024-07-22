@@ -1,4 +1,5 @@
 ﻿using Application.IRepository;
+using Application.IServices;
 using Application.IUOW;
 using Infrastructure.Infrastructure.Data;
 
@@ -11,10 +12,19 @@ namespace Infrastructure.Repositories
 
         public ICheckRoleRepository CheckRoleRepository => throw new NotImplementedException();
 
-        public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository)
+        public IFileManagementService FileManagementService { get;  }
+
+      
+
+        public IFileManagementService fileManagementService => throw new NotImplementedException();
+
+        public UnitOfWork(ApplicationDbContext db, IRequestRepository requestRepository, IFileManagementService fileManagementService
+                        )
         {
             _db = db;
             RequestRepository = requestRepository;
+            FileManagementService = fileManagementService;
+           
         }
 
 

@@ -130,8 +130,8 @@ namespace Infrastracture.Migrations
                 columns: new[] { "Id", "CreatedBy", "CreatedDate", "DocumentStatus", "DocumentType", "IdTrainee", "LastModifiedBy", "LastModifiedDate", "ModeleId", "NameTrainee", "ReasonRejection", "Role" },
                 values: new object[,]
                 {
-                    { new Guid("82ca6169-58f3-49e9-ba8f-990c979f09fb"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6753), 2, "Convention de stage", new Guid("e45c3776-1795-488a-8ec6-7fe4f35546ba"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6760), new Guid("576ac7de-23c7-4303-9a29-f1d3cf5759f9"), null, "ya pas de justification", "director" },
-                    { new Guid("b8dd8ec5-d916-4ffb-bfee-34980de7954b"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6395), 1, "Demande de stage", new Guid("a77d59f7-9797-429c-92c8-445749209baa"), null, new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6653), new Guid("8b76acc7-125d-4ca7-b478-8ac7028b3ea8"), null, "", "assistant" }
+                    { new Guid("20f44830-6501-49a0-af7d-573cf937ac28"), null, new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(7976), 1, "Demande de stage", new Guid("502ec1aa-5f27-47a4-a6a8-879b386ee9c8"), null, new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8029), new Guid("02ea4b20-a2e7-461a-b231-77163e5f77a7"), null, "", "assistant" },
+                    { new Guid("d1f77f17-6c12-4004-a637-188a64ebbb8e"), null, new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8069), 2, "Convention de stage", new Guid("6f1c78e3-6c42-43a2-a575-4c8b22b4ba1e"), null, new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8072), new Guid("5d8d5869-dbe3-4007-acac-e30dba79dcf0"), null, "ya pas de justification", "director" }
                 });
         }
 

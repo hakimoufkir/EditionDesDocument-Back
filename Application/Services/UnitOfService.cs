@@ -12,20 +12,18 @@ namespace Application.Services
         public IMapper Mapper { get; set; }
         public IRequestService RequestService { get; set; }
         public ICheckRoleService CheckRoleService { get; set; }
+        public IFileManagementService FileManagementService { get; set; }
         #endregion
 
-
-
         #region Constructor
-        public UnitOfService(IUnitOfWork uow, IMapper map, IRequestService requestService , ICheckRoleService checkRoleService)
+        public UnitOfService(IUnitOfWork uow, IMapper map, IRequestService requestService, ICheckRoleService checkRoleService, IFileManagementService fileManagementService)
         {
             _uow = uow;
             Mapper = map;
             RequestService = requestService;
             CheckRoleService = checkRoleService;
+            FileManagementService = fileManagementService;
         }
         #endregion
-
-
     }
 }

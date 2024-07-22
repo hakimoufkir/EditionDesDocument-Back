@@ -1,10 +1,4 @@
-
-﻿using MediatR;
-
-
-﻿using Domain.Entities;
 using MediatR;
-using static Domain.Entities.Document;
 using Domain.Enums;
 
 

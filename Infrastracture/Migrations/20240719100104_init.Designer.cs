@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240719095115_init")]
+    [Migration("20240719100104_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -221,25 +221,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b8dd8ec5-d916-4ffb-bfee-34980de7954b"),
-                            CreatedDate = new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6395),
+                            Id = new Guid("20f44830-6501-49a0-af7d-573cf937ac28"),
+                            CreatedDate = new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(7976),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("a77d59f7-9797-429c-92c8-445749209baa"),
-                            LastModifiedDate = new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6653),
-                            ModeleId = new Guid("8b76acc7-125d-4ca7-b478-8ac7028b3ea8"),
+                            IdTrainee = new Guid("502ec1aa-5f27-47a4-a6a8-879b386ee9c8"),
+                            LastModifiedDate = new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8029),
+                            ModeleId = new Guid("02ea4b20-a2e7-461a-b231-77163e5f77a7"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("82ca6169-58f3-49e9-ba8f-990c979f09fb"),
-                            CreatedDate = new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6753),
+                            Id = new Guid("d1f77f17-6c12-4004-a637-188a64ebbb8e"),
+                            CreatedDate = new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8069),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("e45c3776-1795-488a-8ec6-7fe4f35546ba"),
-                            LastModifiedDate = new DateTime(2024, 7, 19, 10, 51, 13, 241, DateTimeKind.Local).AddTicks(6760),
-                            ModeleId = new Guid("576ac7de-23c7-4303-9a29-f1d3cf5759f9"),
+                            IdTrainee = new Guid("6f1c78e3-6c42-43a2-a575-4c8b22b4ba1e"),
+                            LastModifiedDate = new DateTime(2024, 7, 19, 11, 1, 3, 348, DateTimeKind.Local).AddTicks(8072),
+                            ModeleId = new Guid("5d8d5869-dbe3-4007-acac-e30dba79dcf0"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });

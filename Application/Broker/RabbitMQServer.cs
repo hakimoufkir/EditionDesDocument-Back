@@ -1,8 +1,4 @@
-﻿using System.Text;
-using Application.Interfaces;
-using Newtonsoft.Json;
-using RabbitMQ.Client;
-using RabbitMQ.Client.Events;
+﻿using Application.Interfaces;
 
 namespace Application.Broker;
 
