@@ -18,6 +18,9 @@ namespace Application.Features.DocumentFeature.Commands.AddDocument
             _documentService = documentService ?? throw new ArgumentNullException(nameof(documentService));
         }
 
+
+
+
         public async Task<Document> Handle(AddDocumentCommand request, CancellationToken cancellationToken)
         {
             try

@@ -14,13 +14,12 @@ namespace Infrastructure.Infrastructure.Data
         public DbSet<Request> Requests { get; set; }
         public DbSet<Document> Documents { get; set; }
 
+        public DbSet<Trainee> Trainees { get; set; }
 
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-
             modelBuilder.Entity<Request>(entity =>
             {
                 entity.HasKey(e => e.Id);
@@ -40,7 +39,7 @@ namespace Infrastructure.Infrastructure.Data
                         Role = "assistant",
                         DocumentType = "Demande de stage",
                         ReasonRejection = "",
-                        DocumentStatus = Domain.Enums.DocumentStatus.Accepte  // Assuming DocumentStatus is an enum
+                        DocumentStatus = Domain.Enums.DocumentStatus.Accepte
                     },
                     new Request
                     {
@@ -50,7 +49,7 @@ namespace Infrastructure.Infrastructure.Data
                         Role = "director",
                         DocumentType = "Convention de stage",
                         ReasonRejection = "ya pas de justification",
-                        DocumentStatus = Domain.Enums.DocumentStatus.Deny // Assuming DocumentStatus is an enum
+                        DocumentStatus = Domain.Enums.DocumentStatus.Deny
                     }
                 );
             });
@@ -62,7 +61,7 @@ namespace Infrastructure.Infrastructure.Data
                 entity.Property(e => e.InstantJSON).IsRequired();
 
                 // Seed data for Documents entity
-                entity.HasData(                
+                entity.HasData(
                     new Document
                     {
                         Id = Guid.NewGuid(),
@@ -133,7 +132,30 @@ namespace Infrastructure.Infrastructure.Data
                 );
             });
 
+            modelBuilder.Entity<Trainee>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.FirstName).IsRequired().HasMaxLength(50);
+                entity.Property(e => e.LastName).IsRequired().HasMaxLength(50);
+
+                // Seed data for Trainees entity (if needed)
+                entity.HasData(
+                    new Trainee
+                    {
+                        Id = Guid.NewGuid(),
+                        FirstName = "John",
+                        LastName = "Doe"
+                    },
+                    new Trainee
+                    {
+                        Id = Guid.NewGuid(),
+                        FirstName = "Jane",
+                        LastName = "Smith"
+                    }
+                );
+            });
         }
+
 
 
     }

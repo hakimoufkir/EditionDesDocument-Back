@@ -10,12 +10,15 @@ namespace Infrastructure.Repositories
         public IRequestRepository RequestRepository { get; }
         public IDocumentRepository DocumentRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository)
+        public ITraineeRepository TraineeRepository { get; }
+
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
             DocumentRepository = documentRepository;
-        }
+            TraineeRepository = traineeRepository;
+        }   
 
         public void Commit()
         {

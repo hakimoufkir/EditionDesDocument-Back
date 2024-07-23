@@ -3,6 +3,7 @@ using Application.Features.DocumentFeature.Commands.UpdateDocument;
 using Application.Features.DocumentFeature.Queries.GetDocumentById;
 using Application.Features.RequestFeature.Commands.AddRequest;
 using Application.Features.RequestFeature.Commands.UpdateRequest;
+using Application.Features.TraineeFeature.Commands.UpdateTrainee;
 using AutoMapper;
 using Domain.Entities;
 
@@ -27,6 +28,9 @@ namespace EventService.Application.Mapping
 
             //UpdateDocumentCommand mapping
             CreateMap<UpdateDocumentCommand, Document>();
+
+            //UpdateDocumentCommand mapping
+            CreateMap<UpdateTraineeCommand, Trainee>();
         }
     }
 }

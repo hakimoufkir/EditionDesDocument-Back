@@ -16,6 +16,7 @@ namespace Infrastructure
             services.AddTransient<IUnitOfService, UnitOfService>();
             services.AddTransient<IFileManagementService, FileManagementService>();
             services.AddTransient<IDocumentService,DocumentService>();
+            services.AddTransient<ITraineeService, TraineeService>();
            
 
 

@@ -23,6 +23,7 @@ namespace Infrastructure
             //database setup
 
             services.AddScoped<IRequestService, RequestService>();
+            services.AddScoped<ITraineeRepository, TraineeRepository>();
    
 
 

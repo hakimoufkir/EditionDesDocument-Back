@@ -1,10 +1,12 @@
 ﻿using Domain.Common;
 using Domain.Enums;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Entities;
 
 public class Request : Base
 {
+    [ForeignKey("Trainee")]
     public Guid IdTrainee { get; set; }
     public string? NameTrainee { get; set; }
     public Guid ModeleId { get; set; }
