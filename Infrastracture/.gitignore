@@ -104,3 +104,4 @@ StyleCopReport.xml
 
 # Windows shortcuts
 *.lnk
+/Migrations/

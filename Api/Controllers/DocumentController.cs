@@ -36,7 +36,7 @@ namespace Api.Controllers
             }
         }
 
-        [HttpGet("id/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetDocumentById(Guid id)
         {
             try
