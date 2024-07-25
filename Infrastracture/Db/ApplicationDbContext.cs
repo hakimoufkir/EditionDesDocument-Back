@@ -57,11 +57,6 @@ namespace Infrastructure.Infrastructure.Data
 
             modelBuilder.Entity<Document>(entity =>
             {
-                entity.HasKey(e => e.Id);
-                entity.Property(e => e.PathFile).IsRequired();
-                entity.Property(e => e.InstantJSON).IsRequired();
-
-                // Seed data for Documents entity
                 entity.HasData(                
                     new Document
                     {

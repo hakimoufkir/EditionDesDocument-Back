@@ -1,4 +1,5 @@
 ﻿
+using Application.Features.DocumentFeature.Commands.AddDocument;
 using Application.Features.DocumentFeature.Commands.UpdateDocument;
 using Application.Features.DocumentFeature.Queries.GetDocumentById;
 using Application.Features.RequestFeature.Commands.AddRequest;
@@ -24,6 +25,9 @@ namespace EventService.Application.Mapping
             // GetDocumentByIdQuery mapping
             CreateMap<GetDocumentByIdQuery, Document>().ReverseMap();
 
+
+            // addDocumentCommand mapping
+            CreateMap<AddDocumentCommand, Document>().ReverseMap();
 
             //UpdateDocumentCommand mapping
             CreateMap<UpdateDocumentCommand, Document>();

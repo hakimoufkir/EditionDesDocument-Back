@@ -10,11 +10,7 @@ namespace Application.Features.DocumentFeature.Commands.AddDocument
 {
     public class AddDocumentCommand : IRequest<Document>
     {
-        public Document Document { get; set; }
-
-        public AddDocumentCommand(Document document)
-        {
-            Document = document;
-        }
+        public string PathFile { get; set; }
+        public string? InstantJSON { get; set; }
     }
 }

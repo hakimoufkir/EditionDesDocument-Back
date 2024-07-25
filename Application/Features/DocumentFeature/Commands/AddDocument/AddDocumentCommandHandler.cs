@@ -1,4 +1,6 @@
-﻿using Application.IServices;
+﻿using Application.Interfaces;
+using Application.IServices;
+using AutoMapper;
 using Domain.Entities;
 using MediatR;
 using System;
@@ -11,30 +13,30 @@ namespace Application.Features.DocumentFeature.Commands.AddDocument
 {
     public class AddDocumentCommandHandler : IRequestHandler<AddDocumentCommand, Document>
     {
-        private readonly IDocumentService _documentService;
+        private readonly IUnitOfService _unitOfService;
+        private readonly IMapper _mapper;
 
-        public AddDocumentCommandHandler(IDocumentService documentService)
+        public AddDocumentCommandHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _documentService = documentService ?? throw new ArgumentNullException(nameof(documentService));
+            _unitOfService = unitOfService;
+            _mapper = mapper;
         }
 
         public async Task<Document> Handle(AddDocumentCommand request, CancellationToken cancellationToken)
         {
-            try
+            if (request == null)
             {
-                if (request.Document == null)
-                {
-                    throw new ArgumentNullException(nameof(request.Document), "Document cannot be null.");
-                }
+                throw new ArgumentNullException(nameof(request), "Document cannot be null.");
+            }
 
-                Document addedDocument = await _documentService.AddDocumentAsync(request.Document);
-                return addedDocument;
-            }
-            catch (Exception ex)
+            if (request.PathFile == null)
             {
-                // Log the exception details
-                throw new ApplicationException($"An error occurred while adding the document. Details: {ex.Message} {ex.StackTrace}", ex);
+                throw new ArgumentNullException(nameof(request.PathFile), "PathFile cannot be null.");
+
             }
+            Document documentMapped = _mapper.Map<Document>(request);
+            Document addedDocument = await _unitOfService.DocumentService.AddDocumentAsync(documentMapped);
+            return addedDocument;
         }
     }
 }

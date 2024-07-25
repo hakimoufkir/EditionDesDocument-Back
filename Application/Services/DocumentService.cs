@@ -3,6 +3,7 @@ using Application.IServices;
 using Application.IUnitOfWorks;
 using Domain.Entities;
 using Domain.Enums;
+using Soenneker.Extensions.Enumerable;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,7 @@ namespace Application.Services
         public async Task<List<Document>> GetDocumentsList()
         {
             List<Document> documentsList = await _unitOfWork.DocumentRepository.GetAllAsNoTracking();
-            if (documentsList == null)
+            if (documentsList.IsNullOrEmpty())
             {
                 throw new ArgumentException("No documents found.");
             }
@@ -57,7 +58,8 @@ namespace Application.Services
             {
                 throw new ArgumentNullException(nameof(document), "Document cannot be null.");
             }
-
+            document.CreatedDate = DateTime.Now;
+            document.Id = Guid.NewGuid();
             await _unitOfWork.DocumentRepository.CreateAsync(document);
             await _unitOfWork.CommitAsync();
             return document;
