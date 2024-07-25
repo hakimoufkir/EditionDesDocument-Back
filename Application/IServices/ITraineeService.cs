@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Dtos;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Application.IServices
         Task<List<Trainee>> GetTraineesList();
         Task<Trainee> GetTraineeByIdAsync(Guid IdTrainee);
        
-        Task<Trainee> AddTraineeAsync(Trainee trainee);
+        Task<TraineeDto> AddTraineeAsync(TraineeDto trainee);
      
         Task UpdateTraineeAsync(Trainee trainee);
         Task DeleteTraineeAsync(Guid IdTrainee);

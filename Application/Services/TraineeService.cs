@@ -1,5 +1,7 @@
 ﻿using Application.IServices;
 using Application.IUnitOfWorks;
+using AutoMapper;
+using Domain.Dtos;
 using Domain.Entities;
 using Domain.Enums;
 using System;
@@ -16,21 +18,24 @@ namespace Application.Services
     {
 
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public TraineeService(IUnitOfWork unitOfWork)
+        public TraineeService(IUnitOfWork unitOfWork , IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
 
-        public async Task<Trainee> AddTraineeAsync(Trainee trainee)
+        public async Task<TraineeDto> AddTraineeAsync(TraineeDto trainee)
         {
             if (trainee == null)
             {
                 throw new ArgumentNullException(nameof(trainee), "trainee cannot be null.");
             }
 
-            await _unitOfWork.TraineeRepository.CreateAsync(trainee);
+            var trainees = _mapper.Map<Trainee>(trainee);
+            await _unitOfWork.TraineeRepository.CreateAsync(trainees);
             await _unitOfWork.CommitAsync();
             return trainee;
         }

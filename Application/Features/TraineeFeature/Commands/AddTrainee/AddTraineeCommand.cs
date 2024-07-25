@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Domain.Dtos;
+using Domain.Entities;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Application.Features.TraineeFeature.Commands.AddTrainee
 {
-    public class AddTraineeCommand : IRequest<Trainee>
+    public class AddTraineeCommand : IRequest<TraineeDto>
     {
-        public Trainee Trainee { get; set; }
+        public TraineeDto Trainee { get; set; }
 
-        public AddTraineeCommand(Trainee trainee)
+        public AddTraineeCommand(TraineeDto trainee)
         {
             Trainee = trainee;
         }

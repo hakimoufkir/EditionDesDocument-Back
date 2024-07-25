@@ -1,25 +1,17 @@
-﻿using Domain.Common;
+﻿using Domain.Entities;
 using Domain.Enums;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Reflection;
 using System.Text;
-using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Domain.Enums.ResponsStutusHandler;
 
-
-namespace Domain.Entities
+namespace Domain.Dtos
 {
-    public class Trainee : Base
+    public class TraineeDto
     {
-    
         public string? FirstName { get; set; }
-   
         public string? LastName { get; set; }
         public string? Nationality { get; set; }
         public string? UniqueIdentifier { get; set; }
@@ -49,11 +41,8 @@ namespace Domain.Entities
         public string? HighSchoolName { get; set; }
         public string? HighSchoolCity { get; set; }
         public string? HighSchoolCountry { get; set; }
-        //public Type? HighSchoolType { get; set; }
-
         public UniversityType? UniversityDegreeType { get; set; }
         public string? UniversityName { get; set; }
-        //public Type? UniversityType { get; set; }
         public string? UniversityCity { get; set; }
         public string? UniversityCountry { get; set; }
         public string? StudiesCompleted { get; set; }
@@ -65,24 +54,11 @@ namespace Domain.Entities
         public string? CIN { get; set; }
         public DateTime? RegistrationDate { get; set; }
         public StatusInscription? RegistrationStatus { get; set; }
-
         public bool? IsWaitingList { get; set; }
-
         public Guid? IdFiliere { get; set; }
-
-        //[ForeignKey("Group")]
-        //public Guid? IdGroup { get; set; }
-        //[JsonIgnore]
-        //public Group? Group { get; set; }
-
-        public List<Payment>? Payments { get; set; }
-
+        public List<PaymentDto>? Payments { get; set; }
         public string? FieldJSON { get; set; }
         public AnneeScolaire? AnneeScolaire { get; set; }
-
-
-
-
-
     }
+
 }

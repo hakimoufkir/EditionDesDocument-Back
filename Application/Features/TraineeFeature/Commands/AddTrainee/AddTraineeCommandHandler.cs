@@ -1,5 +1,6 @@
 ﻿using Application.IServices;
 using Application.Services;
+using Domain.Dtos;
 using Domain.Entities;
 using MediatR;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.TraineeFeature.Commands.AddTrainee
 {
-    public class AddTraineeCommandHandler : IRequestHandler<AddTraineeCommand, Trainee>
+    public class AddTraineeCommandHandler : IRequestHandler<AddTraineeCommand, TraineeDto>
     {
         private readonly ITraineeService _traineeService;
 
@@ -21,7 +22,7 @@ namespace Application.Features.TraineeFeature.Commands.AddTrainee
 
 
 
-        public async Task<Trainee> Handle(AddTraineeCommand request, CancellationToken cancellationToken)
+        public async Task<TraineeDto> Handle(AddTraineeCommand request, CancellationToken cancellationToken)
         {
             try
             {
@@ -30,7 +31,7 @@ namespace Application.Features.TraineeFeature.Commands.AddTrainee
                     throw new ArgumentNullException(nameof(request.Trainee), "Trainee cannot be null.");
                 }
 
-                Trainee addedTrainee = await _traineeService.AddTraineeAsync(request.Trainee);
+                TraineeDto addedTrainee = await _traineeService.AddTraineeAsync(request.Trainee);
                 return addedTrainee;
             }
             catch (Exception ex)

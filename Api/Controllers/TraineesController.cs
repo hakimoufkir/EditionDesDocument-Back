@@ -7,6 +7,7 @@ using Application.Features.TraineeFeature.Commands.DeleteTrainee;
 using Application.Features.TraineeFeature.Commands.UpdateTrainee;
 using Application.Features.TraineeFeature.Queries.GetTraineeById;
 using Application.Features.TraineeFeature.Queries.GetTraineesList;
+using Domain.Dtos;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,7 @@ namespace Api.Controllers
         {
             _mediator = mediator;
         }
+
         [HttpGet("list")]
         public async Task<IActionResult> GetTraineesList()
         {
@@ -54,21 +56,21 @@ namespace Api.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddTrainee([FromBody] Trainee trainee)
+        public async Task<IActionResult> AddTrainee([FromBody] TraineeDto trainee)
         {
             try
             {
                 if (trainee == null)
                 {
-                    return BadRequest("Document cannot be null.");
+                    return BadRequest("Trainee cannot be null.");
                 }
 
-                Trainee addedTrainee = await _mediator.Send(new AddTraineeCommand(trainee));
-                return Ok(addedTrainee);
+                TraineeDto addedTrainee = await _mediator.Send(new AddTraineeCommand(trainee));
+                return Ok("Trainee added successfully!");
             }
             catch (Exception ex)
             {
-                // Log exception details here
+                
                 return StatusCode(500, $"An error occurred while adding the Trainee. Details: {ex.Message}");
             }
         }
@@ -85,7 +87,7 @@ namespace Api.Controllers
             catch (Exception ex)
             {
                 // Log the exception details here
-                return StatusCode(500, $"An error occurred while updating the document. Details: {ex.Message}");
+                return StatusCode(500, $"An error occurred while updating the Trainee. Details: {ex.Message}");
             }
         }
 
