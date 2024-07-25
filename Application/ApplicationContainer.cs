@@ -7,6 +7,7 @@ using Application.Services;
 using EventService.Application.Mapping;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using Confluent.Kafka;
 
 namespace Infrastructure
 {
@@ -22,12 +23,27 @@ namespace Infrastructure
             services.AddTransient<IDocumentService,DocumentService>();
             services.AddTransient<ITraineeService, TraineeService>();
 
-            //Kafka Producer Services
-            services.AddSingleton<KafkaRequester>();
+            // Kafka Producer Services
+            services.AddSingleton<ListTraineeProducer>(sp =>
+            {
+                var producerConfig = new ProducerConfig { BootstrapServers = "localhost:9092" };
+                var producerBuilder = new ProducerBuilder<Null, string>(producerConfig).Build();
+                return new ListTraineeProducer(producerBuilder);
+            });
 
+            // Kafka Consumer services
+            services.AddSingleton<IConsumer<Null, string>>(sp =>
+            {
+                var config = new ConsumerConfig
+                {
+                    GroupId = "EditionDesDocument",
+                    BootstrapServers = "localhost:9092",
+                    AutoOffsetReset = AutoOffsetReset.Earliest
+                };
+                return new ConsumerBuilder<Null, string>(config).Build();
+            });
 
-            //Kafka Consumer services
-            services.AddHostedService<ListTrainee>();
+            services.AddHostedService<ListTraineeConsumer>();
 
 
             //configuration of mediator

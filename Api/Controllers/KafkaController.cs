@@ -1,8 +1,7 @@
 ﻿using Application.Broker.Producer;
-using Application.Features.FilesFeature.Queries.GetAllFiles;
-using Application.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
 
 namespace Api.Controllers
 {
@@ -10,12 +9,11 @@ namespace Api.Controllers
     [ApiController]
     public class KafkaController : ControllerBase
     {
-        private readonly KafkaRequester _kafkaRequester;
+        private readonly ListTraineeProducer _listTraineeProducer;
 
-
-        public KafkaController(KafkaRequester kafkaRequester)
+        public KafkaController(ListTraineeProducer listTraineeProducer)
         {
-            _kafkaRequester = kafkaRequester;
+            _listTraineeProducer = listTraineeProducer;
         }
 
         [HttpGet("RequestListTrainee")]
@@ -23,12 +21,12 @@ namespace Api.Controllers
         {
             try
             {
-                await _kafkaRequester.ProduceAsync("InscriptionServiceRequestMiddleWare", "ListTrainees");
+                await _listTraineeProducer.ProduceAsync("InscriptionServiceRequestMiddleWare", "ListTrainees");
                 return Ok();
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error listing files: {ex.Message}");
+                return StatusCode(500, $"Error listing trainees: {ex.Message}");
             }
         }
     }
