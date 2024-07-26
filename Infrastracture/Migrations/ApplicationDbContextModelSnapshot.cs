@@ -53,6 +53,43 @@ namespace Infrastracture.Migrations
                     b.ToTable("Documents");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("Capacity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("IdFiliere")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("IdYear")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdYear");
+
+                    b.ToTable("Groups");
+                });
+
             modelBuilder.Entity("Domain.Entities.Payment", b =>
                 {
                     b.Property<Guid>("Id")
@@ -93,7 +130,7 @@ namespace Infrastracture.Migrations
 
                     b.HasIndex("IdTrainee");
 
-                    b.ToTable("Payment");
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("Domain.Entities.Request", b =>
@@ -227,6 +264,9 @@ namespace Infrastracture.Migrations
                     b.Property<Guid?>("IdFiliere")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid?>("IdGroup")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<bool?>("IsWaitingList")
                         .HasColumnType("bit");
 
@@ -304,7 +344,50 @@ namespace Infrastracture.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdGroup");
+
                     b.ToTable("Trainees");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Year", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("current")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Years");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.HasOne("Domain.Entities.Year", "Year")
+                        .WithMany("Groups")
+                        .HasForeignKey("IdYear");
+
+                    b.Navigation("Year");
                 });
 
             modelBuilder.Entity("Domain.Entities.Payment", b =>
@@ -320,7 +403,26 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.Trainee", b =>
                 {
+                    b.HasOne("Domain.Entities.Group", "Group")
+                        .WithMany("Trainees")
+                        .HasForeignKey("IdGroup");
+
+                    b.Navigation("Group");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.Navigation("Trainees");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Trainee", b =>
+                {
                     b.Navigation("Payments");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Year", b =>
+                {
+                    b.Navigation("Groups");
                 });
 #pragma warning restore 612, 618
         }

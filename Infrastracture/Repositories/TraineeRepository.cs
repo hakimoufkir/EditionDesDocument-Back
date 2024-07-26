@@ -21,10 +21,10 @@ namespace Infrastracture.Repositories
             _context = context;
         }
 
-        public async Task<List<Trainee>> GetAllAsNoTracking()
-        {
-            return await dbSet.AsNoTracking().ToListAsync();
-        }
+        //public async Task<List<Trainee>> GetAllAsNoTracking()
+        //{
+        //    return await dbSet.AsNoTracking().ToListAsync();
+        //}
 
         public async Task<Trainee> GetByIdAsync(Guid id)
         {

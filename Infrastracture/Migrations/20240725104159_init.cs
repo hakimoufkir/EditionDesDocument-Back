@@ -51,6 +51,48 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Years",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    current = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Years", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Groups",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdFiliere = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Capacity = table.Column<int>(type: "int", nullable: true),
+                    IdYear = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    LastModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Groups", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Groups_Years_IdYear",
+                        column: x => x.IdYear,
+                        principalTable: "Years",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Trainees",
                 columns: table => new
                 {
@@ -100,6 +142,7 @@ namespace Infrastracture.Migrations
                     RegistrationStatus = table.Column<int>(type: "int", nullable: true),
                     IsWaitingList = table.Column<bool>(type: "bit", nullable: true),
                     IdFiliere = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    IdGroup = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     FieldJSON = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AnneeScolaire = table.Column<int>(type: "int", nullable: true),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -110,10 +153,15 @@ namespace Infrastracture.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Trainees", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Trainees_Groups_IdGroup",
+                        column: x => x.IdGroup,
+                        principalTable: "Groups",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Payment",
+                name: "Payments",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -130,9 +178,9 @@ namespace Infrastracture.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Payment", x => x.Id);
+                    table.PrimaryKey("PK_Payments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Payment_Trainees_IdTrainee",
+                        name: "FK_Payments_Trainees_IdTrainee",
                         column: x => x.IdTrainee,
                         principalTable: "Trainees",
                         principalColumn: "Id",
@@ -140,9 +188,19 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Payment_IdTrainee",
-                table: "Payment",
+                name: "IX_Groups_IdYear",
+                table: "Groups",
+                column: "IdYear");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Payments_IdTrainee",
+                table: "Payments",
                 column: "IdTrainee");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Trainees_IdGroup",
+                table: "Trainees",
+                column: "IdGroup");
         }
 
         /// <inheritdoc />
@@ -152,13 +210,19 @@ namespace Infrastracture.Migrations
                 name: "Documents");
 
             migrationBuilder.DropTable(
-                name: "Payment");
+                name: "Payments");
 
             migrationBuilder.DropTable(
                 name: "Requests");
 
             migrationBuilder.DropTable(
                 name: "Trainees");
+
+            migrationBuilder.DropTable(
+                name: "Groups");
+
+            migrationBuilder.DropTable(
+                name: "Years");
         }
     }
 }

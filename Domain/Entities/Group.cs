@@ -17,6 +17,7 @@ namespace Domain.Entities
         public Guid? IdFiliere { get; set; }
         public int? Capacity { get; set; }
 
+
         [ForeignKey("Year")]
        
         public Guid? IdYear { get; set; }
