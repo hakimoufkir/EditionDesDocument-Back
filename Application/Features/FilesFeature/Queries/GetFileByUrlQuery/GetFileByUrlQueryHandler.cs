@@ -6,16 +6,16 @@ namespace Application.Features.DocumentsFeature.Queries.GetFileByUrlQuery
 {
     public class GetFileByUrlQueryHandler : IRequestHandler<GetFileByUrlQuery, GetFileByUrlResponse>
     {
-        private readonly IUnitOfService _uos;
+        private readonly IUnitOfService _unitOfService;
 
-        public GetFileByUrlQueryHandler(IUnitOfService uos)
+        public GetFileByUrlQueryHandler(IUnitOfService unitOfService)
         {
-            _uos = uos;
+            _unitOfService = unitOfService;
         }
 
         public async Task<GetFileByUrlResponse> Handle(GetFileByUrlQuery request, CancellationToken cancellationToken)
         {
-            var fileStream = await _uos.FileManagementService.GetFile(request.Url);
+            var fileStream = await _unitOfService.FileManagementService.GetFile(request.Url);
 
             if (fileStream == null)
             {

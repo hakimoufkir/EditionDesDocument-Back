@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Application.Interfaces;
-using Application.IUOW;
+using Application.IUnitOfWorks;
 using Application.IServices;
 
 namespace Application.Services
@@ -8,22 +8,26 @@ namespace Application.Services
     public class UnitOfService : IUnitOfService
     {
         #region Props
-        private readonly IUnitOfWork _uow;
         public IMapper Mapper { get; set; }
         public IRequestService RequestService { get; set; }
-        public ICheckRoleService CheckRoleService { get; set; }
         public IFileManagementService FileManagementService { get; set; }
+
+        public IDocumentService DocumentService { get; set; }
+
+
+
         #endregion
 
         #region Constructor
-        public UnitOfService(IUnitOfWork uow, IMapper map, IRequestService requestService, ICheckRoleService checkRoleService, IFileManagementService fileManagementService)
+        public UnitOfService(IMapper mapper, IRequestService requestService, IFileManagementService fileManagementService, IDocumentService documentService)
         {
-            _uow = uow;
-            Mapper = map;
+            Mapper = mapper;
             RequestService = requestService;
-            CheckRoleService = checkRoleService;
             FileManagementService = fileManagementService;
+            DocumentService = documentService;
         }
+
+
         #endregion
     }
 }

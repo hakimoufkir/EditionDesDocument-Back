@@ -7,10 +7,9 @@ namespace Application.Interfaces
     {
 
         IRequestService RequestService { get; }
-        ICheckRoleService CheckRoleService { get; }
         IFileManagementService FileManagementService { get; }
 
-
+        IDocumentService DocumentService { get; }
 
 
     }

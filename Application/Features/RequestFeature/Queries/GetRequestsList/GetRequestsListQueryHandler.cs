@@ -10,12 +10,12 @@ namespace Application.Features.RequestFeature.Queries.GetRequestsList
 {
     public class GetRequestsListQueryHandler : IRequestHandler<GetRequestsListQuery, List<Request>>
     {
-        private readonly IRequestService _requestService; 
+        private readonly IUnitOfService _unitOfService;
         private readonly IMapper _mapper;
 
-        public GetRequestsListQueryHandler(IRequestService requestService, IMapper mapper)
+        public GetRequestsListQueryHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _requestService = requestService;
+            _unitOfService = unitOfService;
             _mapper = mapper;
         }
 
@@ -25,7 +25,7 @@ namespace Application.Features.RequestFeature.Queries.GetRequestsList
             int page = 1; 
             int pageSize = 100; 
 
-            List<Request> requests = await _requestService.GetPagedRequestsAsync(page, pageSize);
+            List<Request> requests = await _unitOfService.RequestService.GetPagedRequestsAsync(page, pageSize);
             return requests;
         }
     }

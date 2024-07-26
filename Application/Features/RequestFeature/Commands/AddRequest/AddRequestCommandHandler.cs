@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using AutoMapper;
 using Domain.Entities;
+using Domain.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -12,11 +13,11 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
 {
     public class AddRequestCommandHandler : IRequestHandler<AddRequestCommand, string>
     {
-        private readonly IUnitOfService _uos;
+        private readonly IUnitOfService _unitOfService;
         private readonly IMapper _mapper;
-        public AddRequestCommandHandler(IUnitOfService uos, IMapper mapper)
+        public AddRequestCommandHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _uos = uos;
+            _unitOfService = unitOfService;
             _mapper = mapper;
         }
 
@@ -25,10 +26,11 @@ namespace Application.Features.RequestFeature.Commands.AddRequest
             try
             {
                 Request requests = _mapper.Map<Request>(request);
-                var result = await _uos.RequestService.AddRequestAsync(requests);
-                if (result == "Success")
+                var result = await _unitOfService.RequestService.AddRequestAsync(requests);
+                if (result == ResponsStutusHandler.Status.Success.ToString())
                 {
-                    return "Request added successfully !";
+                    //return "Request added successfully !";
+                    return ResponsStutusHandler.StatusMessages.Added.ToString();
                 }
                 else
                 {

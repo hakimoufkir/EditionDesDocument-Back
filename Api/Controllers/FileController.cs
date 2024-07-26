@@ -1,6 +1,8 @@
-﻿using Application.Features.DocumentsFeature.Commands.AddFile;
+﻿using Application.Features.DocumentFeature.Commands.DeleteDocument;
+using Application.Features.DocumentsFeature.Commands.AddFile;
 using Application.Features.DocumentsFeature.Queries;
 using Application.Features.DocumentsFeature.Queries.GetFileByUrlQuery;
+using Application.Features.FilesFeature.Queries.GetAllFiles;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,27 +35,62 @@ namespace Api.Controllers
         [HttpGet("download")]
         public async Task<IActionResult> DownloadFile(string url)
         {
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return BadRequest("The file URL is required.");
+            }
+
             try
             {
-                var response = await _mediator.Send(new GetFileByUrlQuery { Url = url });
+                // Decode the URL if needed
+                string decodedUrl = Uri.UnescapeDataString(url);
+
+
+                var response = await _mediator.Send(new GetFileByUrlQuery { Url = decodedUrl });
 
                 if (response == null)
                 {
                     return NotFound();
                 }
 
-                var contentType = response.ContentType;
-                var fileName = response.FileName;
-                var fileStream = new MemoryStream(response.FileContent);
+                if (response.FileContent == null || response.FileContent.Length == 0)
+                {
+                    return NotFound("File content is empty.");
+                }
 
+                var contentType = response.ContentType ?? "application/octet-stream";
+                var fileName = response.FileName ?? "unknown";
+
+             
+
+                var fileStream = new MemoryStream(response.FileContent);
                 return File(fileStream, contentType, fileName);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error downloading file: {ex.Message}");
+                // Log the exception details
                 return StatusCode(500, "Internal server error");
             }
         }
+
+
+        [HttpGet("list")]
+        public async Task<IActionResult> ListFiles()
+        {
+            try
+            {
+                var files = await _mediator.Send(new GetAllFilesQuery());
+                return Ok(files);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error listing files: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+
+        
     }
 
    

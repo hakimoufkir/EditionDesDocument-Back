@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\irepository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\irepository\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\requestfeature\\commands\\updaterequest\\updaterequestcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +35,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "Application\\IRepository\\IRequestRepository.cs",
+              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\IRequestRepository.cs",
+              "RelativeToolTip": "Application\\IRepository\\IRequestRepository.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T17:00:35.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Api\\appsettings.json",
+              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\appsettings.json",
+              "RelativeToolTip": "Api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T11:14:36.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateRequestCommand.cs",
+              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "RelativeToolTip": "Application\\Features\\RequestFeature\\Commands\\UpdateRequest\\UpdateRequestCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T11:09:04.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RequestRepository.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\RequestRepository.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Repositories\\RequestRepository.cs",
@@ -35,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IRequestService.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\IRequestService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\IRequestService.cs",
@@ -43,8 +94,7 @@
               "RelativeToolTip": "Application\\IServices\\IRequestService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-20T17:09:34.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T17:09:34.552Z"
             }
           ]
         }
