@@ -15,7 +15,6 @@
 		<Folder Include="Features\FilesFeature\Commands\UpdateFile\" />
 		<Folder Include="Features\GroupFeature\Commands\DeleteGroup\" />
 		<Folder Include="Features\GroupFeature\Commands\UpdateGroup\" />
-		<Folder Include="Features\GroupFeature\Queries\GetAllGroupQuery\" />
 		<Folder Include="Features\GroupFeature\Queries\GetGroupByIdQuery\" />
 	</ItemGroup>
 

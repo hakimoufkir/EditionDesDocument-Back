@@ -11,6 +11,8 @@ namespace Application.IServices
 {
     public interface IGroupService
     {
+        Task<List<Group>> GetGroupsList();
+
         Task<GroupDto> AddGroupAsync(GroupDto group);
     }
 }

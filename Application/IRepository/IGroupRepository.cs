@@ -11,7 +11,7 @@ namespace Application.IRepository
 {
     public interface IGroupRepository : IGenericRepository<Group>
     {
-        Task CreateAsync(Group group);
+    
     }
 }
 

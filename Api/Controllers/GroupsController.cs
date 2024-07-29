@@ -1,4 +1,6 @@
-﻿using Application.Features.GroupFeature.Commands.AddGroup;
+﻿using Application.Features.DocumentFeature.Queries.GetAllDocuments;
+using Application.Features.GroupFeature.Commands.AddGroup;
+using Application.Features.GroupFeature.Queries.GetAllGroupQuery;
 using Application.Features.TraineeFeature.Commands.AddTrainee;
 using Domain.Dtos;
 using Domain.Entities;
@@ -39,8 +41,20 @@ namespace Api.Controllers
                 return StatusCode(500, $"An error occurred while adding the Group. Details gg: {ex.Message}");
             }
         }
-      
 
 
+        [HttpGet("list")]
+        public async Task<IActionResult> GetGroupsList()
+        {
+            try
+            {
+                List<Group> GroupsList = await _mediator.Send(new GetAllGroupsListQuery());
+                return Ok(GroupsList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
     }
 }

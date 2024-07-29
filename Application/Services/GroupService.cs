@@ -3,6 +3,7 @@ using Application.IUnitOfWorks;
 using AutoMapper;
 using Domain.Dtos;
 using Domain.Entities;
+using Soenneker.Extensions.Enumerable;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +38,14 @@ namespace Application.Services
 
         }
 
-    
-
-
+        public async Task<List<Group>> GetGroupsList()
+        {
+            List<Group> groupsList = await _unitOfWork.GroupRepository.GetAllAsNoTracking();
+            if (groupsList.IsNullOrEmpty())
+            {
+                throw new ArgumentException("No Groups found.");
+            }
+            return groupsList;
+        }
     }
 }
