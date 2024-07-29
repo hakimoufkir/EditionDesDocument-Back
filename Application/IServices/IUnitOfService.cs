@@ -12,6 +12,7 @@ namespace Application.Interfaces
         IDocumentService DocumentService { get; }
 
         ITraineeService TraineeService { get; }
+        IGroupService GroupService { get; }
 
 
     }

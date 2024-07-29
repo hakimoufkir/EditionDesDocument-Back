@@ -10,6 +10,7 @@ namespace Domain.Entities
 {
     public class Year : Base
     {
+        //
        
         public DateTime? StartDate { get; set; }
 

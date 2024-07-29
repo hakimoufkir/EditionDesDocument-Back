@@ -41,7 +41,7 @@ namespace Api.Controllers
         }
 
 
-        [HttpGet("id/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetTraineeById(Guid id)
         {
             try

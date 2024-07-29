@@ -8,6 +8,7 @@ namespace Domain.Entities;
 public class Document : Base
 {
     public string PathFile { get; set; }
-    public string InstantJSON { get; set; }
+
+    public string? InstantJSON { get; set; }
 
 }

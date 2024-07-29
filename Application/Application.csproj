@@ -11,19 +11,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Broker\" />
 		<Folder Include="Features\FilesFeature\Commands\DeleteFile\" />
 		<Folder Include="Features\FilesFeature\Commands\UpdateFile\" />
+		<Folder Include="Features\GroupFeature\Commands\DeleteGroup\" />
+		<Folder Include="Features\GroupFeature\Commands\UpdateGroup\" />
+		<Folder Include="Features\GroupFeature\Queries\GetAllGroupQuery\" />
+		<Folder Include="Features\GroupFeature\Queries\GetGroupByIdQuery\" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.21.0" />
 		<PackageReference Include="Castle.Core" Version="5.1.1" />
+		<PackageReference Include="Confluent.Kafka" Version="2.5.0" />
 		<PackageReference Include="MediatR" Version="12.3.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.34" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.4" />
 		<PackageReference Include="Soenneker.Blob.Sas" Version="2.1.874" />
