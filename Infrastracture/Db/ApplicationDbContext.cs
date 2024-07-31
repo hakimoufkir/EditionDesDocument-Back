@@ -1,5 +1,7 @@
 ﻿using Domain.Entities;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
+using static Domain.Enums.ResponsStutusHandler;
 
 
 namespace Infrastructure.Infrastructure.Data
@@ -14,6 +16,13 @@ namespace Infrastructure.Infrastructure.Data
         public DbSet<Request> Requests { get; set; }
         public DbSet<Document> Documents { get; set; }
 
+        public DbSet<Trainee> Trainees { get; set; }
+
+        public DbSet<Year> Years { get; set; }
+
+
+
+       
 
 
 
@@ -57,11 +66,6 @@ namespace Infrastructure.Infrastructure.Data
 
             modelBuilder.Entity<Document>(entity =>
             {
-                entity.HasKey(e => e.Id);
-                entity.Property(e => e.PathFile).IsRequired();
-                entity.Property(e => e.InstantJSON).IsRequired();
-
-                // Seed data for Documents entity
                 entity.HasData(                
                     new Document
                     {

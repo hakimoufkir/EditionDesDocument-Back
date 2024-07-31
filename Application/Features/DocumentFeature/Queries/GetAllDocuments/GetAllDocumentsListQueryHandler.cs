@@ -25,15 +25,8 @@ namespace Application.Features.DocumentFeature.Queries.GetAllDocuments
 
         public async Task<List<Document>> Handle(GetAllDocumentsListQuery request, CancellationToken cancellationToken)
         {
-            try
-            {
-                List<Document> documents = await _unitOfService.DocumentService.GetDocumentsList();
-                return documents;
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException($"An error occurred while retrieving documents. Details: {ex.Message} {ex.StackTrace}", ex);
-            }
+            List<Document> documents = await _unitOfService.DocumentService.GetDocumentsList();
+            return documents;
         }
     }
 }

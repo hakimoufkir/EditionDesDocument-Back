@@ -14,17 +14,22 @@ namespace Application.Services
 
         public IDocumentService DocumentService { get; set; }
 
+        public ITraineeService TraineeService { get; set; }
+        public IYearService YearService { get; set; }
+
 
 
         #endregion
 
         #region Constructor
-        public UnitOfService(IMapper mapper, IRequestService requestService, IFileManagementService fileManagementService, IDocumentService documentService)
+        public UnitOfService(IMapper mapper, IRequestService requestService, IFileManagementService fileManagementService, IDocumentService documentService, ITraineeService traineeService, IYearService yearService)
         {
             Mapper = mapper;
             RequestService = requestService;
             FileManagementService = fileManagementService;
             DocumentService = documentService;
+            TraineeService = traineeService;
+            YearService = yearService;
         }
 
 

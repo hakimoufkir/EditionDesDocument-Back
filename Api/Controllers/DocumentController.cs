@@ -27,8 +27,8 @@ namespace Api.Controllers
         {
             try
             {
-                List<Document> OneDocument = await _mediator.Send(new GetAllDocumentsListQuery());
-                return Ok(OneDocument);
+                List<Document> DocumentsList = await _mediator.Send(new GetAllDocumentsListQuery());
+                return Ok(DocumentsList);
             }
             catch (Exception ex)
             {
@@ -36,7 +36,7 @@ namespace Api.Controllers
             }
         }
 
-        [HttpGet("id/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetDocumentById(Guid id)
         {
             try
@@ -71,16 +71,16 @@ namespace Api.Controllers
         }
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddDocument([FromBody] Document document)
+        public async Task<IActionResult> AddDocument([FromBody] AddDocumentCommand addDocumentCommand)
         {
             try
             {
-                if (document == null)
+                if (addDocumentCommand == null)
                 {
                     return BadRequest("Document cannot be null.");
                 }
 
-                Document addedDocument = await _mediator.Send(new AddDocumentCommand(document));
+                Document addedDocument = await _mediator.Send(addDocumentCommand);
                 return Ok(addedDocument);
             }
             catch (Exception ex)
@@ -111,7 +111,7 @@ namespace Api.Controllers
             try
             {
                 await _mediator.Send(command);
-                return Ok("Document Updated Successfully"); 
+                return Ok("Document Updated Successfully");
             }
             catch (Exception ex)
             {

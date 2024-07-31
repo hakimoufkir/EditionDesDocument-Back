@@ -35,7 +35,6 @@ namespace Infrastracture.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("InstantJSON")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastModifiedBy")
@@ -55,12 +54,92 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("adfc1cb2-132c-4416-a101-ee66c24efb69"),
-                            CreatedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(6476),
+                            Id = new Guid("1acb8bed-4cc2-4a18-9296-f6bcb5e5c122"),
+                            CreatedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9977),
                             InstantJSON = "{\r\n                            \"documentId\": \"SGS5RehxYUyGZIpdckC0Nw==\",\r\n                            \"instantJSON\": {\r\n                                \"annotations\": [\r\n                                    {\r\n                                        \"bbox\": [\r\n                                            147.92001342773438,\r\n                                            206.239990234375,\r\n                                            306.55999755859375,\r\n                                            32\r\n                                        ],\r\n                                        \"borderStyle\": \"solid\",\r\n                                        \"borderWidth\": 1,\r\n                                        \"createdAt\": \"2024-07-21T15:04:32Z\",\r\n                                        \"creatorName\": \"{\\\"Document\\\":\\\"Ttire\\\"}\",\r\n                                        \"customData\": {\r\n                                            \"User\": \"FirstName\",\r\n                                            \"value\": \"\"\r\n                                        },\r\n                                        \"font\": \"Helvetica\",\r\n                                        \"fontSize\": 12,\r\n                                        \"formFieldName\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"horizontalAlign\": \"left\",\r\n                                        \"id\": \"01J3AX5BW5V77M2C7YBJRN1WGS\",\r\n                                        \"lineHeightFactor\": 1.186000108718872,\r\n                                        \"name\": \"01J3AX5BW6J3YBJBZF3ABV0ZE4\",\r\n                                        \"opacity\": 1,\r\n                                        \"pageIndex\": 0,\r\n                                        \"rotation\": 0,\r\n                                        \"type\": \"pspdfkit/widget\",\r\n                                        \"updatedAt\": \"2024-07-21T15:04:56Z\",\r\n                                        \"v\": 2,\r\n                                        \"verticalAlign\": \"center\"\r\n                                    }\r\n                                ],\r\n                                \"formFields\": [\r\n                                    {\r\n                                        \"annotationIds\": [\r\n                                            \"01J3AX5BW5V77M2C7YBJRN1WGS\"\r\n                                        ],\r\n                                        \"comb\": false,\r\n                                        \"defaultValue\": \"\",\r\n                                        \"doNotScroll\": false,\r\n                                        \"doNotSpellCheck\": false,\r\n                                        \"id\": \"01J3AX64W4SJSJA90NQRAMJCGC\",\r\n                                        \"label\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"multiLine\": false,\r\n                                        \"name\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"password\": false,\r\n                                        \"pdfObjectId\": 94,\r\n                                        \"richText\": false,\r\n                                        \"type\": \"pspdfkit/form-field/text\",\r\n                                        \"v\": 1\r\n                                    }\r\n                                ],\r\n                                \"format\": \"https://pspdfkit.com/instant-json/v1\",\r\n                                \"pdfId\": {\r\n                                    \"changing\": \"QV5CW7SEzOfM3vnnwDZlRA==\",\r\n                                    \"permanent\": \"SGS5RehxYUyGZIpdckC0Nw==\"\r\n                                }\r\n                            }\r\n                        }",
-                            LastModifiedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(6537),
+                            LastModifiedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9984),
                             PathFile = "https://blobstoragedbdemo.blob.core.windows.net/smsproject/00deed32-72c9-4322-b928-265ba7184a1d.pdf"
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int?>("Capacity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("IdFiliere")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("IdYear")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdYear");
+
+                    b.ToTable("Group");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Payment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<double?>("Amount")
+                        .HasColumnType("float");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IdTrainee")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("PaymentMethod")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PaymentStatus")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TypePayment")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdTrainee");
+
+                    b.ToTable("Payment");
                 });
 
             modelBuilder.Entity("Domain.Entities.Request", b =>
@@ -114,28 +193,271 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8172caa9-53a0-49a7-903b-c2afca62ce0a"),
-                            CreatedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(2375),
+                            Id = new Guid("bb0a86c1-e9b5-413a-b05d-9e872f1b78d1"),
+                            CreatedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9516),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("f146f372-9ee7-4783-8208-28fa217d2c4c"),
-                            LastModifiedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(2488),
-                            ModeleId = new Guid("3c1e5657-6032-4dc8-a505-c07491b4bf12"),
+                            IdTrainee = new Guid("8f4845cd-3804-432b-b205-34fddf1e11ab"),
+                            LastModifiedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9587),
+                            ModeleId = new Guid("e760088b-0386-4f7e-8d59-b0454b9155a4"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("57ce87b5-49cf-4e80-825c-98863cfbd484"),
-                            CreatedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(2599),
+                            Id = new Guid("3661c365-2959-46da-be46-b8e5797b43c8"),
+                            CreatedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9647),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("7a7e7477-2227-4259-892a-ea2f4b422558"),
-                            LastModifiedDate = new DateTime(2024, 7, 22, 12, 15, 50, 568, DateTimeKind.Local).AddTicks(2610),
-                            ModeleId = new Guid("16e25497-0402-4ed6-88c4-d016630dc843"),
+                            IdTrainee = new Guid("36872bee-b7a1-45a6-966f-36f7e354e931"),
+                            LastModifiedDate = new DateTime(2024, 7, 26, 12, 56, 48, 66, DateTimeKind.Local).AddTicks(9651),
+                            ModeleId = new Guid("7661576b-4e43-40f0-abd5-85162437c796"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Trainee", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("AnneeScolaire")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("BacYear")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("Baccalaureate")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("BirthCertificates")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("Birthdate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Birthplace")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CIN")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DiscoveryOriginOfTheSchool")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatherEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatherFirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatherGSM")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatherJob")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FatherLastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FieldJSON")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GSM")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Gender")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("GroupId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("HighSchoolCity")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HighSchoolCountry")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HighSchoolName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("IdFiliere")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool?>("IsWaitingList")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MotherEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MotherFirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MotherGSM")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MotherLastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nationality")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("NumberOfYearsOfStudy")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ParentsAddress")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("Passerelle")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Picture")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RegistrationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("RegistrationStatus")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ScholarCertificates")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SchoolLevel")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StudiesCompleted")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UniqueIdentifier")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UniversityCity")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UniversityCountry")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UniversityDegreeType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UniversityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GroupId");
+
+                    b.ToTable("Trainees");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Year", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("LastModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("current")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Years");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.HasOne("Domain.Entities.Year", "Year")
+                        .WithMany("Groups")
+                        .HasForeignKey("IdYear");
+
+                    b.Navigation("Year");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Payment", b =>
+                {
+                    b.HasOne("Domain.Entities.Trainee", "Trainee")
+                        .WithMany("Payments")
+                        .HasForeignKey("IdTrainee")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Trainee");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Trainee", b =>
+                {
+                    b.HasOne("Domain.Entities.Group", null)
+                        .WithMany("Trainees")
+                        .HasForeignKey("GroupId");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Group", b =>
+                {
+                    b.Navigation("Trainees");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Trainee", b =>
+                {
+                    b.Navigation("Payments");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Year", b =>
+                {
+                    b.Navigation("Groups");
                 });
 #pragma warning restore 612, 618
         }
