@@ -70,10 +70,10 @@ namespace Domain.Entities
 
         public Guid? IdFiliere { get; set; }
 
-        //[ForeignKey("Group")]
-        //public Guid? IdGroup { get; set; }
-        //[JsonIgnore]
-        //public Group? Group { get; set; }
+        [ForeignKey("Group")]
+        public Guid? IdGroup { get; set; } 
+        [JsonIgnore]
+        public Group? Group { get; set; }
 
         public List<Payment>? Payments { get; set; }
 

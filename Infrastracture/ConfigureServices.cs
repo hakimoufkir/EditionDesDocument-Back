@@ -31,10 +31,10 @@ namespace Infrastructure
 
 
 
-
             string? con = configuration.GetConnectionString("DefaultSQLConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con));
 
+            services.AddScoped<IGroupRepository, GroupRepository>();
 
             services.AddScoped<IRequestRepository, RequestRepository>();
             services.AddScoped<IDocumentRepository, DocumentRepository>();

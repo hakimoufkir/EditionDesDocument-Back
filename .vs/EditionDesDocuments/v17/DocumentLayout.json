@@ -3,80 +3,68 @@
   "WorkspaceRootPath": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\genericrepo\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\genericrepo\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\services\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\command\\addyear\\addyearcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\command\\addyear\\addyearcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\api\\controllers\\yearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\yearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\repositories\\yearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\yearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Migrations\\20240731141306_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Migrations\\20240731141306_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\applicationcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\applicationcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\iunitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iunitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\command\\addyear\\addyearcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\command\\addyear\\addyearcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\iservices\\iyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\iyearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\irepository\\iyearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\irepository\\iyearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\command\\addyear\\addyearcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\command\\addyear\\addyearcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\command\\addyear\\addyearcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\command\\addyear\\addyearcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\services\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\yearservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\queries\\getyearslist\\getyearslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\queries\\getyearslist\\getyearslistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\features\\yearfeature\\queries\\getyearslist\\getyearslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\features\\yearfeature\\queries\\getyearslist\\getyearslistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\api\\controllers\\yearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\yearcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\domain\\entities\\year.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83DDCDA8-C3BF-43B4-AC28-4F4AD28F60F6}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\year.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\genericrepo\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\genericrepo\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\api\\controllers\\traineescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\controllers\\traineescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\mapping\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iservices\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\iunitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\iunitofworks\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,40 +75,16 @@
       "RelativeMoniker": "D:0:0:{6ED07438-5F41-453B-92C4-535A6DBA7995}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\repositories\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\documentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\application\\irepository\\iyearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089108D4-1B76-4B33-A0E1-80C91B1C8FD9}|Application\\Application.csproj|solutionrelative:application\\irepository\\iyearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\ITraineeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\IServices\\ITraineeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\TraineeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Services\\TraineeService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\TraineeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastracture\\Repositories\\TraineeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\ITraineeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\IRepository\\ITraineeRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|d:\\uir_project\\gestiondocument\\editiondesdocument\\infrastracture\\repositories\\yearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C233E72-D9FC-4D04-A1AA-3AB0F8B1F14D}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\yearrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,176 +94,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "20240731141306_init.cs",
+              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Migrations\\20240731141306_init.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240731141306_init.cs",
+              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Migrations\\20240731141306_init.cs",
+              "RelativeToolTip": "Infrastracture\\Migrations\\20240731141306_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:13:06.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IUnitOfWorks\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Application\\IUnitOfWorks\\IUnitOfWork.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IUnitOfWorks\\IUnitOfWork.cs",
               "RelativeToolTip": "Application\\IUnitOfWorks\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwA8AAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T13:06:52.603Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "UnitOfService.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\UnitOfService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\UnitOfService.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\UnitOfService.cs",
               "RelativeToolTip": "Application\\Services\\UnitOfService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAmAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwBsAAADxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T13:05:00.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "IUnitOfService.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\IUnitOfService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\IUnitOfService.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\IUnitOfService.cs",
               "RelativeToolTip": "Application\\IServices\\IUnitOfService.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T13:03:37.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "AutoMapperProfile.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Mapping\\AutoMapperProfile.cs",
               "RelativeDocumentMoniker": "Application\\Mapping\\AutoMapperProfile.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Mapping\\AutoMapperProfile.cs",
               "RelativeToolTip": "Application\\Mapping\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwCsAAAA7AAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAQwC8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T12:58:30.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\UnitOfWorks\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastracture\\UnitOfWorks\\UnitOfWork.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\UnitOfWorks\\UnitOfWork.cs",
               "RelativeToolTip": "Infrastracture\\UnitOfWorks\\UnitOfWork.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswCQAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T12:36:23.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\GenericRepo\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Infrastracture\\GenericRepo\\GenericRepository.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\GenericRepo\\GenericRepository.cs",
               "RelativeToolTip": "Infrastracture\\GenericRepo\\GenericRepository.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAowD8AAAAQAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAADwv0MAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T13:45:06.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Year.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Domain\\Entities\\Year.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Year.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Domain\\Entities\\Year.cs",
               "RelativeToolTip": "Domain\\Entities\\Year.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T11:29:00.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ApplicationContainer.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\ApplicationContainer.cs",
               "RelativeDocumentMoniker": "Application\\ApplicationContainer.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\ApplicationContainer.cs",
               "RelativeToolTip": "Application\\ApplicationContainer.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwBgAAAA0AAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAcwBkAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T11:16:42.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GetTraineesListQuery.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs",
-              "RelativeToolTip": "Application\\Features\\TraineeFeature\\Queries\\GetTraineesList\\GetTraineesListQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:14:41.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TraineesController.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\TraineesController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\TraineesController.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\TraineesController.cs",
-              "RelativeToolTip": "Api\\Controllers\\TraineesController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:05:59.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RequestController.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\RequestController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\RequestController.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\RequestController.cs",
-              "RelativeToolTip": "Api\\Controllers\\RequestController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAuwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:05:40.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "YearController.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\YearController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\YearController.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\Controllers\\YearController.cs",
               "RelativeToolTip": "Api\\Controllers\\YearController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCEAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T11:05:34.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
               "Title": "GetYearsListQueryHandler.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs",
               "RelativeToolTip": "Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQueryHandler.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBMAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:03:46.616Z"
+              "WhenOpened": "2024-07-29T11:03:46.616Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 6,
               "Title": "GetYearsListQuery.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQuery.cs",
@@ -307,74 +249,51 @@
               "RelativeToolTip": "Application\\Features\\YearFeature\\Queries\\GetYearsList\\GetYearsListQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T11:03:40.305Z"
+              "WhenOpened": "2024-07-29T11:03:40.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ITraineeService.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\ITraineeService.cs",
-              "RelativeDocumentMoniker": "Application\\IServices\\ITraineeService.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\ITraineeService.cs",
-              "RelativeToolTip": "Application\\IServices\\ITraineeService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T10:59:22.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "TraineeService.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\TraineeService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\TraineeService.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\TraineeService.cs",
-              "RelativeToolTip": "Application\\Services\\TraineeService.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T10:58:29.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "YearService.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\YearService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\YearService.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Services\\YearService.cs",
               "RelativeToolTip": "Application\\Services\\YearService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBgAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T10:50:53.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddYearCommandHandler.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommandHandler.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommandHandler.cs",
               "RelativeToolTip": "Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommandHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T10:50:53.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "IYearService.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\IYearService.cs",
               "RelativeDocumentMoniker": "Application\\IServices\\IYearService.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IServices\\IYearService.cs",
               "RelativeToolTip": "Application\\IServices\\IYearService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAwAoAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T10:50:53.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AddYearCommand.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\YearFeature\\Command\\AddYear\\AddYearCommand.cs",
@@ -388,103 +307,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Application.csproj",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Application.csproj",
-              "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\Application.csproj",
-              "RelativeToolTip": "Application\\Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-29T10:50:53.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ConfigureServices.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\ConfigureServices.cs",
               "RelativeDocumentMoniker": "Infrastracture\\ConfigureServices.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\ConfigureServices.cs",
               "RelativeToolTip": "Infrastracture\\ConfigureServices.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAABIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T10:50:50.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\appsettings.json",
               "RelativeDocumentMoniker": "Api\\appsettings.json",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Api\\appsettings.json",
               "RelativeToolTip": "Api\\appsettings.json",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-26T11:52:26.201Z"
+              "WhenOpened": "2024-07-26T11:52:26.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Db\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Db\\ApplicationDbContext.cs",
               "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Db\\ApplicationDbContext.cs",
               "RelativeToolTip": "Infrastracture\\Db\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAzwBcAAAAAAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwBUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T11:36:51.265Z"
+              "WhenOpened": "2024-07-26T11:36:51.265Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DocumentRepository.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\DocumentRepository.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\DocumentRepository.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\DocumentRepository.cs",
-              "RelativeToolTip": "Infrastracture\\Repositories\\DocumentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T11:35:37.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RequestRepository.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\RequestRepository.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\RequestRepository.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\RequestRepository.cs",
-              "RelativeToolTip": "Infrastracture\\Repositories\\RequestRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T11:35:11.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "TraineeRepository.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\TraineeRepository.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\TraineeRepository.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\TraineeRepository.cs",
-              "RelativeToolTip": "Infrastracture\\Repositories\\TraineeRepository.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T11:34:38.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ITraineeRepository.cs",
-              "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\ITraineeRepository.cs",
-              "RelativeDocumentMoniker": "Application\\IRepository\\ITraineeRepository.cs",
-              "ToolTip": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\ITraineeRepository.cs",
-              "RelativeToolTip": "Application\\IRepository\\ITraineeRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T11:31:40.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "IYearRepository.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Application\\IRepository\\IYearRepository.cs",
               "RelativeDocumentMoniker": "Application\\IRepository\\IYearRepository.cs",
@@ -497,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "YearRepository.cs",
               "DocumentMoniker": "D:\\UIR_project\\GestionDocument\\EditionDesDocument\\Infrastracture\\Repositories\\YearRepository.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Repositories\\YearRepository.cs",

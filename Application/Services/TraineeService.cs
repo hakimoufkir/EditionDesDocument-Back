@@ -93,7 +93,7 @@ namespace Application.Services
 
         public async Task DeleteTraineeAsync(Guid IdTrainee)
         {
-            // Check if the trainee exists
+           
             Trainee trainee = await _unitOfWork.TraineeRepository.GetAsNoTracking(u => u.Id == IdTrainee);
             if (trainee == null)
             {
@@ -102,7 +102,7 @@ namespace Application.Services
 
             try
             {
-                // Delete the trainee
+               
                 await _unitOfWork.TraineeRepository.RemoveAsync(trainee);
                 await _unitOfWork.CommitAsync();
             }

@@ -13,6 +13,7 @@ namespace Application.Interfaces
 
         ITraineeService TraineeService { get; }
         IYearService YearService { get; }
+        IGroupService GroupService { get; }
 
 
     }

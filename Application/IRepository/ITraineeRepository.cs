@@ -13,6 +13,7 @@ namespace Application.IRepository
         Task<Trainee> GetByIdAsync(Guid id);
         Task UpdateAsync(Trainee trainee);
         Task CreateAsync(Trainee trainee);
-        Task<List<Trainee>> GetAllAsNoTracking();
+
+        //Task<List<Trainee>> GetAllAsNoTracking();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Application.IRepository;
 using Application.IUnitOfWorks;
 using Infrastructure.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -12,20 +13,27 @@ namespace Infrastructure.Repositories
 
         public ITraineeRepository TraineeRepository { get; }
         public IYearRepository YearRepository { get; }
+        public IGroupRepository GroupRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository)
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository, IGroupRepository groupRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
             DocumentRepository = documentRepository;
             TraineeRepository = traineeRepository;
             YearRepository = yearRepository;
+            GroupRepository = groupRepository;
         }   
 
         public void Commit()
         {
             _dbContext.SaveChanges();
         }
+
+        //public async Task CommitAsync()
+        //{
+        //   await _dbContext.SaveChangesAsync();
+        //}
 
         public async Task CommitAsync()
         {
@@ -34,9 +42,11 @@ namespace Infrastructure.Repositories
                 await _dbContext.SaveChangesAsync();
 
             }
-            catch (Exception ex) 
+            catch (DbUpdateException ex)
             {
-                throw new ApplicationException($"Saving the Error{ex.Message} {ex.StackTrace}",ex);
+                var innerException = ex.InnerException != null ? $" Inner exception: {ex.InnerException.Message}" : string.Empty;
+                throw new ApplicationException($"An error occurred while saving changes to the database.{innerException}", ex);
+
             }
         }
 

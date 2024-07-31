@@ -23,6 +23,7 @@ namespace Infrastructure
             services.AddTransient<IDocumentService,DocumentService>();
             services.AddTransient<ITraineeService, TraineeService>();
             services.AddTransient<IYearService, YearService>();
+            services.AddTransient<IGroupService, GroupService>();
 
             // Kafka Producer Services
             services.AddSingleton<ListTraineeProducer>(sp =>
