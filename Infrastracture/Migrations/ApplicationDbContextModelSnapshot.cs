@@ -54,10 +54,10 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("9715bb1e-b368-4a10-b3b7-5c3e381ab9a0"),
-                            CreatedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7977),
+                            Id = new Guid("c0449e76-caf5-40f4-9780-04fb28a8539b"),
+                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4820),
                             InstantJSON = "{\r\n                            \"documentId\": \"SGS5RehxYUyGZIpdckC0Nw==\",\r\n                            \"instantJSON\": {\r\n                                \"annotations\": [\r\n                                    {\r\n                                        \"bbox\": [\r\n                                            147.92001342773438,\r\n                                            206.239990234375,\r\n                                            306.55999755859375,\r\n                                            32\r\n                                        ],\r\n                                        \"borderStyle\": \"solid\",\r\n                                        \"borderWidth\": 1,\r\n                                        \"createdAt\": \"2024-07-21T15:04:32Z\",\r\n                                        \"creatorName\": \"{\\\"Document\\\":\\\"Ttire\\\"}\",\r\n                                        \"customData\": {\r\n                                            \"User\": \"FirstName\",\r\n                                            \"value\": \"\"\r\n                                        },\r\n                                        \"font\": \"Helvetica\",\r\n                                        \"fontSize\": 12,\r\n                                        \"formFieldName\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"horizontalAlign\": \"left\",\r\n                                        \"id\": \"01J3AX5BW5V77M2C7YBJRN1WGS\",\r\n                                        \"lineHeightFactor\": 1.186000108718872,\r\n                                        \"name\": \"01J3AX5BW6J3YBJBZF3ABV0ZE4\",\r\n                                        \"opacity\": 1,\r\n                                        \"pageIndex\": 0,\r\n                                        \"rotation\": 0,\r\n                                        \"type\": \"pspdfkit/widget\",\r\n                                        \"updatedAt\": \"2024-07-21T15:04:56Z\",\r\n                                        \"v\": 2,\r\n                                        \"verticalAlign\": \"center\"\r\n                                    }\r\n                                ],\r\n                                \"formFields\": [\r\n                                    {\r\n                                        \"annotationIds\": [\r\n                                            \"01J3AX5BW5V77M2C7YBJRN1WGS\"\r\n                                        ],\r\n                                        \"comb\": false,\r\n                                        \"defaultValue\": \"\",\r\n                                        \"doNotScroll\": false,\r\n                                        \"doNotSpellCheck\": false,\r\n                                        \"id\": \"01J3AX64W4SJSJA90NQRAMJCGC\",\r\n                                        \"label\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"multiLine\": false,\r\n                                        \"name\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"password\": false,\r\n                                        \"pdfObjectId\": 94,\r\n                                        \"richText\": false,\r\n                                        \"type\": \"pspdfkit/form-field/text\",\r\n                                        \"v\": 1\r\n                                    }\r\n                                ],\r\n                                \"format\": \"https://pspdfkit.com/instant-json/v1\",\r\n                                \"pdfId\": {\r\n                                    \"changing\": \"QV5CW7SEzOfM3vnnwDZlRA==\",\r\n                                    \"permanent\": \"SGS5RehxYUyGZIpdckC0Nw==\"\r\n                                }\r\n                            }\r\n                        }",
-                            LastModifiedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7986),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4823),
                             PathFile = "https://blobstoragedbdemo.blob.core.windows.net/smsproject/00deed32-72c9-4322-b928-265ba7184a1d.pdf"
                         });
                 });
@@ -193,25 +193,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3e00062b-abea-44cf-8d5f-175faf39a1f2"),
-                            CreatedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7322),
+                            Id = new Guid("536b4df7-34e0-4997-bbe5-308e6c3ae242"),
+                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4572),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("c4cb918a-a1ad-40f0-8213-2ab43b6a9763"),
-                            LastModifiedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7421),
-                            ModeleId = new Guid("fbbd8033-88f8-46c6-a741-8577a9f4b383"),
+                            IdTrainee = new Guid("80adbf0d-eed7-4269-bfdb-186109e68ece"),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4611),
+                            ModeleId = new Guid("10284f49-3079-4fa1-a79e-9cc0589dfdf1"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("3da185dd-0abc-4c32-b2d0-fe56414590ff"),
-                            CreatedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7470),
+                            Id = new Guid("3c42fcba-9890-4e4d-8c02-92fa1dcc7041"),
+                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4644),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("8a163d7d-cd8e-40ed-b704-59289fd081c3"),
-                            LastModifiedDate = new DateTime(2024, 7, 26, 2, 2, 20, 262, DateTimeKind.Local).AddTicks(7474),
-                            ModeleId = new Guid("9bf9d666-f1ce-4ab2-b49c-dfe8fb4f542e"),
+                            IdTrainee = new Guid("8612e042-9b21-439c-9d38-94fd00eba0ec"),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4645),
+                            ModeleId = new Guid("d39ac185-a36f-4327-81dc-01dc7b39994f"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });
@@ -421,7 +421,7 @@ namespace Infrastracture.Migrations
             modelBuilder.Entity("Domain.Entities.Group", b =>
                 {
                     b.HasOne("Domain.Entities.Year", "Year")
-                        .WithMany("Groups")
+                        .WithMany()
                         .HasForeignKey("IdYear");
 
                     b.Navigation("Year");
@@ -455,11 +455,6 @@ namespace Infrastracture.Migrations
             modelBuilder.Entity("Domain.Entities.Trainee", b =>
                 {
                     b.Navigation("Payments");
-                });
-
-            modelBuilder.Entity("Domain.Entities.Year", b =>
-                {
-                    b.Navigation("Groups");
                 });
 #pragma warning restore 612, 618
         }

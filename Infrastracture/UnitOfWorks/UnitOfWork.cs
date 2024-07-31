@@ -12,15 +12,16 @@ namespace Infrastructure.Repositories
         public IDocumentRepository DocumentRepository { get; }
 
         public ITraineeRepository TraineeRepository { get; }
-
+        public IYearRepository YearRepository { get; }
         public IGroupRepository GroupRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository , IGroupRepository groupRepository)
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository, IGroupRepository groupRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
             DocumentRepository = documentRepository;
             TraineeRepository = traineeRepository;
+            YearRepository = yearRepository;
             GroupRepository = groupRepository;
         }   
 
@@ -39,11 +40,13 @@ namespace Infrastructure.Repositories
             try
             {
                 await _dbContext.SaveChangesAsync();
+
             }
             catch (DbUpdateException ex)
             {
                 var innerException = ex.InnerException != null ? $" Inner exception: {ex.InnerException.Message}" : string.Empty;
                 throw new ApplicationException($"An error occurred while saving changes to the database.{innerException}", ex);
+
             }
         }
 

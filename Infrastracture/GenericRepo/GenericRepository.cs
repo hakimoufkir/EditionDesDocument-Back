@@ -59,7 +59,14 @@ namespace Infrastructure.Repositories
         }
         public async Task CreateAsync(T entity)
         {
-            await dbSet.AddAsync(entity);
+            try
+            {
+                await dbSet.AddAsync(entity);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException($"The error in generic {ex.Message} {ex.StackTrace}", ex);
+            }
         }
         public async Task<T> GetAsync(Expression<Func<T, bool>> filter = null)
         {

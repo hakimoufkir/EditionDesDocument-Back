@@ -8,7 +8,7 @@ namespace Application.Features.RequestFeature.Commands.UpdateRequest
     {
         public Guid Id { get; set; }
         public DocumentStatus DocumentStatus { get; set; }
-
-        public string ReasonRejection { get; set; }     
+        
+        public string ReasonRejection { get; set; } 
     }
 }

@@ -6,6 +6,7 @@ using Application.Features.GroupFeature.Commands.AddGroup;
 using Application.Features.RequestFeature.Commands.AddRequest;
 using Application.Features.RequestFeature.Commands.UpdateRequest;
 using Application.Features.TraineeFeature.Commands.UpdateTrainee;
+using Application.Features.YearFeature.Command.AddYear;
 using AutoMapper;
 using Domain.Dtos;
 using Domain.Entities;
@@ -40,6 +41,7 @@ namespace EventService.Application.Mapping
 
             CreateMap<TraineeDto, Trainee>();
             CreateMap<PaymentDto, Payment>();
+            CreateMap<AddYearCommand, Year>().ReverseMap();
 
             // Group Mapping
             CreateMap<GroupDto, Group>().ReverseMap();
