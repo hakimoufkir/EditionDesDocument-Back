@@ -54,10 +54,10 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c0449e76-caf5-40f4-9780-04fb28a8539b"),
-                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4820),
+                            Id = new Guid("1fc8ad35-1264-4f0b-9122-38801227cbc8"),
+                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(9175),
                             InstantJSON = "{\r\n                            \"documentId\": \"SGS5RehxYUyGZIpdckC0Nw==\",\r\n                            \"instantJSON\": {\r\n                                \"annotations\": [\r\n                                    {\r\n                                        \"bbox\": [\r\n                                            147.92001342773438,\r\n                                            206.239990234375,\r\n                                            306.55999755859375,\r\n                                            32\r\n                                        ],\r\n                                        \"borderStyle\": \"solid\",\r\n                                        \"borderWidth\": 1,\r\n                                        \"createdAt\": \"2024-07-21T15:04:32Z\",\r\n                                        \"creatorName\": \"{\\\"Document\\\":\\\"Ttire\\\"}\",\r\n                                        \"customData\": {\r\n                                            \"User\": \"FirstName\",\r\n                                            \"value\": \"\"\r\n                                        },\r\n                                        \"font\": \"Helvetica\",\r\n                                        \"fontSize\": 12,\r\n                                        \"formFieldName\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"horizontalAlign\": \"left\",\r\n                                        \"id\": \"01J3AX5BW5V77M2C7YBJRN1WGS\",\r\n                                        \"lineHeightFactor\": 1.186000108718872,\r\n                                        \"name\": \"01J3AX5BW6J3YBJBZF3ABV0ZE4\",\r\n                                        \"opacity\": 1,\r\n                                        \"pageIndex\": 0,\r\n                                        \"rotation\": 0,\r\n                                        \"type\": \"pspdfkit/widget\",\r\n                                        \"updatedAt\": \"2024-07-21T15:04:56Z\",\r\n                                        \"v\": 2,\r\n                                        \"verticalAlign\": \"center\"\r\n                                    }\r\n                                ],\r\n                                \"formFields\": [\r\n                                    {\r\n                                        \"annotationIds\": [\r\n                                            \"01J3AX5BW5V77M2C7YBJRN1WGS\"\r\n                                        ],\r\n                                        \"comb\": false,\r\n                                        \"defaultValue\": \"\",\r\n                                        \"doNotScroll\": false,\r\n                                        \"doNotSpellCheck\": false,\r\n                                        \"id\": \"01J3AX64W4SJSJA90NQRAMJCGC\",\r\n                                        \"label\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"multiLine\": false,\r\n                                        \"name\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"password\": false,\r\n                                        \"pdfObjectId\": 94,\r\n                                        \"richText\": false,\r\n                                        \"type\": \"pspdfkit/form-field/text\",\r\n                                        \"v\": 1\r\n                                    }\r\n                                ],\r\n                                \"format\": \"https://pspdfkit.com/instant-json/v1\",\r\n                                \"pdfId\": {\r\n                                    \"changing\": \"QV5CW7SEzOfM3vnnwDZlRA==\",\r\n                                    \"permanent\": \"SGS5RehxYUyGZIpdckC0Nw==\"\r\n                                }\r\n                            }\r\n                        }",
-                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4823),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(9178),
                             PathFile = "https://blobstoragedbdemo.blob.core.windows.net/smsproject/00deed32-72c9-4322-b928-265ba7184a1d.pdf"
                         });
                 });
@@ -193,25 +193,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("536b4df7-34e0-4997-bbe5-308e6c3ae242"),
-                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4572),
+                            Id = new Guid("677a3621-1c91-4590-bdde-d2597e8e3618"),
+                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8827),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("80adbf0d-eed7-4269-bfdb-186109e68ece"),
-                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4611),
-                            ModeleId = new Guid("10284f49-3079-4fa1-a79e-9cc0589dfdf1"),
+                            IdTrainee = new Guid("e8b0a8cc-22a4-4383-a69c-0974578d050c"),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8864),
+                            ModeleId = new Guid("99073c62-292f-441a-adca-3fe0bd3259fe"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("3c42fcba-9890-4e4d-8c02-92fa1dcc7041"),
-                            CreatedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4644),
+                            Id = new Guid("9314e8cc-3c7b-43f8-9c5c-03ab608ba4b7"),
+                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8897),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("8612e042-9b21-439c-9d38-94fd00eba0ec"),
-                            LastModifiedDate = new DateTime(2024, 7, 31, 15, 13, 4, 922, DateTimeKind.Local).AddTicks(4645),
-                            ModeleId = new Guid("d39ac185-a36f-4327-81dc-01dc7b39994f"),
+                            IdTrainee = new Guid("39167dda-c930-4df6-aade-8b953ce70487"),
+                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8898),
+                            ModeleId = new Guid("fc5c36a5-b976-4d27-908b-a6c91e156a6a"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });
@@ -298,6 +298,9 @@ namespace Infrastracture.Migrations
                     b.Property<string>("HighSchoolName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("HighSchoolType")
+                        .HasColumnType("int");
+
                     b.Property<Guid?>("IdFiliere")
                         .HasColumnType("uniqueidentifier");
 
@@ -378,6 +381,9 @@ namespace Infrastracture.Migrations
 
                     b.Property<string>("UniversityName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UniversityType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

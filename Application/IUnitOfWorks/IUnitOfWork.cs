@@ -13,7 +13,7 @@ public interface IUnitOfWork
     ITraineeRepository TraineeRepository { get; }
     IYearRepository YearRepository { get; }
 
-   IGroupRepository GroupRepository { get; }
+    IGroupRepository GroupRepository { get; }
    
     void Commit();
     Task CommitAsync();

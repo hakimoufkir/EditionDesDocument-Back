@@ -23,6 +23,7 @@ namespace Application.Services
         {
             var years = _mapper.Map<Year>(year);
             await _unitOfWork.YearRepository.CreateAsync(years);
+            await _unitOfWork.CommitAsync();
             return years;
         }
 

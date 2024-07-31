@@ -41,6 +41,8 @@ namespace EventService.Application.Mapping
 
             CreateMap<TraineeDto, Trainee>();
             CreateMap<PaymentDto, Payment>();
+
+            // Year Mapping
             CreateMap<AddYearCommand, Year>().ReverseMap();
 
             // Group Mapping

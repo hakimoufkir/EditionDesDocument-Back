@@ -33,7 +33,7 @@ namespace Api.Controllers
                 }
 
                 GroupDto addedGroup = await _mediator.Send(new AddGroupCommand(group));
-                return Ok("Trainee added successfully!");
+                return Ok("Group added successfully!");
             }
             catch (Exception ex)
             {
