@@ -16,6 +16,9 @@
 		<Folder Include="Features\GroupFeature\Commands\DeleteGroup\" />
 		<Folder Include="Features\GroupFeature\Commands\UpdateGroup\" />
 		<Folder Include="Features\GroupFeature\Queries\GetGroupByIdQuery\" />
+		<Folder Include="Features\PaymentFeature\Commands\DeletePayment\" />
+		<Folder Include="Features\PaymentFeature\Commands\UpdatePayment\" />
+		<Folder Include="Features\PaymentFeature\Queries\GetPaymentByIdQuery\" />
 	</ItemGroup>
 
 	<ItemGroup>

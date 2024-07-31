@@ -14,6 +14,8 @@ public interface IUnitOfWork
     IYearRepository YearRepository { get; }
 
     IGroupRepository GroupRepository { get; }
+
+    IPaymentRepository PaymentRepository { get; }
    
     void Commit();
     Task CommitAsync();

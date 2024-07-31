@@ -48,6 +48,11 @@ namespace EventService.Application.Mapping
             // Group Mapping
             CreateMap<GroupDto, Group>().ReverseMap();
             CreateMap<AddGroupCommand, Group>().ReverseMap();
+
+
+            //Payment Mapping
+            CreateMap<Payment, PaymentDto>().ReverseMap();
+
         }
     }
 }

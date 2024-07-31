@@ -15,6 +15,8 @@ namespace Application.Interfaces
         IYearService YearService { get; }
         IGroupService GroupService { get; }
 
+        IPaymentService PaymentService { get; }
+
 
     }
 }

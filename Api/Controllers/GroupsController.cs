@@ -23,7 +23,7 @@ namespace Api.Controllers
 
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddTrainee([FromBody] GroupDto group)
+        public async Task<IActionResult> AddGroup([FromBody] GroupDto group)
         {
             try
             {
