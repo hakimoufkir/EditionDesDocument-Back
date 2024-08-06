@@ -11,6 +11,7 @@ public class Document : Base
 
     public string? InstantJSON { get; set; }
 
-    // public string Type { get; set; }
+    public bool? FirstYear { get; set; }
+    public bool? SecondYear { get; set; }
 
 }
