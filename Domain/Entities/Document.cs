@@ -11,4 +11,6 @@ public class Document : Base
 
     public string? InstantJSON { get; set; }
 
+    // public string Type { get; set; }
+
 }

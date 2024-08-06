@@ -16,41 +16,56 @@ namespace Application.Broker.Consumer
         public ListTraineeConsumer(IConsumer<Null, string> consumer, ILogger<ListTraineeConsumer> logger)
         {
             _consumer = consumer;
-            _topic = "InscriptionServiceRequestMiddleWare";
+            _topic = "ListTraineesForDocumentsService";
             _logger = logger;
         }
 
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            return Task.Run(() =>
+            _consumer.Subscribe(_topic);
+            try
             {
-                _consumer.Subscribe(_topic);
-
-                try
+                while (!stoppingToken.IsCancellationRequested)
                 {
-                    while (!stoppingToken.IsCancellationRequested)
-                    {
-                        var consumeResult = _consumer.Consume(stoppingToken);
-                        // Process message
-                        _logger.LogInformation($"Received message: {consumeResult.Message.Value}");
-                    }
+                    await ProcessKafkaMessage(stoppingToken);
+                    await Task.Delay(TimeSpan.FromSeconds(1), stoppingToken);
                 }
-                catch (OperationCanceledException)
-                {
-                    // Ensure the consumer is closed properly
-                    _consumer.Close();
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError($"Error consuming Kafka message: {ex.Message}");
-                }
-            }, stoppingToken);
+            }
+            catch (OperationCanceledException)
+            {
+            
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while executing the Kafka consumer service.");
+            }
+            finally
+            {
+                _consumer.Close();
+                _consumer.Dispose();
+            }
         }
 
-        public override async Task StopAsync(CancellationToken cancellationToken)
+        // public override async Task StopAsync(CancellationToken cancellationToken)
+        // {
+        //     await base.StopAsync(cancellationToken);
+        //     _consumer.Close();
+        // }
+        private async Task ProcessKafkaMessage(CancellationToken stoppingToken)
         {
-            await base.StopAsync(cancellationToken);
-            _consumer.Close();
+            try
+            {
+                var consumeResult = _consumer.Consume(TimeSpan.FromSeconds(1));
+                if (consumeResult?.Message?.Value != null)
+                {
+                    string message = consumeResult.Message.Value;
+                    _logger.LogInformation($"Received unknown message: {message}");
+                }
+            }
+            catch (ConsumeException ex)
+            {
+                _logger.LogError(ex, "Error consuming Kafka message");
+            }
         }
     }
 }
