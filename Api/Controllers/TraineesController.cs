@@ -86,7 +86,6 @@ namespace Api.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception details here
                 return StatusCode(500, $"An error occurred while updating the Trainee. Details: {ex.Message}");
             }
         }

@@ -1,6 +1,7 @@
 ﻿using Application.IRepository;
 using Application.IUnitOfWorks;
 using Infrastructure.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -11,13 +12,20 @@ namespace Infrastructure.Repositories
         public IDocumentRepository DocumentRepository { get; }
 
         public ITraineeRepository TraineeRepository { get; }
+        public IYearRepository YearRepository { get; }
+        public IGroupRepository GroupRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository)
+        public IPaymentRepository PaymentRepository { get; }
+
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository, IGroupRepository groupRepository , IPaymentRepository paymentRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
             DocumentRepository = documentRepository;
             TraineeRepository = traineeRepository;
+            YearRepository = yearRepository;
+            GroupRepository = groupRepository;
+            PaymentRepository = paymentRepository;
         }   
 
         public void Commit()
@@ -25,9 +33,24 @@ namespace Infrastructure.Repositories
             _dbContext.SaveChanges();
         }
 
+        //public async Task CommitAsync()
+        //{
+        //   await _dbContext.SaveChangesAsync();
+        //}
+
         public async Task CommitAsync()
         {
-           await _dbContext.SaveChangesAsync();
+            try
+            {
+                await _dbContext.SaveChangesAsync();
+
+            }
+            catch (DbUpdateException ex)
+            {
+                var innerException = ex.InnerException != null ? $" Inner exception: {ex.InnerException.Message}" : string.Empty;
+                throw new ApplicationException($"An error occurred while saving changes to the database.{innerException}", ex);
+
+            }
         }
 
         public void Rollback()

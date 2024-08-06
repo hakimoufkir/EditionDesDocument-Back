@@ -1,10 +1,4 @@
-﻿using Domain.Entities;
-using Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Enums;
 using static Domain.Enums.ResponsStutusHandler;
 
 namespace Domain.Dtos
@@ -56,6 +50,10 @@ namespace Domain.Dtos
         public StatusInscription? RegistrationStatus { get; set; }
         public bool? IsWaitingList { get; set; }
         public Guid? IdFiliere { get; set; }
+        //[ForeignKey("Group")]
+        //public Guid IdGroup { get; set; } 
+        //[JsonIgnore]
+        //public Group? Group { get; set; }
         public List<PaymentDto>? Payments { get; set; }
         public string? FieldJSON { get; set; }
         public AnneeScolaire? AnneeScolaire { get; set; }

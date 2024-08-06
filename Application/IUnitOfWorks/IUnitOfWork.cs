@@ -11,6 +11,11 @@ public interface IUnitOfWork
     IDocumentRepository DocumentRepository { get; }
 
     ITraineeRepository TraineeRepository { get; }
+    IYearRepository YearRepository { get; }
+
+    IGroupRepository GroupRepository { get; }
+
+    IPaymentRepository PaymentRepository { get; }
    
     void Commit();
     Task CommitAsync();

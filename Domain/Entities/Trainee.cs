@@ -1,16 +1,17 @@
 ﻿using Domain.Common;
 using Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+//using System;
+//using System.Collections.Generic;
+//using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Reflection;
-using System.Text;
+//using System.Linq;
+//using System.Reflection;
+//using System.Text;
 using System.Text.Json.Serialization;
-using System.Text.RegularExpressions;
+//using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static Domain.Enums.ResponsStutusHandler;
+
 
 
 namespace Domain.Entities
@@ -49,11 +50,11 @@ namespace Domain.Entities
         public string? HighSchoolName { get; set; }
         public string? HighSchoolCity { get; set; }
         public string? HighSchoolCountry { get; set; }
-        //public Type? HighSchoolType { get; set; }
+        public Enums.Type? HighSchoolType { get; set; }
 
         public UniversityType? UniversityDegreeType { get; set; }
         public string? UniversityName { get; set; }
-        //public Type? UniversityType { get; set; }
+        public Enums.Type? UniversityType { get; set; }
         public string? UniversityCity { get; set; }
         public string? UniversityCountry { get; set; }
         public string? StudiesCompleted { get; set; }
@@ -70,10 +71,10 @@ namespace Domain.Entities
 
         public Guid? IdFiliere { get; set; }
 
-        //[ForeignKey("Group")]
-        //public Guid? IdGroup { get; set; }
-        //[JsonIgnore]
-        //public Group? Group { get; set; }
+        [ForeignKey("Group")]
+        public Guid? IdGroup { get; set; } 
+        [JsonIgnore]
+        public Group? Group { get; set; }
 
         public List<Payment>? Payments { get; set; }
 

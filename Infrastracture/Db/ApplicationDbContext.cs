@@ -12,15 +12,17 @@ namespace Infrastructure.Infrastructure.Data
 
 
 
-
+       
         public DbSet<Request> Requests { get; set; }
         public DbSet<Document> Documents { get; set; }
 
         public DbSet<Trainee> Trainees { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Year> Years { get; set; }
+        public DbSet<Group> Groups { get; set; }
 
 
 
-       
 
 
 
