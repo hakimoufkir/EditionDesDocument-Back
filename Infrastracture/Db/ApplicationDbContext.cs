@@ -70,7 +70,7 @@ namespace Infrastructure.Infrastructure.Data
                     new Document
                     {
                         Id = Guid.NewGuid(),
-                        PathFile = "https://blobstoragedbdemo.blob.core.windows.net/smsproject/00deed32-72c9-4322-b928-265ba7184a1d.pdf",
+                        PathFile = "https://smsproject.blob.core.windows.net/sms/fa0110fe-58b9-46c0-9835-59580685fb9f.pdf",
                         InstantJSON = @"{
                             ""documentId"": ""SGS5RehxYUyGZIpdckC0Nw=="",
                             ""instantJSON"": {
@@ -132,7 +132,9 @@ namespace Infrastructure.Infrastructure.Data
                                     ""permanent"": ""SGS5RehxYUyGZIpdckC0Nw==""
                                 }
                             }
-                        }"
+                        }",
+                        FirstYear= true,
+                        SecondYear=false
                     }
                 );
             });
