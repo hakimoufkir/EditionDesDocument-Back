@@ -19,13 +19,15 @@ namespace Application.Services
 
         public IGroupService GroupService { get; set; }
 
+        public IPaymentService PaymentService { get; set; }
+
 
 
         #endregion
 
         #region Constructor
 
-        public UnitOfService(IMapper mapper, IRequestService requestService, IFileManagementService fileManagementService, IDocumentService documentService, ITraineeService traineeService, IYearService yearService, IGroupService groupService)
+        public UnitOfService(IMapper mapper, IRequestService requestService, IFileManagementService fileManagementService, IDocumentService documentService, ITraineeService traineeService, IYearService yearService, IGroupService groupService, IPaymentService paymentService)
 
         {
             Mapper = mapper;
@@ -35,6 +37,7 @@ namespace Application.Services
             TraineeService = traineeService;
             YearService = yearService;
             GroupService = groupService;
+            PaymentService = paymentService;
         }
 
 

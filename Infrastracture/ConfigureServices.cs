@@ -25,7 +25,7 @@ namespace Infrastructure
             services.AddScoped<IRequestService, RequestService>();
             services.AddScoped<ITraineeRepository, TraineeRepository>();
             services.AddScoped<IYearRepository, YearRepository>();
-            //services.AddScoped<IYearService, YearService>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
 
 
 

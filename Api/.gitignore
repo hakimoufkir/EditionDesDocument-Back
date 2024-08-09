@@ -105,3 +105,6 @@ StyleCopReport.xml
 
 # Windows shortcuts
 *.lnk
+
+# My configuration
+appsettings.json

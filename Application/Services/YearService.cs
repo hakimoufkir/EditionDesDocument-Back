@@ -23,6 +23,7 @@ namespace Application.Services
         {
             var years = _mapper.Map<Year>(year);
             await _unitOfWork.YearRepository.CreateAsync(years);
+            await _unitOfWork.CommitAsync();
             return years;
         }
 
@@ -30,5 +31,39 @@ namespace Application.Services
         {
             return await _unitOfWork.YearRepository.GetAllAsNoTracking();
         }
+
+        public async Task<Year> UpdateYearAsync(Year year)
+        {
+            // Retrieve existing year from the repository
+            var existingYear = await _unitOfWork.YearRepository.GetAsNoTracking(y => y.Id == year.Id);
+            if (existingYear == null)
+            {
+                throw new KeyNotFoundException("Year not found");
+            }
+
+            // Update the existing year with the new values
+            _mapper.Map(year, existingYear);
+
+            // Save changes
+            await _unitOfWork.YearRepository.UpdateAsync(existingYear);
+            await _unitOfWork.CommitAsync();
+
+            return existingYear;
+        }
+
+        public async Task DeleteYearAsync(Guid yearId)
+        {
+            // Retrieve the year to be deleted
+            var year = await _unitOfWork.YearRepository.GetAsNoTracking(y => y.Id == yearId);
+            if (year == null)
+            {
+                throw new KeyNotFoundException("Year not found");
+            }
+
+            // Remove the year
+            await _unitOfWork.YearRepository.RemoveAsync(year);
+            await _unitOfWork.CommitAsync();
+        }
+
     }
 }

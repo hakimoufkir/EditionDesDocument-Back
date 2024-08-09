@@ -15,7 +15,9 @@ namespace Infrastructure.Repositories
         public IYearRepository YearRepository { get; }
         public IGroupRepository GroupRepository { get; }
 
-        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository, IGroupRepository groupRepository)
+        public IPaymentRepository PaymentRepository { get; }
+
+        public UnitOfWork(ApplicationDbContext dbContext, IRequestRepository requestRepository,  IDocumentRepository documentRepository, ITraineeRepository traineeRepository, IYearRepository yearRepository, IGroupRepository groupRepository , IPaymentRepository paymentRepository)
         {
             _dbContext = dbContext;
             RequestRepository = requestRepository;
@@ -23,6 +25,7 @@ namespace Infrastructure.Repositories
             TraineeRepository = traineeRepository;
             YearRepository = yearRepository;
             GroupRepository = groupRepository;
+            PaymentRepository = paymentRepository;
         }   
 
         public void Commit()

@@ -23,7 +23,7 @@ namespace Api.Controllers
 
 
         [HttpPost("add")]
-        public async Task<IActionResult> AddTrainee([FromBody] GroupDto group)
+        public async Task<IActionResult> AddGroup([FromBody] GroupDto group)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace Api.Controllers
                 }
 
                 GroupDto addedGroup = await _mediator.Send(new AddGroupCommand(group));
-                return Ok("Trainee added successfully!");
+                return Ok("Group added successfully!");
             }
             catch (Exception ex)
             {
