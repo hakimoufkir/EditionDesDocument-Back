@@ -34,6 +34,9 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool?>("FirstYear")
+                        .HasColumnType("bit");
+
                     b.Property<string>("InstantJSON")
                         .HasColumnType("nvarchar(max)");
 
@@ -47,6 +50,9 @@ namespace Infrastracture.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool?>("SecondYear")
+                        .HasColumnType("bit");
+
                     b.HasKey("Id");
 
                     b.ToTable("Documents");
@@ -54,11 +60,13 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1fc8ad35-1264-4f0b-9122-38801227cbc8"),
-                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(9175),
+                            Id = new Guid("c87a7f77-7dd9-448b-9214-1f8544f1530e"),
+                            CreatedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(1917),
+                            FirstYear = true,
                             InstantJSON = "{\r\n                            \"documentId\": \"SGS5RehxYUyGZIpdckC0Nw==\",\r\n                            \"instantJSON\": {\r\n                                \"annotations\": [\r\n                                    {\r\n                                        \"bbox\": [\r\n                                            147.92001342773438,\r\n                                            206.239990234375,\r\n                                            306.55999755859375,\r\n                                            32\r\n                                        ],\r\n                                        \"borderStyle\": \"solid\",\r\n                                        \"borderWidth\": 1,\r\n                                        \"createdAt\": \"2024-07-21T15:04:32Z\",\r\n                                        \"creatorName\": \"{\\\"Document\\\":\\\"Ttire\\\"}\",\r\n                                        \"customData\": {\r\n                                            \"User\": \"FirstName\",\r\n                                            \"value\": \"\"\r\n                                        },\r\n                                        \"font\": \"Helvetica\",\r\n                                        \"fontSize\": 12,\r\n                                        \"formFieldName\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"horizontalAlign\": \"left\",\r\n                                        \"id\": \"01J3AX5BW5V77M2C7YBJRN1WGS\",\r\n                                        \"lineHeightFactor\": 1.186000108718872,\r\n                                        \"name\": \"01J3AX5BW6J3YBJBZF3ABV0ZE4\",\r\n                                        \"opacity\": 1,\r\n                                        \"pageIndex\": 0,\r\n                                        \"rotation\": 0,\r\n                                        \"type\": \"pspdfkit/widget\",\r\n                                        \"updatedAt\": \"2024-07-21T15:04:56Z\",\r\n                                        \"v\": 2,\r\n                                        \"verticalAlign\": \"center\"\r\n                                    }\r\n                                ],\r\n                                \"formFields\": [\r\n                                    {\r\n                                        \"annotationIds\": [\r\n                                            \"01J3AX5BW5V77M2C7YBJRN1WGS\"\r\n                                        ],\r\n                                        \"comb\": false,\r\n                                        \"defaultValue\": \"\",\r\n                                        \"doNotScroll\": false,\r\n                                        \"doNotSpellCheck\": false,\r\n                                        \"id\": \"01J3AX64W4SJSJA90NQRAMJCGC\",\r\n                                        \"label\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"multiLine\": false,\r\n                                        \"name\": \"TEXT_WIDGET_01J3AX5BW5Q4S6YGEEERR87PJ3\",\r\n                                        \"password\": false,\r\n                                        \"pdfObjectId\": 94,\r\n                                        \"richText\": false,\r\n                                        \"type\": \"pspdfkit/form-field/text\",\r\n                                        \"v\": 1\r\n                                    }\r\n                                ],\r\n                                \"format\": \"https://pspdfkit.com/instant-json/v1\",\r\n                                \"pdfId\": {\r\n                                    \"changing\": \"QV5CW7SEzOfM3vnnwDZlRA==\",\r\n                                    \"permanent\": \"SGS5RehxYUyGZIpdckC0Nw==\"\r\n                                }\r\n                            }\r\n                        }",
-                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(9178),
-                            PathFile = "https://blobstoragedbdemo.blob.core.windows.net/smsproject/00deed32-72c9-4322-b928-265ba7184a1d.pdf"
+                            LastModifiedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(1946),
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/fa0110fe-58b9-46c0-9835-59580685fb9f.pdf",
+                            SecondYear = false
                         });
                 });
 
@@ -193,25 +201,25 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("677a3621-1c91-4590-bdde-d2597e8e3618"),
-                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8827),
+                            Id = new Guid("8d1902b5-1ca7-4998-ab65-c56940c7ea6f"),
+                            CreatedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(756),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("e8b0a8cc-22a4-4383-a69c-0974578d050c"),
-                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8864),
-                            ModeleId = new Guid("99073c62-292f-441a-adca-3fe0bd3259fe"),
+                            IdTrainee = new Guid("c168e28d-4c1c-41b8-b417-364962f5c0a5"),
+                            LastModifiedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(1017),
+                            ModeleId = new Guid("c6100cfc-3dec-49c9-b5cf-c5184bcddb26"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("9314e8cc-3c7b-43f8-9c5c-03ab608ba4b7"),
-                            CreatedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8897),
+                            Id = new Guid("7ba47285-4be8-4bcc-a0e8-add8be70f4a3"),
+                            CreatedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(1118),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("39167dda-c930-4df6-aade-8b953ce70487"),
-                            LastModifiedDate = new DateTime(2024, 7, 31, 7, 50, 52, 994, DateTimeKind.Local).AddTicks(8898),
-                            ModeleId = new Guid("fc5c36a5-b976-4d27-908b-a6c91e156a6a"),
+                            IdTrainee = new Guid("5204e113-7a03-414a-9487-bfdb6f066ee4"),
+                            LastModifiedDate = new DateTime(2024, 8, 9, 17, 51, 26, 647, DateTimeKind.Local).AddTicks(1125),
+                            ModeleId = new Guid("05841ccc-bdbd-4c09-ac33-889d94fbf793"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });

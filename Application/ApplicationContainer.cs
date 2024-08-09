@@ -29,7 +29,7 @@ namespace Infrastructure
             // Kafka Producer Services
             services.AddSingleton<ListTraineeProducer>(sp =>
             {
-                var producerConfig = new ProducerConfig { BootstrapServers = "localhost:9092" };
+                var producerConfig = new ProducerConfig { BootstrapServers = "156.67.81.207:9092" };
                 var producerBuilder = new ProducerBuilder<Null, string>(producerConfig).Build();
                 return new ListTraineeProducer(producerBuilder);
             });
@@ -40,7 +40,7 @@ namespace Infrastructure
                 var config = new ConsumerConfig
                 {
                     GroupId = "EditionDesDocument",
-                    BootstrapServers = "localhost:9092",
+                    BootstrapServers = "156.67.81.207:9092",
                     AutoOffsetReset = AutoOffsetReset.Earliest
                 };
                 return new ConsumerBuilder<Null, string>(config).Build();
