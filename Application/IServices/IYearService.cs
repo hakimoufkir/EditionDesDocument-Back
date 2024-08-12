@@ -11,5 +11,9 @@ namespace Application.IServices
     {
         Task<Year> CreateYearAsync(Year year);
         Task<List<Year>> GetAllYearsAsync();
+
+        Task<Year> UpdateYearAsync(Year year);
+        Task DeleteYearAsync(Guid yearId);
+
     }
 }

@@ -15,4 +15,8 @@ public class Request : Base
     public DocumentStatus DocumentStatus{ get; set; }
     public string ReasonRejection { get; set; }
 
+    public Guid IdDocument { get; set; }
+    [ForeignKey(nameof(IdDocument))]
+    public virtual Document? Document { get; set; }
+
 }

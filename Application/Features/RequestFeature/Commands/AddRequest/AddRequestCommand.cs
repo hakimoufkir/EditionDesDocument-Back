@@ -17,4 +17,6 @@ public class AddRequestCommand : IRequest<string>
     public DocumentStatus DocumentStatus { get; set; }
     public string MotifRejection { get; set; }
 
+    public Guid IdDocument { get; set; }
+
 }
