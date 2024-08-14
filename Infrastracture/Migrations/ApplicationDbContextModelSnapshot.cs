@@ -46,6 +46,9 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime?>("LastModifiedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PathFile")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -56,6 +59,53 @@ namespace Infrastracture.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Documents");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("7b241550-381a-4c2b-8148-112f7d808581"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstantJSON = "string",
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Convention de stage",
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/106546be-7125-4b63-9b0a-2225e384c026.docx"
+                        },
+                        new
+                        {
+                            Id = new Guid("94557cd1-2a66-4b5a-bd4c-4aacf9d67e34"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstantJSON = "string",
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Demande de stage",
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/b0177362-394b-4b78-b53e-a6666d8e3d69.docx"
+                        },
+                        new
+                        {
+                            Id = new Guid("16ce2451-0dc2-4cb0-a325-857d53f6b371"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstantJSON = "string",
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Attestation d'inscription",
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/e0de30de-d492-4683-97dd-d4a8bf3bc511.docx"
+                        },
+                        new
+                        {
+                            Id = new Guid("59ec09bd-7243-4da7-bfc4-9bd9a16782c1"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstantJSON = "string",
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Contrat",
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/1db826ac-886c-441c-b66b-7412f304219d.doc"
+                        },
+                        new
+                        {
+                            Id = new Guid("2415f49e-93a0-431b-9d03-f62eb9b56f4c"),
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            InstantJSON = "string",
+                            LastModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Attestation de scolarité",
+                            PathFile = "https://smsproject.blob.core.windows.net/sms/79c6d185-c542-4609-a2fe-1942aa361e7f.docx"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Group", b =>
@@ -150,15 +200,16 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("DocumentId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<int>("DocumentStatus")
                         .HasColumnType("int");
 
                     b.Property<string>("DocumentType")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("IdDocument")
-                        .HasColumnType("uniqueidentifier");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<Guid>("IdTrainee")
                         .HasColumnType("uniqueidentifier");
@@ -181,14 +232,42 @@ namespace Infrastracture.Migrations
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdDocument")
-                        .IsUnique();
+                    b.HasIndex("DocumentId");
 
                     b.ToTable("Requests");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("b06b613f-a589-4835-93f5-212bb7ea2a9b"),
+                            CreatedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2900),
+                            DocumentId = new Guid("94557cd1-2a66-4b5a-bd4c-4aacf9d67e34"),
+                            DocumentStatus = 1,
+                            DocumentType = "Demande de stage",
+                            IdTrainee = new Guid("be3bc4f8-5718-4341-b666-b78924e3f3f1"),
+                            LastModifiedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2923),
+                            ModeleId = new Guid("ec8cae74-b2ca-40df-b400-ece582fd3d12"),
+                            ReasonRejection = "",
+                            Role = "assistant"
+                        },
+                        new
+                        {
+                            Id = new Guid("107ed0f9-bae2-4c74-a650-1ae9eeca9b08"),
+                            CreatedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2973),
+                            DocumentId = new Guid("7b241550-381a-4c2b-8148-112f7d808581"),
+                            DocumentStatus = 2,
+                            DocumentType = "Convention de stage",
+                            IdTrainee = new Guid("4608f027-a5df-4eeb-9fff-3c409960589e"),
+                            LastModifiedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2975),
+                            ModeleId = new Guid("f494f880-e120-4a99-a259-67728028eaf6"),
+                            ReasonRejection = "ya pas de justification",
+                            Role = "director"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Entities.Trainee", b =>
@@ -421,8 +500,8 @@ namespace Infrastracture.Migrations
             modelBuilder.Entity("Domain.Entities.Request", b =>
                 {
                     b.HasOne("Domain.Entities.Document", "Document")
-                        .WithOne("Request")
-                        .HasForeignKey("Domain.Entities.Request", "IdDocument")
+                        .WithMany("Requests")
+                        .HasForeignKey("DocumentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -440,7 +519,7 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.Document", b =>
                 {
-                    b.Navigation("Request");
+                    b.Navigation("Requests");
                 });
 
             modelBuilder.Entity("Domain.Entities.Group", b =>
