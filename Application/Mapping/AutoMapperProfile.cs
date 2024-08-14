@@ -7,6 +7,7 @@ using Application.Features.RequestFeature.Commands.AddRequest;
 using Application.Features.RequestFeature.Commands.UpdateRequest;
 using Application.Features.TraineeFeature.Commands.UpdateTrainee;
 using Application.Features.YearFeature.Command.AddYear;
+using Application.Features.YearFeature.Command.UpdateYear;
 using AutoMapper;
 using Domain.Dtos;
 using Domain.Entities;
@@ -44,6 +45,7 @@ namespace EventService.Application.Mapping
 
             // Year Mapping
             CreateMap<AddYearCommand, Year>().ReverseMap();
+            CreateMap<UpdateYearCommand, Year>().ReverseMap();
 
             // Group Mapping
             CreateMap<GroupDto, Group>().ReverseMap();

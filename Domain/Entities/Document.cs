@@ -13,5 +13,7 @@ public class Document : Base
 
     public bool? FirstYear { get; set; }
     public bool? SecondYear { get; set; }
+    public string? Name { get; set; }
 
+    public ICollection<Request> Requests {get;set;}
 }

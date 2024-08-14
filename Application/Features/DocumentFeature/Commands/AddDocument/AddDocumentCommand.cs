@@ -12,5 +12,6 @@ namespace Application.Features.DocumentFeature.Commands.AddDocument
     {
         public string PathFile { get; set; }
         public string? InstantJSON { get; set; }
+        public string? Name { get; set; }
     }
 }
