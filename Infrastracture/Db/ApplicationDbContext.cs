@@ -12,7 +12,7 @@ namespace Infrastructure.Infrastructure.Data
 
 
 
-       
+
         public DbSet<Request> Requests { get; set; }
         public DbSet<Document> Documents { get; set; }
 
@@ -66,7 +66,7 @@ namespace Infrastructure.Infrastructure.Data
 
             modelBuilder.Entity<Document>(entity =>
             {
-                entity.HasData(                
+                entity.HasData(
                     new Document
                     {
                         Id = Guid.NewGuid(),
@@ -133,8 +133,8 @@ namespace Infrastructure.Infrastructure.Data
                                 }
                             }
                         }",
-                        FirstYear= true,
-                        SecondYear=false
+                        FirstYear = true,
+                        SecondYear = false
                     }
                 );
             });
