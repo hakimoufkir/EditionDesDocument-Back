@@ -16,7 +16,4 @@ public class Document : Base
     public string? Name { get; set; }
 
     public ICollection<Request> Requests {get;set;}
-
-    //public virtual Request? Request { get; set; }
-
 }

@@ -4,6 +4,8 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Domain.Entities;
+using Newtonsoft.Json;
 
 namespace Application.Broker.Consumer
 {
@@ -25,6 +27,7 @@ namespace Application.Broker.Consumer
             _consumer.Subscribe(_topic);
             try
             {
+                // _logger.LogInformation("Consuming Kafka message...");
                 while (!stoppingToken.IsCancellationRequested)
                 {
                     await ProcessKafkaMessage(stoppingToken);
@@ -59,7 +62,15 @@ namespace Application.Broker.Consumer
                 if (consumeResult?.Message?.Value != null)
                 {
                     string message = consumeResult.Message.Value;
-                    _logger.LogInformation($"Received unknown message: {message}");
+                    List<Trainee> trainees = JsonConvert.DeserializeObject<List<Trainee>>(message);
+                    if (trainees is not null)
+                    {
+                        StaticTrainee.SetAndResetList(trainees);
+                    }
+                    _logger.LogInformation($"Kafka message consumed: {message}");
+                }else
+                {
+                    _logger.LogInformation("No Kafka message received in the specified time frame.");
                 }
             }
             catch (ConsumeException ex)
