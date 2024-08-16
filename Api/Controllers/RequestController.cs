@@ -1,5 +1,7 @@
-﻿using Application.Features.RequestFeature.Commands.AddRequest;
+﻿using Application.Features.DocumentFeature.Queries.GetDocumentById;
+using Application.Features.RequestFeature.Commands.AddRequest;
 using Application.Features.RequestFeature.Commands.UpdateRequest;
+using Application.Features.RequestFeature.Queries.GetRequestByID;
 using Application.Features.RequestFeature.Queries.GetRequestsList;
 using Domain.Entities;
 using Domain.Enums;
@@ -87,7 +89,19 @@ namespace Api.Controllers
         }
 
 
-
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetRequestById(Guid id)
+        {
+            try
+            {
+                Request req = await _mediator.Send(new GetRequestByIdQuery(id));
+                return Ok(req);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
 
 
     }

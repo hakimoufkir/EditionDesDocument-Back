@@ -244,27 +244,27 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b06b613f-a589-4835-93f5-212bb7ea2a9b"),
-                            CreatedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2900),
+                            Id = new Guid("42c9a2fb-f4cb-4268-a805-83d47ed08534"),
+                            CreatedDate = new DateTime(2024, 8, 15, 0, 18, 7, 859, DateTimeKind.Local).AddTicks(9374),
                             DocumentId = new Guid("94557cd1-2a66-4b5a-bd4c-4aacf9d67e34"),
                             DocumentStatus = 1,
                             DocumentType = "Demande de stage",
-                            IdTrainee = new Guid("be3bc4f8-5718-4341-b666-b78924e3f3f1"),
-                            LastModifiedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2923),
-                            ModeleId = new Guid("ec8cae74-b2ca-40df-b400-ece582fd3d12"),
+                            IdTrainee = new Guid("f8da6880-8a33-42f1-969c-730b2e994896"),
+                            LastModifiedDate = new DateTime(2024, 8, 15, 0, 18, 7, 859, DateTimeKind.Local).AddTicks(9394),
+                            ModeleId = new Guid("780b7c81-29b5-4a2e-9ee6-a24d1d57603f"),
                             ReasonRejection = "",
                             Role = "assistant"
                         },
                         new
                         {
-                            Id = new Guid("107ed0f9-bae2-4c74-a650-1ae9eeca9b08"),
-                            CreatedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2973),
+                            Id = new Guid("b73edd48-5343-4e48-b923-5611b9346343"),
+                            CreatedDate = new DateTime(2024, 8, 15, 0, 18, 7, 859, DateTimeKind.Local).AddTicks(9452),
                             DocumentId = new Guid("7b241550-381a-4c2b-8148-112f7d808581"),
                             DocumentStatus = 2,
                             DocumentType = "Convention de stage",
-                            IdTrainee = new Guid("4608f027-a5df-4eeb-9fff-3c409960589e"),
-                            LastModifiedDate = new DateTime(2024, 8, 14, 18, 34, 11, 976, DateTimeKind.Local).AddTicks(2975),
-                            ModeleId = new Guid("f494f880-e120-4a99-a259-67728028eaf6"),
+                            IdTrainee = new Guid("e491f82a-8da4-4b55-a77a-427d17c75f11"),
+                            LastModifiedDate = new DateTime(2024, 8, 15, 0, 18, 7, 859, DateTimeKind.Local).AddTicks(9453),
+                            ModeleId = new Guid("785b156c-6636-4276-bc0c-905e35fe8f7e"),
                             ReasonRejection = "ya pas de justification",
                             Role = "director"
                         });

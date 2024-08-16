@@ -93,6 +93,7 @@ namespace Application.Services
 
             existingDocument.PathFile = document.PathFile;
             existingDocument.InstantJSON = document.InstantJSON;
+            existingDocument.Name = document.Name;
 
             try
             {

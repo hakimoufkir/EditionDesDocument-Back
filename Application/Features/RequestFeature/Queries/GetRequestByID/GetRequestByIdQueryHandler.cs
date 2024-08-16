@@ -1,4 +1,5 @@
 ﻿using Application.Interfaces;
+using Application.Services;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
@@ -7,17 +8,18 @@ namespace Application.Features.RequestFeature.Queries.GetRequestByID;
 
 public class GetRequestByIdQueryHandler :IRequestHandler<GetRequestByIdQuery,Request>
 {
-    private readonly IUnitOfService _uos;
+    private readonly IUnitOfService _unitOfService;
     private readonly IMapper _mapper;
 
-    public GetRequestByIdQueryHandler(IUnitOfService uos, IMapper mapper)
+    public GetRequestByIdQueryHandler(IUnitOfService unitOfService, IMapper mapper)
     {
-        _uos = uos;
+        _unitOfService = unitOfService;
         _mapper = mapper;
     }
 
-    public Task<Request> Handle(GetRequestByIdQuery request, CancellationToken cancellationToken)
+    public async Task<Request> Handle(GetRequestByIdQuery request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        Request result = await _unitOfService.RequestService.GetRequestByIdAsync(request.IdRequest);
+        return result;
     }
 }

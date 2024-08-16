@@ -7,12 +7,14 @@ namespace Application.Features.DocumentFeature.Commands.UpdateDocument
         public Guid Id { get; set; }
         public string PathFile { get; set; }
         public string InstantJSON { get; set; }
+        public string? Name { get; set; }
 
-        public UpdateDocumentCommand(Guid id, string pathFile, string instantJSON)
+        public UpdateDocumentCommand(Guid id, string pathFile, string instantJSON, string? name)
         {
             Id = id;
             PathFile = pathFile;
             InstantJSON = instantJSON;
+            Name = name;
         }
     }
 }
