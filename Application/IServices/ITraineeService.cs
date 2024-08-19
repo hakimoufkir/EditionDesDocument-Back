@@ -17,5 +17,6 @@ namespace Application.IServices
      
         Task UpdateTraineeAsync(Trainee trainee);
         Task DeleteTraineeAsync(Guid IdTrainee);
+        Task<List<Trainee>> GetListTraineesFormKafkaAsync();
     }
 }
