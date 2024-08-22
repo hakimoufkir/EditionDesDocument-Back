@@ -65,10 +65,12 @@ namespace Application.Broker.Consumer
                     List<Trainee> trainees = JsonConvert.DeserializeObject<List<Trainee>>(message);
                     if (trainees is not null)
                     {
-                        StaticTrainee.SetAndResetList(trainees);
+                        StaticTrainee.SetTraineeList(trainees);
+                        StaticTraineeRequestStatus.SetRequestCompleted(); // Mark the request as completed
                     }
                     _logger.LogInformation($"Kafka message consumed: {message}");
-                }else
+                }
+                else
                 {
                     _logger.LogInformation("No Kafka message received in the specified time frame.");
                 }
@@ -78,5 +80,6 @@ namespace Application.Broker.Consumer
                 _logger.LogError(ex, "Error consuming Kafka message");
             }
         }
+
     }
 }

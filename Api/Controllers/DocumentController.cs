@@ -5,9 +5,11 @@ using Application.Features.DocumentFeature.Queries.GetAllDocuments;
 using Application.Features.DocumentFeature.Queries.GetDocumentById;
 using Application.Features.DocumentFeature.Queries.GetDocumentByUrl;
 using Application.Features.FilesFeature.Queries.GetAllFiles;
+using Application.Features.TraineeFeature.Queries.GetTraineeById;
 using Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace Api.Controllers
 {
@@ -118,6 +120,48 @@ namespace Api.Controllers
                 // Log the exception details here
                 return StatusCode(500, $"An error occurred while updating the document. Details: {ex.Message}");
             }
+        }
+
+        [HttpPost("print")]
+        public async Task<IActionResult> PrintDocument(
+            [FromBody] string request
+            /*[FromBody] PrintDocumentRequest request*/
+            )
+        {
+            /* try
+             {
+                 // Fetch the trainee data
+                 var trainee = await _mediator.Send(new GetTraineeByIdQuery(request.IdTrainee));
+
+                 // Fetch the document data
+                 var document = await _mediator.Send(new GetDocumentByIdQuery(request.DocumentId));
+
+                 if (trainee == null || document == null)
+                 {
+                     return NotFound("Trainee or Document not found.");
+                 }
+
+                 // Update InstantJSON with trainee data
+                 var instantJSON = JsonConvert.DeserializeObject<InstantJSON>(document.InstantJSON);
+                 var field = instantJSON.FormFieldValues.FirstOrDefault(f => f.Name == "Trainee_FirstName");
+
+                 if (field != null)
+                 {
+                     field.Value = trainee.FirstName; // Update with the actual value
+                 }
+
+                 var updatedInstantJSON = JsonConvert.SerializeObject(instantJSON);
+
+                 // Update document with the new InstantJSON
+                 await _mediator.Send(new UpdateDocumentCommand(document.Id, updatedInstantJSON));
+
+                 return Ok("Document updated successfully.");
+             }
+             catch (Exception ex)
+             {
+                 return StatusCode(500, $"An error occurred: {ex.Message}");
+             }*/
+            return Ok("testing ...");
         }
 
 

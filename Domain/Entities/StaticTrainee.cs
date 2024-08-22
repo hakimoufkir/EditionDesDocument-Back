@@ -1,20 +1,22 @@
-﻿namespace Domain.Entities;
+﻿using System.Collections.Generic;
+using Domain.Entities;
 
 public static class StaticTrainee
 {
-    public static List<Trainee> Trainees  { get; private set; } = new();
-    public static TaskCompletionSource Loading = new();
-    
-    public static void SetAndResetList(List<Trainee> products)
+    private static List<Trainee> _traineeList = new List<Trainee>();
+
+    public static void SetTraineeList(List<Trainee> traineeList)
     {
-        Trainees = new List<Trainee>();
-        Trainees.AddRange(products);
-        Loading.TrySetResult(); 
+        _traineeList = traineeList;
     }
 
-
-    public static void ResetLoading()
+    public static List<Trainee> GetTraineeList()
     {
-        Loading = new TaskCompletionSource();
+        return _traineeList;
+    }
+
+    public static void ClearTraineeList()
+    {
+        _traineeList.Clear();
     }
 }
