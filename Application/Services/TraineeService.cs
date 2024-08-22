@@ -1,4 +1,5 @@
-﻿using Application.IServices;
+﻿using Application.Broker.Producer;
+using Application.IServices;
 using Application.IUnitOfWorks;
 using AutoMapper;
 using Domain.Dtos;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -19,11 +21,13 @@ namespace Application.Services
 
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly ListTraineeProducer _listTraineeProducer ;
 
-        public TraineeService(IUnitOfWork unitOfWork , IMapper mapper)
+        public TraineeService(IUnitOfWork unitOfWork , IMapper mapper, ListTraineeProducer listTraineeProducer)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _listTraineeProducer = listTraineeProducer;
         }
 
 
@@ -112,6 +116,14 @@ namespace Application.Services
             }
         }
 
+
+        public async Task<List<Trainee>> GetListTraineesFormKafkaAsync()
+        {
+            await _listTraineeProducer.ProduceAsync("InscriptionServiceRequestMiddleWare", "ListTrainees");
+            if (!StaticTrainee.Loading.Task.IsCompleted) await StaticTrainee.Loading.Task;
+            StaticTrainee.ResetLoading();
+            return StaticTrainee.Trainees;
+        }
 
     }
 }
