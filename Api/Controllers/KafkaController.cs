@@ -19,12 +19,12 @@ namespace Api.Controllers
         {
            _listTraineeProducer = listTraineeProducer;
         }
-        private readonly IUnitOfService _unitOfService;
-
-        public KafkaController(IUnitOfService unitOfService)
+/*        private readonly IUnitOfService _unitOfService;
+*/
+        /*public KafkaController(IUnitOfService unitOfService)
         {
             _unitOfService = unitOfService;
-        }
+        }*/
         // [HttpGet("RequestListTrainee")]
         // public async Task<IActionResult> PostRequestListTrainee()
         // {
