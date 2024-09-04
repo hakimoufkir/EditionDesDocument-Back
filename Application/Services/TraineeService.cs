@@ -119,11 +119,20 @@ namespace Application.Services
 
         public async Task<List<Trainee>> GetListTraineesFormKafkaAsync()
         {
+            // Produce the message to Kafka
             await _listTraineeProducer.ProduceAsync("InscriptionServiceRequestMiddleWare", "ListTrainees");
-            if (!StaticTrainee.Loading.Task.IsCompleted) await StaticTrainee.Loading.Task;
-            StaticTrainee.ResetLoading();
-            return StaticTrainee.Trainees;
-        }
 
+            // Wait until the trainees are loaded
+            if (!StaticTrainee.LoadingTask.IsCompleted)
+            {
+                await StaticTrainee.LoadingTask;
+            }
+
+            // Reset the loading task for the next request
+            StaticTrainee.ResetLoading();
+
+            // Return the trainee list
+            return StaticTrainee.GetTraineeList();
+        }
     }
 }
